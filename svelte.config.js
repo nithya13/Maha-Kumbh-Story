@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
-import sveltePreprocess from 'svelte-preprocess';
+
+import {vitePreprocess} from '@sveltejs/vite-plugin-svelte';
 
 
 const config = {
@@ -7,11 +8,14 @@ const config = {
 
     kit: {
         adapter: adapter({
-            strict: false 
+
+            fallback: 'index.html'
+
         }),
         paths: {
             base: process.env.NODE_ENV === 'production' ? '/Maha-Kumbh-Story' : '',
         }
+    }
     },
-};
+
 export default config;
