@@ -4,14 +4,14 @@
 </svelte:head>
 
 <script>
- 
+  import { base } from '$app/paths';
 </script>
 
 
 <section class="relative w-full h-screen overflow-hidden">
   <!-- Background Image -->
   <img 
-    src="/Background.webp" 
+  src="{`${base}/Background.webp`}" 
     alt="Background" 
     class="absolute inset-0 w-full h-full object-cover" 
   />
