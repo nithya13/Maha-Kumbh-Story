@@ -275,7 +275,7 @@
       </div>
   
       <div
-        class="bg-white/80 backdrop-blur-lg rounded-2xl p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
+        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Rituals as Conservation</h2>
         <p class="text-base leading-relaxed">
@@ -284,7 +284,7 @@
       </div>
   
       <div
-        class="bg-white/80 backdrop-blur-lg rounded-2xl p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
+        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Power Structures</h2>
         <p class="text-base leading-relaxed">
