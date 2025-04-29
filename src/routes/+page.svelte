@@ -22,7 +22,7 @@
     return () => observer.disconnect();
   });
 </script>
-<header class="fixed top-0 left-0 w-full z-50 bg-transparent text-white">
+<header class="w-full py-4 px-6 absolute top-0 left-0 z-20 text-white">
   <div class="flex items-center justify-between px-6 py-4">
     <!-- Logo or Title (left) -->
     <div class="text-xl tracking-wider" style="font-family: 'Bebas Neue', sans-serif;">
@@ -52,7 +52,7 @@
   <div class="absolute inset-0" style="background: rgba(0, 0, 0, 0.1);"></div>
 
   <!-- Centered Content -->
-  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 transform -translate-y-70 md:-translate-y-20">
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 transform md:-translate-y-20">
     <h1 class="text-4xl tracking-wider md:text-6xl font-bold mb-4 border-b-2 border-white" style="font-family: 'Bebas Neue', sans-serif;">
       A water rejuvenation lesson from the Maha Kumbh
     </h1>
