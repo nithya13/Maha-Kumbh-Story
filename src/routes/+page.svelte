@@ -1,20 +1,31 @@
 <script>
   import { onMount } from "svelte";
-  import { base } from "$app/paths";
+
+
+  import { base } from '$app/paths';
 
   let isOverlayVisible = false;
+  let isPointsVisible = false;
   let fadeTrigger;
+  let pointsTrigger;
 
   onMount(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         isOverlayVisible = entry.isIntersecting;
       },
-      { threshold: 0.5 },
+      { threshold: 0.5 }
+    );
+
+    const observer2 = new IntersectionObserver(
+      ([entry]) => {
+        isPointsVisible = entry.isIntersecting;
+      },
+      { threshold: 0.5 }
     );
 
     if (fadeTrigger) observer.observe(fadeTrigger);
-    return () => observer.disconnect();
+    if (pointsTrigger) observer2.observe(pointsTrigger);
   });
 </script>
 
@@ -203,7 +214,7 @@
     </p>
   </section>
 
-  <section class="relative col-span-full h-[500vh]">
+  <section class="relative col-span-full h-[700vh]">
     <div class="sticky top-0 h-screen overflow-hidden z-10">
       <!-- Base Map -->
       <img
@@ -211,8 +222,8 @@
         alt="Zoning"
         class="w-full h-full object-contain"
       />
-
-      <!-- Overlay on top of Map -->
+  
+      <!-- First overlay -->
       <img
         src={`${base}/overlay.png`}
         alt="Overlay"
@@ -220,32 +231,64 @@
         class:opacity-0={!isOverlayVisible}
         class:opacity-100={isOverlayVisible}
       />
+  
+      <!-- Labels overlay -->
+      <img
+        src={`${base}/labels.png`}
+        alt="Labels"
+        class="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000"
+        class:opacity-0={!isOverlayVisible}
+        class:opacity-100={isOverlayVisible}
+      />
+  
+      <!-- Second overlay (points) -->
+      <img
+        src={`${base}/points.png`}
+        alt="Points"
+        class="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000"
+        class:opacity-0={!isPointsVisible}
+        class:opacity-100={isPointsVisible}
+      />
     </div>
-
-    <!-- Trigger area between the cards -->
+  
+    <!-- Trigger area between the first and second overlay -->
     <div
       bind:this={fadeTrigger}
       class="absolute top-[190vh] h-[10vh] w-full"
     ></div>
-
+  
+    <!-- Trigger area for points overlay -->
+    <div
+      bind:this={pointsTrigger}
+      class="absolute top-[320vh] h-[10vh] w-full"
+    ></div>
+  
+    <!-- Floating cards area -->
     <div class="absolute top-[100vh] w-full z-20">
       <div
         class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Zoning</h2>
         <p class="text-base leading-relaxed">
-          The area around the sangam is classified into zones for administrative
-          purposes
+          The area around the sangam is classified into zones for administrative purposes.
         </p>
       </div>
-
+  
       <div
         class="bg-white/80 backdrop-blur-lg rounded-2xl p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Rituals as Conservation</h2>
         <p class="text-base leading-relaxed">
-          Events like the Maha Kumbh show that faith-based gatherings can
-          support conservation goals if approached thoughtfully.
+          Events like the Maha Kumbh show that faith-based gatherings can support conservation goals if approached thoughtfully.
+        </p>
+      </div>
+  
+      <div
+        class="bg-white/80 backdrop-blur-lg rounded-2xl p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
+      >
+        <h2 class="text-xl mb-2">Power Structures</h2>
+        <p class="text-base leading-relaxed">
+          The organization and functioning of the ephemeral city reflect deep social hierarchies, with power embedded in spatial and infrastructural choices.
         </p>
       </div>
     </div>
