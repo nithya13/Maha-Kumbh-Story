@@ -32,8 +32,7 @@
     <!-- Menu (right) -->
     <nav>
       <ul class="flex space-x-10 text-sm">
-        <li>
-          <a href="#about" class="hover:underline">About</a>
+        <li class="hover:underline">About
         </li>
       </ul>
     </nav>
