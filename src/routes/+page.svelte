@@ -74,7 +74,7 @@
     class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 transform md:-translate-y-20"
   >
     <h1
-      class="text-4xl tracking-wider md:text-6xl font-bold mb-4 border-b-2 border-white"
+      class="text-4xl tracking-wider md:text-6xl font-bold mb-4 border-b-1 border-white"
       style="font-family: 'Bebas Neue', sans-serif;"
     >
       A water rejuvenation lesson from the Maha Kumbh
