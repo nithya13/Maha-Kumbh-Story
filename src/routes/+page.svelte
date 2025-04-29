@@ -22,7 +22,23 @@
     return () => observer.disconnect();
   });
 </script>
+<header class="fixed top-0 left-0 w-full z-50 bg-transparent text-white">
+  <div class="flex items-center justify-between px-6 py-4">
+    <!-- Logo or Title (left) -->
+    <div class="text-xl tracking-wider" style="font-family: 'Bebas Neue', sans-serif;">
+      Reading Rituals for River Rejuvenation
+    </div>
 
+    <!-- Menu (right) -->
+    <nav>
+      <ul class="flex space-x-10 text-sm">
+        <li>
+          <a href="#about" class="hover:underline">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <section class="relative w-full h-screen overflow-hidden">
   <!-- Background Image -->
