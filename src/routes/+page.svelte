@@ -4,7 +4,23 @@
 </svelte:head>
 
 <script>
+  import { onMount } from 'svelte';
   import { base } from '$app/paths';
+
+  let isOverlayVisible = false;
+  let fadeTrigger;
+
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isOverlayVisible = entry.isIntersecting;
+      },
+      { threshold: 0.5 }
+    );
+
+    if (fadeTrigger) observer.observe(fadeTrigger);
+    return () => observer.disconnect();
+  });
 </script>
 
 
@@ -68,27 +84,35 @@ society, to mitigate the impact.
 
   <section class="relative col-span-full h-[500vh]">
     <div class="sticky top-0 h-screen overflow-hidden z-10">
+      <!-- Base Map -->
       <img
-        src="./Map.png"
+        src="{`${base}/Map.png`}"
         alt="Zoning"
-        class=" w-full h-full object-contain"
+        class="w-full h-full object-contain"
+      />
+  
+      <!-- Overlay on top of Map -->
+      <img
+        src="{`${base}/overlay.png`}"
+        alt="Overlay"
+        class="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000"
+        class:opacity-0={!isOverlayVisible}
+        class:opacity-100={isOverlayVisible}
       />
     </div>
-
+  
+    <!-- Trigger area between the cards -->
+    <div bind:this={fadeTrigger} class="absolute top-[190vh] h-[10vh] w-full"></div>
+  
     <div class="absolute top-[100vh] w-full z-20">
-      <div
-        class="bg-white/80 backdrop-blur-lg rounded-2xl p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
-      >
-        <h2 class="text-xl mb-2">Indigenous Practices and Water</h2>
+      <div class="bg-white/80 backdrop-blur-lg rounded-2xl p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg">
+        <h2 class="text-xl mb-2">Zoning</h2>
         <p class="text-base leading-relaxed">
-          Many indigenous traditions hold rivers sacred and teach sustainable
-          water use practices rooted in spirituality.
+          The area around the sangam is classified into zones for administrative purposes
         </p>
       </div>
-
-      <div
-        class="bg-white/80 backdrop-blur-lg rounded-2xl p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
-      >
+  
+      <div class="bg-white/80 backdrop-blur-lg rounded-2xl p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg">
         <h2 class="text-xl mb-2">Rituals as Conservation</h2>
         <p class="text-base leading-relaxed">
           Events like the Maha Kumbh show that faith-based gatherings can
