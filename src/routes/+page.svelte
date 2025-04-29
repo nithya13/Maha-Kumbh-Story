@@ -45,6 +45,25 @@
       water bodies. Can we leverage this relationship for the enduring
       rejuvenation of rivers and water bodies?
     </p>
+    <p>The Maha Kumbh in Prayagraj takes place along a stretch of about 20 km and in an
+      area of 40 square km around the sangam of the Ganga, the Yamuna and the mythical
+      Saraswati. The river bed and surrounding area are transformed into a temporary
+      settlement to receive the pilgrims and visitors. A Harvard University study called it
+      an “ephemeral mega-city”. Built in just eight to 10 weeks in the belly of the river, the
+      city is unbuilt as swiftly, before the river begins to swell. An amazing convergence of
+      cultural, economic and political interests produces this spectacle of making and
+      unmaking the ephemeral city. The city turns into a theatre for celebrating the
+      spiritual connection with the river.</p>
+      <p>
+        At the same time, the staggering footfall and the mind-numbing scale of rituals and
+practices along the river stretch, over such a short period, raise concerns about their
+impact on the river. The Central Pollution Control Board’s (CPCB) monitoring during
+this Maha Kumbh, as well as the one in 2013, showed high levels of faecal coliform,
+more so during the amrit snan (auspicious bathing) days. There have been deliberate
+efforts to respond and mitigate this by allowing adequateows in the river. There
+has also been an upsurge of environmental action, both by state institutions and civil
+society, to mitigate the impact.
+      </p>
   </section>
 
   <section class="relative col-span-full h-[500vh]">
