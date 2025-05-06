@@ -92,9 +92,22 @@
   class="grid grid-cols-1 md:grid-cols-12 gap-4 w-full"
   style="font-family: 'Lora', serif;"
 >
+
+<!-- Table of Contents -->
+<aside class="hidden md:block col-start-2 col-span-2 py-4 md:py-8 px-4 text-left">
+  <nav class="space-y-4 text-sm font-bold text-gray-700">
+    <a href="#chapter1" class="block border-b border-black pb-1">Chapter 1</a>
+    <a href="#chapter2" class="block border-b border-black pb-1">Chapter 2</a>
+    <a href="#chapter3" class="block border-b border-black pb-1">Chapter 3</a>
+    <a href="#chapter4" class="block border-b border-black pb-1">Chapter 4</a>
+    <a href="#chapter5" class="block border-b border-black pb-1">Chapter 5</a>
+  </nav>
+</aside>
+
   <section
-    class="col-start-1 col-span-1 md:col-start-4 md:col-span-6 py-4 md:py-8 px-4 md:px-0 text-left"
+    class="col-start-1 col-span-1 md:col-start-4 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left"
   >
+  <h2 id="chapter1" class="text-2xl font-semibold mb-4">Chapter 1: Ecology, the River, and Rituals</h2>
     <p class="text-base leading-relaxed">
       Prayagraj hosted more than 60 crore pilgrims and visitors over a span of
       45 days during the Maha Kumbh, according to the estimates of the Uttar
@@ -211,14 +224,16 @@
       extends to other festivals — the Chhath Puja, for instance. It is time to
       bring the confluence of culture with river ecologies to the centre of
       analysis for an Indian model of river rejuvenation and water conservation.
-    </p>
+    </p> <br/>
+    <h2 id="chapter2" class="text-2xl font-semibold mb-4">Chapter 2: Mapping the Sangam and the Stakeholders</h2>
   </section>
 
   <section class="relative col-span-full h-[700vh]">
+    
     <div class="sticky top-0 h-screen overflow-hidden z-10">
       <!-- Base Map -->
       <img
-        src={`${base}/Map.png`}
+        src={`${base}/Map2.png`}
         alt="Zoning"
         class="w-full h-full object-contain"
       />
@@ -264,9 +279,9 @@
     ></div>
   
     <!-- Floating cards area -->
-    <div class="absolute top-[100vh] w-full z-20">
+    <div class="absolute top-[100vh] left-[10vw] w-full z-20">
       <div
-        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
+        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Zoning</h2>
         <p class="text-base leading-relaxed">
@@ -275,7 +290,7 @@
       </div>
   
       <div
-        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
+        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Rituals as Conservation</h2>
         <p class="text-base leading-relaxed">
@@ -284,7 +299,7 @@
       </div>
   
       <div
-        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mx-auto mb-[100vh] shadow-lg"
+        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Power Structures</h2>
         <p class="text-base leading-relaxed">
