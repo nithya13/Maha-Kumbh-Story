@@ -98,9 +98,9 @@
   <nav class="space-y-4 text-sm font-bold text-gray-700">
     <a href="#chapter1" class="block border-b border-black pb-1">Chapter 1</a>
     <a href="#chapter2" class="block border-b border-black pb-1">Chapter 2</a>
-    <a href="#chapter3" class="block border-b border-black pb-1">Chapter 3</a>
-    <a href="#chapter4" class="block border-b border-black pb-1">Chapter 4</a>
-    <a href="#chapter5" class="block border-b border-black pb-1">Chapter 5</a>
+    <a href="#chapter2" class="block border-b border-black pb-1">Chapter 3</a>
+    <a href="#chapter2" class="block border-b border-black pb-1">Chapter 4</a>
+    <a href="#chapter2" class="block border-b border-black pb-1">Chapter 5</a>
   </nav>
 </aside>
 
