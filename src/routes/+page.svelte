@@ -242,7 +242,7 @@
       <img
         src={`${base}/overlay.png`}
         alt="Overlay"
-        class="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000"
+        class="absolute inset-0 w-full h-full object-contain transition-opacity duration-1200"
         class:opacity-0={!isOverlayVisible}
         class:opacity-100={isOverlayVisible}
       />
