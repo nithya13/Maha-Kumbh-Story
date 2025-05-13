@@ -250,7 +250,7 @@ const observer3 = new IntersectionObserver(
       <img
         src={`${base}/Fecal-coliform.png`}
         alt="Overlay"
-        class="absolute inset-0 w-full h-full object-contain transition-opacity duration-800"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
         class:opacity-0={!isOverlayVisible}
         class:opacity-100={isOverlayVisible}
       />
@@ -268,7 +268,7 @@ const observer3 = new IntersectionObserver(
       <img
         src={`${base}/Flower-tributes.png`}
         alt="Points"
-        class="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
         class:opacity-0={!isPointsVisible}
         class:opacity-100={isPointsVisible}
       />
@@ -276,7 +276,7 @@ const observer3 = new IntersectionObserver(
       <img
         src={`${base}/Nightmap.jpg`}
         alt="Points"
-        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-100"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
         class:opacity-0={!isNightVisible}
         class:opacity-100={isNightVisible}
       />
