@@ -55,7 +55,10 @@ const observer3 = new IntersectionObserver(
       style="font-family: 'Bebas Neue', sans-serif;"
     >
       Reading Rituals for River Rejuvenation
+
+      
     </div>
+
 
     <!-- Menu (right) -->
     <nav>
@@ -82,157 +85,89 @@ const observer3 = new IntersectionObserver(
     class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 transform md:-translate-y-20"
   >
     <h1
-      class="text-4xl tracking-wider md:text-6xl font-bold mb-4 border-b-1 border-white"
+      class="text-4xl tracking-wider md:text-6xl font-bold mb-6 border-b-1 border-white"
       style="font-family: 'Bebas Neue', sans-serif;"
     >
       A water rejuvenation lesson from the Maha Kumbh
     </h1>
-    <h2
-      class="text-xl tracking-wider md:text-2xl font-medium"
-      style="font-family: 'Bebas Neue', sans-serif;"
+    <h6
+      class="text-base tracking-wider md:text-base font-medium"
+      style="font-family: 'Inter', sans-serif;"
     >
       Indigenous practices often embody an ecological ethic of conservation
-    </h2>
+    </h6>
   </div>
 </section>
 
 <main
   class="grid grid-cols-1 md:grid-cols-12 gap-4 w-full"
-  style="font-family: 'Lora', serif;"
+  style="font-family: 'Inter', sans serif;"
 >
 
 <!-- Table of Contents -->
-<aside class="hidden md:block col-start-2 col-span-2 py-4 md:py-8 px-4 text-left">
+<aside class="hidden md:block col-start-2 col-span-2 y-4 md:py-8 px-4 text-left">
   <nav class="space-y-4 text-sm font-bold text-gray-700">
-    <a href="#chapter1" class="block border-b border-black pb-1">Chapter 1</a>
-    <a href="#chapter2" class="block border-b border-black pb-1">Chapter 2</a>
-    <a href="#chapter2" class="block border-b border-black pb-1">Chapter 3</a>
-    <a href="#chapter2" class="block border-b border-black pb-1">Chapter 4</a>
-    <a href="#chapter2" class="block border-b border-black pb-1">Chapter 5</a>
+    <a href="#chapter1" class="block border-b border-black pb-1">1. Reading Rituals for Rejuvenating Rivers 
+</a>
+    <a href="#chapter2" class="block border-b border-black pb-1">2.Legends, Rituals, Customs and Practices</a>
+    <a href="#chapter2" class="block border-b border-black pb-1">3. Spatial Mapping</a>
+        <a href="#chapter2" class="block border-b border-black pb-1">4. Power Mapping</a>
+    <a href="#chapter2" class="block border-b border-black pb-1">5. Annexures</a>
   </nav>
 </aside>
 
   <section
-    class="col-start-1 col-span-1 md:col-start-4 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left"
+    class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left"
   >
-  <h2 id="chapter1" class="text-2xl font-semibold mb-4">Chapter 1: Rituals and River-Society Relationship</h2>
-    <p class="text-base leading-relaxed">
-      Prayagraj hosted more than 60 crore pilgrims and visitors over a span of
-      45 days during the Maha Kumbh, according to the estimates of the Uttar
-      Pradesh government. The world has witnessed the religious and spiritual
-      fervour that moved the entire nation while it celebrated its reverence for
-      the river goddess Ganga. Yet, the event is fundamentally a manifestation
-      of a profound and deep-seated river- society relationship. Cultural
-      gatherings such as the Maha Kumbh are known to happen along rivers and
-      water bodies. Can we leverage this relationship for the enduring
-      rejuvenation of rivers and water bodies?
-    </p>
-    <br />
-    <p>
-      The Maha Kumbh in Prayagraj takes place along a stretch of about 20 km and
-      in an area of 40 square km around the sangam of the Ganga, the Yamuna and
-      the mythical Saraswati. The river bed and surrounding area are transformed
-      into a temporary settlement to receive the pilgrims and visitors. A
-      Harvard University study called it an “ephemeral mega-city”. Built in just
-      eight to 10 weeks in the belly of the river, the city is unbuilt as
-      swiftly, before the river begins to swell. An amazing convergence of
-      cultural, economic and political interests produces this spectacle of
-      making and unmaking the ephemeral city. The city turns into a theatre for
-      celebrating the spiritual connection with the river.
-    </p>
-    <p>
-      <br />
-      At the same time, the staggering footfall and the mind-numbing scale of rituals
-      and practices along the river stretch, over such a short period, raise concerns
-      about their impact on the river. The Central Pollution Control Board’s (CPCB)
-      monitoring during this Maha Kumbh, as well as the one in 2013, showed high
-      levels of faecal coliform, more so during the amrit snan (auspicious bathing)
-      days. There have been deliberate efforts to respond and mitigate this by allowing
-      adequateows in the river. There has also been an upsurge of environmental action,
-      both by state institutions and civil society, to mitigate the impact.
-    </p>
-    <br />
-    <p>
-      The spectacle of the Maha Kumbh is, thus, subject to two seemingly
-      divergent narratives. One that is focused on society and spirituality — it
-      eulogises the virtues of the Indian spiritual traditions of respect and
-      reverence towards nature. The other, shaped by the emerging environmental
-      challenges, is the impact of mass gatherings and a variety of ritual
-      practices on river ecologies.
-    </p>
-    <br />
-    <p>
-      On the face of it, the two appear conflicting. But a focus on the
-      river-society relationship, embodied by the Maha Kumbh and similar events,
-      can lead to progressive outcomes. The profundity of the relationship is as
-      unfathomable as that of the spectacular nature of the Maha Kumbh. Often
-      described as aastha (deeper than the loose translation, faith), can this
-      embedded spiritual consciousness be deployed for ecological purposes?
-    </p>
-    <br />
-    <p>
-      It would not be a stretch of imagination to say that indigenous practices
-      — spiritual or non-spiritual — often embody an ecological ethic of
-      conservation. Using indigenous metaphors and practices can be very
-      effective in pursuing environmental outcomes. The recent example of the
-      popular leader Morari Bapu’s successful campaign to protect the whale
-      shark in the Saurashtra coastal region is one example. Such deployment of
-      spiritual consciousness can possibly address a critical gap in the efforts
-      to rejuvenate rivers, especially the Namami Gange programme to clean the
-      Ganga. The programme is unprecedented in its scope, scale and significance
-      and has led to a visible and tangible impact in improving the river’s
-      ecological status. But there are two challenges in sustaining this impact.
-      One pertains to the sub-national institutionalisation of the programme for
-      its enduring impact. Discernible institutional mandates or budgetary
-      allocations at the sub-national scale remain elusive. The other is the
-      continuing pollution loads from non-point sources — these are contributed
-      by a multitude of stakeholder interest groups along the river.
-    </p>
-    <br />
-    <p>
-      The latter is difficult to address without changing the behaviour of
-      people in their everyday engagement with the river. People’s engagement
-      with the river must complement and catalyse the efforts of agencies like
-      the National Mission for Clean Ganga (NMCG). They provide the sub-national
-      churning and accountability that are necessary to make river rejuvenation
-      efforts enduring. Building on aastha can turn the mission into a truly
-      people’s programme for an improved ecological status of the river.
-    </p>
-    <br />
-    <p>
-      The challenge, however, is about unpacking aastha and turning it into an
-      astra — an instrument. While much needs to be understood about the
-      enigmatic aastha, it can begin with its material manifestations — the
-      rituals and practices that impact the river’s ecologies. There is a risk
-      here of privileging ritual practices and reinforcing the social and
-      spiritual power hierarchies. These can be avoided through a deeper
-      understanding of the ecosystem that sanctions and sustains the rituals and
-      practices.
-    </p>
-    <br />
-    <p>
-      Thus, the takeaway is to bring the rituals and practices to the centre of
-      our analysis. Not just for channelling spiritual consciousness but also to
-      unravel the underlying ecological ethic. This requires recognising that
-      the rituals and practices are informed and constructed by a web of agents,
-      actors and networks. These range from priests, pandas and pandits to
-      popular preachers and spiritual thought-leaders as well as institutions
-      such as ashrams and akharas. These networks transcend the spiritual realm.
-      They can often be driven by the interests of the political economy. The
-      reimagining of rituals must involve working with these networks and
-      institutions to produce means and meanings that can complement river
-      rejuvenation efforts.
-    </p>
-    <br />
-    <p>
-      India’s rivers and water bodies host gatherings of cultural and spiritual
-      signi cance — a legend usually provides the convening power. And, the
-      river-society relationship unravels in myriad ways: Legends, rituals,
-      beliefs, and practices. It is not restricted to kumbh gatherings but
-      extends to other festivals — the Chhath Puja, for instance. It is time to
-      bring the confluence of culture with river ecologies to the centre of
-      analysis for an Indian model of river rejuvenation and water conservation.
-    </p> <br/>
+  <h2 id="chapter1" class="text-2xl font-semibold mb-4">Chapter 1: Rituals and River-societies</h2>
+    <!-- <p class="text-base leading-relaxed"></p> -->
+      <p>
+    The Maha Kumbh of 2025 in Prayagraj, Uttar Pradesh, at the Triveni Sangam of the Ganga, Yamuna, and the mythical Saraswati gathered over 60 crore pilgrims and visitors over a span of 45 days.
+  </p>
+
+  <p>
+    A spectacle embodying people’s spiritual connection with the river.<br>
+    A measure of the river’s cultural convening power.<br>
+    An ecological ethic deeply embedded in religious practices, legends, and beliefs.
+  </p>
+
+  <p>
+    This colossal event of Maha Kumbh has been subjected to two outwardly divergent narratives. One focused on society and spirituality: the virtues of the Indian spiritual traditions of respect and reverence towards nature. The other on the environmental concerns and sensibilities: how mass gatherings and the ritual practices impact river ecologies.
+  </p>
+
+  <p>
+    These two appear conflicting, but we see powerful convergence for river rejuvenation. We believe it is possible if we focus on the river-society relationship embodying Maha Kumbh and similar gatherings along the rivers and explore beyond the binary views of the spiritual and the environmental.
+  </p>
+
+  <p>
+    The river-society relationship is often described as <strong>Aastha</strong> (loosely translated from faith). Aastha is the most potent power mobilizing the masses of populations to come and express their deep reverence to the river Ganga (the Goddess) in the form of a variety of rituals and practices along the river.
+  </p>
+<!-- Image with float for text wrapping -->
+<img src={`${base}/Cutout1.png`} alt="Decorative illustration" class="wrap-image" />
+  <p>
+    The primary goal of our research is to unpack and understand the Aastha and turn it into <strong>Astra</strong> for river rejuvenation. This is a pilot project initiated by the TREADS Initiative at CPR and supported by the NMCG, beginning with an audio-visual documentation of rituals at the Maha Kumbh of Prayagraj. We showcase the work carried out under this project on this website.
+  </p>
+
+  <p>
+    Towards the above goal, our research is driven by the following questions:
+  </p>
+
+  <ul>
+    <li>What are the rituals and practices along the river? How do these impact the river ecologies?</li>
+    <li>What/who informs, prescribes, and sanctions the rituals and practices - the spiritual consciousness? Who are the agents, institutions, and networks? What are the embedded power relations?</li>
+    <li>Can we unpack and understand the ecological ethic, if any, underlying the spiritual consciousness?</li>
+    <li>Can we reimagine the rituals and practices for river rejuvenation? How can we redeploy the power relations towards river rejuvenation?</li>
+    <li>How can we pursue Rejuvenating Rivers as a people’s programme, where people’s engagement in the river-society intersectional spaces contribute to improving rivers’ ecological status?</li>
+  </ul>
+
+  <p>
+    We want to bring rituals and practices to the centre of analysis in thinking about rejuvenating rivers. The approach recognizes that the rituals and practices are informed and produced by an ecosystem where a variety of agents, actors, and networks actively participate. These range from priests, pandas, pandits to popular preachers and spiritual thought-leaders - extending to the institutionalized versions including ashrams, akharas, and other institutional forms. Political and economic interests too are part of the ecosystem, transcending the spiritual or religious networks. Reimagining rituals must work with these networks and institutions towards making rejuvenating rivers a truly people’s programme.
+  </p>
+
+  <p>
+    India’s rivers and water bodies are often hosts to gatherings and events of cultural and spiritual significance. These are not restricted to Kumbh gatherings alone but extend to other festivals such as the Chhath Puja. It is time for bringing this cultural confluence with river ecologies to the centre of analysis for an Indian model of river rejuvenation and water conservation.
+  </p>
+
     <h2 id="chapter2" class="text-2xl font-semibold mb-4">Chapter 2: Mapping the Sangam and the Stakeholders</h2>
   </section>
 
@@ -303,7 +238,7 @@ const observer3 = new IntersectionObserver(
     <!-- Floating cards area -->
     <div class="absolute top-[100vh] left-[10vw] w-full z-20">
       <div
-        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-#ddd9cc backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Fecal coliform rose on snan days and then fell</h2>
         <p class="text-base leading-relaxed">
@@ -314,7 +249,7 @@ action to mitigate the impact, both by the state institutions and the civic soci
       </div>
   
       <div
-        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-#ddd9cc backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Floral waste</h2>
         <p class="text-base leading-relaxed">
@@ -327,7 +262,7 @@ pilgrims.
       </div>
   
       <div
-        class="bg-white/80 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-#ddd9cc backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Deep Daan</h2>
         <p class="text-base leading-relaxed">
@@ -342,4 +277,102 @@ main channel, where they lit their lamps and let them float on the water.
       </div>
     </div>
   </section>
+
+
+
+  <section class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left"
+  >
+  <h2 id="chapter2" class="text-2xl font-semibold mb-4">Chapter 2: Legends, Rituals, Customs and Practices at the Maha Kumbh</h2>
+    <!-- <p class="text-base leading-relaxed"></p> -->
+      <p>
+    The Kumbh Mela is an assembly of rituals and the largest sacred cultural gathering in the world - Amrit Snan being the most prominent and prevalent among all of them. These traditions, rooted deep within the Hindu cosmography, mythology, and yogic practices, serve a variety of purposes – spiritual cleansing to affirm social bonds. Most interviewees underscored that attending the Maha Kumbh at Prayagraj was not an individual pilgrimage but a moment of history that would be an iconic memory for generations to come, considering the unusual phenomenon of having such a magnificent Maha Kumbh after 144 years. The Rituals and Practices reflect the traditions of Sanatana, which have been followed throughout the centuries. In this section, we have detailed the rituals and their connections to mythology, while interpreting them through reflections drawn from our field observations. The section highlights the centrality of water-based rituals ranging from Snans as the most prominent ritual and others including Tarpan, Kalpavas and Daans. It also describes the material engagement at the Maha Kumbh that largely comprises natural materials such as flowers, cereals (barley, rice, sesame seeds), milk, and honey. These engagements reflect a deep ecologically sensitive engagement with the river in ritual performance.
+
+  </p>
+
+    <div class="sticky top-0 h-screen overflow-hidden z-10">
+      <!-- Base Map -->
+      <img
+        src={`${base}/Calendar.jpg`}
+        alt="Zoning"
+        class="w-full h-full object-contain"
+      />
+  </div>
+  </section>
+
 </main>
+<style>
+  /* Import fonts from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Khand:wght@400;600&display=swap');
+
+  /* Base styles */
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+.wrap-image {
+  float: right;
+  width: 300px; /* adjust as needed */
+  margin: 0 0 1.5rem 1.5rem;
+  shape-outside: ellipse(50% 50%);
+  shape-margin: 1rem;
+}
+  h1, h2, h3, h4 {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+ :global(h2::after) {
+    content: "";
+    display: block;
+    margin-top: 0.5rem;
+    width: 1000px; /* adjust to match image width */
+    height: 20px;  /* adjust to match image height */
+    background-image: url('/Border.png'); /* from static folder */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  p, li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+    
+  }
+
+  .annotation {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem; /* Smaller size */
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+</style>
