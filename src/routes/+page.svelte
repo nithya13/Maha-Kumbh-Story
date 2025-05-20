@@ -238,7 +238,7 @@ const observer3 = new IntersectionObserver(
     <!-- Floating cards area -->
     <div class="absolute top-[100vh] left-[10vw] w-full z-20">
       <div
-        class="bg-#ed1c24 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-#c4b2a9 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Fecal coliform rose on snan days and then fell</h2>
         <p class="text-base leading-relaxed">
