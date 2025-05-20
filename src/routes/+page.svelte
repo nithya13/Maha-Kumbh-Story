@@ -85,7 +85,7 @@ const observer3 = new IntersectionObserver(
     class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 transform md:-translate-y-20"
   >
     <h1
-      class="text-4xl tracking-wider md:text-6xl font-bold mb-6 border-b-1 border-white"
+      class="text-4xl tracking-wider md:text-6xl font-bold border-b-1 border-white"
       style="font-family: 'Bebas Neue', sans-serif;"
     >
       A water rejuvenation lesson from the Maha Kumbh
@@ -238,7 +238,7 @@ const observer3 = new IntersectionObserver(
     <!-- Floating cards area -->
     <div class="absolute top-[100vh] left-[10vw] w-full z-20">
       <div
-        class="bg-#ddd9cc backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-#ed1c24 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Fecal coliform rose on snan days and then fell</h2>
         <p class="text-base leading-relaxed">
@@ -249,7 +249,7 @@ action to mitigate the impact, both by the state institutions and the civic soci
       </div>
   
       <div
-        class="bg-#ddd9cc backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-#c4b2a9 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Floral waste</h2>
         <p class="text-base leading-relaxed">
@@ -262,7 +262,7 @@ pilgrims.
       </div>
   
       <div
-        class="bg-#ddd9cc backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-#bac0be backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h2 class="text-xl mb-2">Deep Daan</h2>
         <p class="text-base leading-relaxed">
@@ -316,8 +316,8 @@ main channel, where they lit their lamps and let them float on the water.
     text-align: justify;
   }
 .wrap-image {
-  float: right;
-  width: 300px; /* adjust as needed */
+  float: left;
+  width: 400px; /* adjust as needed */
   margin: 0 0 1.5rem 1.5rem;
   shape-outside: ellipse(50% 50%);
   shape-margin: 1rem;
@@ -326,7 +326,7 @@ main channel, where they lit their lamps and let them float on the water.
     font-family: 'Khand', sans-serif;
     font-weight: 600;
     margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
     line-height: 1.3;
   }
 
