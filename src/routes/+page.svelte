@@ -299,6 +299,80 @@ main channel, where they lit their lamps and let them float on the water.
   </div>
   </section>
 
+  <section class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left"
+  >
+  <h2 id="chapter2" class="text-2xl font-semibold mb-4">Chapter 3: Permeating Power: Spiritual and Spatial (River-Society Intersection)
+</h2>
+    <!-- <p class="text-base leading-relaxed"></p> -->
+      <p>
+    This visual captures the spiritual and cultural hierarchy that informs ritual practices and shapes informal interactions with devotees and pilgrims. The illustration delineates four levels within this projection of power or influence—beginning with the Akharas at the top, followed by influential spiritual gurus and socio-cultural organizations, then the Pandas and Purohits, and finally culminating in the pilgrims and Kalpavasis, who constitute the base of this hierarchical structure.
+
+
+  </p>
+  </section>
+<section class="relative col-span-full h-[500vh]">
+  <!-- Sticky Background River Image -->
+  <div class="sticky top-0 h-screen z-10">
+    <img
+      src={`${base}/Pyramid/River.png`}
+      alt="River"
+      class="w-full h-auto"
+    />
+  </div>
+
+  
+
+  <!-- Phase 2: ABAP + Operational Heads Layer -->
+  <div class="sticky top-0 h-screen z-20 flex items-start justify-start pl-20 pt-10">
+    <div class="flex flex-col items-start">
+      <h3 class="text-2xl font-semibold mb-2">ABAP</h3>
+      <img
+        src={`${base}/Pyramid/ABAP.png`}
+        alt="ABAP"
+        class="max-w-[70%] object-contain"
+      />
+      <h3 class="text-2xl font-semibold mb-2">Operational Heads</h3>
+      <img
+        src={`${base}/Pyramid/Operational-heads.png`}
+        alt="Operational"
+        class="max-w-[70%] object-contain"
+      />
+    </div>
+  </div>
+
+  <!-- Spacer to control scroll timing -->
+  <div class="h-[100vh]"></div>
+
+  <!-- Phase 3: Akhara Layer -->
+  <div class="sticky top-0 h-screen z-30 flex items-start justify-end pr-40 pt-10">
+    <div class="flex flex-col items-end">
+      <h3 class="text-2xl font-semibold mb-2">Akhara Head</h3>
+      <img
+        src={`${base}/Pyramid/Akhara-head.png`}
+        alt="Akhara"
+        class="max-w-[30%] object-contain"
+      />
+      <h3 class="text-2xl font-semibold mb-2">Akharas</h3>
+      <img
+        src={`${base}/Pyramid/Akhara.png`}
+        alt="Akhara"
+        class="max-w-[50%] object-contain"
+      />
+      <h3 class="text-2xl font-semibold mb-2">Naga Sadhus</h3>
+      <img
+        src={`${base}/Pyramid/Naga-Sadhus.png`}
+        alt="Naga Sadhus"
+        class="max-w-[50%] object-contain"
+      />
+    </div>
+  </div>
+
+  <!-- Final Spacer to allow River to scroll away -->
+  <div class="h-[300vh] z-0"></div>
+</section>
+
+
+
 </main>
 <style>
   /* Import fonts from Google Fonts */
