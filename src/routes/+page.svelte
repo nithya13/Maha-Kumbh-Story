@@ -61,7 +61,10 @@
     <!-- Menu (right) -->
     <nav>
       <ul class="flex space-x-10 text-sm text-black">
-        <li><h4 >About TREADS</h4></li>
+        <a href = "https://cprindia.org/research/treads-transboundary-rivers-ecologies-development-studies/">
+         <li><h4 >About TREADS</h4></li>
+        </a>
+       
       </ul>
     </nav>
   </div>
@@ -229,7 +232,7 @@
       the spiritual consciousness?
     </p>
     <p>
-      > Embedded within these networks are complex power relations. At the apex
+      Embedded within these networks are complex power relations. At the apex
       are the Akharas and their heads (such as the Acharya Mahamandaleshwar),
       who hold significant spiritual and organizational authority. Influential
       gurus and socio-cultural organizations further shape the discourse and
@@ -271,7 +274,7 @@
     </p>
 
     <!-- Image with float for text wrapping -->
-    <img src={`${base}/Satsang.jpg`} alt="Decorative illustration" />
+    <img src={`${base}/Satsang.jpg`} alt="Satsang" />
     <p class="annotation">Devotees gather for a satsang</p>
   </section>
   
@@ -445,8 +448,14 @@
   </section>
 
   <section class="relative col-span-full h-[500vh]">
+    
     <!-- Sticky Background River Image -->
     <div class="sticky top-0 h-screen z-10">
+      <h3 
+        class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
+      >
+        Permeating Power: Spiritual and Spatial 
+      </h3>
       <img
         src={`${base}/Pyramid/River.png`}
         alt="River"
