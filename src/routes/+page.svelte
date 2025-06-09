@@ -60,8 +60,8 @@
 
     <!-- Menu (right) -->
     <nav>
-      <ul class="flex space-x-10 text-sm">
-        <li><h4>About TREADS</h4></li>
+      <ul class="flex space-x-10 text-sm text-black">
+        <li><h4 >About TREADS</h4></li>
       </ul>
     </nav>
   </div>
@@ -74,9 +74,10 @@
     alt="Background"
     class="absolute inset-0 w-full h-full object-cover"
   />
+   
 
   <!-- Dark overlay for better text visibility (optional but recommended) -->
-  <div class="absolute inset-0" style="background: rgba(0, 0, 0, 0.2);"></div>
+ <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
 
   <!-- Centered Content -->
   <div
