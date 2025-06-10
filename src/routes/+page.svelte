@@ -452,34 +452,32 @@
     <!-- Sticky Background River Image -->
     <div class="sticky top-0 h-screen z-10">
       <h3 
-        class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
+        class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-100"
       >
         Permeating Power: Spiritual and Spatial 
       </h3>
       <img
-        src={`${base}/Pyramid/River.png`}
+        src={`${base}/Pyramid/Main-illustration.jpg`}
         alt="River"
         class="w-full h-auto"
       />
     </div>
-
+ <!-- Spacer to control scroll timing -->
+    <div class="h-[100vh]"></div>
     <!-- Phase 2: ABAP + Operational Heads Layer -->
     <div
-      class="sticky top-0 h-screen z-20 flex items-start justify-start pl-20 pt-10"
+      class="sticky top-0 h-screen z-20 "
     >
       <div class="flex flex-col items-start">
-        <h3 class="text-2xl font-semibold mb-2">ABAP</h3>
+        
         <img
-          src={`${base}/Pyramid/ABAP.png`}
+          src={`${base}/Pyramid/Main-overlay-1.png`}
           alt="ABAP"
-          class="max-w-[70%] object-contain"
+          class="h-full object-cover
+          "
         />
-        <h3 class="text-2xl font-semibold mb-2">Operational Heads</h3>
-        <img
-          src={`${base}/Pyramid/Operational-heads.png`}
-          alt="Operational"
-          class="max-w-[70%] object-contain"
-        />
+        
+       
       </div>
     </div>
 
@@ -488,18 +486,16 @@
 
     <!-- Phase 3: Akhara Layer -->
     <div
-      class="sticky top-0 h-screen z-30 flex items-start justify-end pr-40 pt-10"
+      class="sticky top-0 h-screen z-30 flex items-start"
     >
       <div class="flex flex-col items-end">
-        <h3 class="text-2xl font-semibold mb-2">
-          Acharya Mahamandaleshwar (Akhara head)
-        </h3>
-        <img
-          src={`${base}/Pyramid/Akhara-head.png`}
-          alt="Akhara"
-          class="max-w-[30%] object-contain"
+        
+         <img
+          src={`${base}/Pyramid/Text-overlay.png`}
+          alt="Operational"
+          class="object-cover"
         />
-        <h3 class="text-2xl font-semibold mb-2">Akharas</h3>
+        <!-- <h3 class="text-2xl font-semibold mb-2">Akharas</h3>
         <img
           src={`${base}/Pyramid/Akhara.png`}
           alt="Akhara"
@@ -510,12 +506,11 @@
           src={`${base}/Pyramid/Naga-Sadhus.png`}
           alt="Naga Sadhus"
           class="max-w-[50%] object-contain"
-        />
+        /> -->
       </div>
     </div>
 
-    <!-- Final Spacer to allow River to scroll away -->
-    <div class="h-[300vh] z-0"></div>
+    
   </section>
 </main>
 
