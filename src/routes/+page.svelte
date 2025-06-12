@@ -105,7 +105,7 @@
     class="absolute bottom-2 w-full h-[20%] z-10 px-6 py-2 flex flex-wrap md:flex-nowrap justify-between items-stretch text-white uppercase"
   >
     <!-- Box 1 -->
-    <div class="w-1/2 md:w-1/4 text-center flex items-center justify-center">
+    <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
       <a href="#chapter1">
         <h1>1</h1>
         <h6
@@ -121,7 +121,7 @@
     <div class="hidden md:block w-px bg-white"></div>
 
     <!-- Box 2 -->
-    <div class="w-1/2 md:w-1/4 text-center flex items-center justify-center">
+    <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
       <a href="#chapter2">
         <h1>2</h1>
         <h6
@@ -137,7 +137,7 @@
     <div class="hidden md:block w-px bg-white"></div>
 
     <!-- Box 3 -->
-    <div class="w-1/2 md:w-1/4 text-center flex items-center justify-center">
+    <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
       <a href="#chapter3">
         <h1>3</h1>
         <h6
@@ -153,7 +153,7 @@
     <div class="hidden md:block w-px bg-white"></div>
 
     <!-- Box 4 -->
-    <div class="w-1/2 md:w-1/4 text-center flex items-center justify-center">
+    <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
       <a href="#chapter4">
         <h1>4</h1>
         <h6
@@ -448,70 +448,46 @@
   </section>
 
   <section class="relative col-span-full h-[500vh]">
-    
-    <!-- Sticky Background River Image -->
-    <div class="sticky top-0 h-screen z-10">
-      <h3 
-        class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-100"
-      >
-        Permeating Power: Spiritual and Spatial 
-      </h3>
-      <img
-        src={`${base}/Pyramid/Main-illustration.jpg`}
-        alt="River"
-        class="w-full h-auto"
-      />
-    </div>
- <!-- Spacer to control scroll timing -->
-    <div class="h-[100vh]"></div>
-    <!-- Phase 2: ABAP + Operational Heads Layer -->
-    <div
-      class="sticky top-0 h-screen z-20 "
+  <!-- Sticky Base Image -->
+  <div class="sticky top-0 h-screen z-10">
+    <h3 
+      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-50"
     >
-      <div class="flex flex-col items-start">
-        
-        <img
-          src={`${base}/Pyramid/Main-overlay-1.png`}
-          alt="ABAP"
-          class="h-full object-cover
-          "
-        />
-        
-       
-      </div>
-    </div>
+      Permeating Power: Spiritual and Spatial
+    </h3>
+    <img
+      src={`${base}/Pyramid/Main-illustration.jpg`}
+      alt="Main Illustration"
+      class="absolute top-0 left-0 w-full h-full object-cover"
+    />
+  </div>
 
-    <!-- Spacer to control scroll timing -->
-    <div class="h-[100vh]"></div>
+  <!-- Spacer -->
+  <div class="h-[100vh]"></div>
 
-    <!-- Phase 3: Akhara Layer -->
-    <div
-      class="sticky top-0 h-screen z-30 flex items-start"
-    >
-      <div class="flex flex-col items-end">
-        
-         <img
-          src={`${base}/Pyramid/Text-overlay.png`}
-          alt="Operational"
-          class="object-cover"
-        />
-        <!-- <h3 class="text-2xl font-semibold mb-2">Akharas</h3>
-        <img
-          src={`${base}/Pyramid/Akhara.png`}
-          alt="Akhara"
-          class="max-w-[50%] object-contain"
-        />
-        <h3 class="text-2xl font-semibold mb-2">Naga Sadhus</h3>
-        <img
-          src={`${base}/Pyramid/Naga-Sadhus.png`}
-          alt="Naga Sadhus"
-          class="max-w-[50%] object-contain"
-        /> -->
-      </div>
-    </div>
+  <!-- Overlay Layer 1 -->
+  <div class="sticky top-0 h-screen z-20">
+    <img
+      src={`${base}/Pyramid/Main-overlay-1.png`}
+      alt="Overlay 1"
+      class="absolute top-0 left-0 w-full h-full object-cover"
+    />
+  </div>
 
-    
-  </section>
+  <!-- Spacer -->
+  <div class="h-[100vh]"></div>
+
+  <!-- Overlay Layer 2 -->
+  <div class="sticky top-0 h-screen z-30">
+    <img
+      src={`${base}/Pyramid/Text-overlay.png`}
+      alt="Overlay 2"
+      class="absolute top-0 left-0 w-full h-full object-cover"
+    />
+  </div>
+</section>
+
+
 </main>
 
 <style>
