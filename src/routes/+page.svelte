@@ -138,6 +138,8 @@
   <Riversociety {base} />
   <Rituals {base} />
     <Power {base} />
+    <div class="h-[100vh]"></div>
+
   <Spatial {base} />
 
 </main>
