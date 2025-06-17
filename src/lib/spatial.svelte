@@ -1,8 +1,51 @@
-<section id="chapter2" class="relative col-span-full h-[700vh]">
+<script>
+     export let base = "";
+
+  import { onMount } from "svelte";
+
+
+  let isOverlayVisible = false;
+  let isPointsVisible = false;
+  let isNightVisible = false;
+  let fadeTrigger;
+  let pointsTrigger;
+  let nightTrigger;
+
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isOverlayVisible = entry.isIntersecting;
+      },
+      { threshold: 0.5 },
+    );
+
+    const observer2 = new IntersectionObserver(
+      ([entry]) => {
+        isPointsVisible = entry.isIntersecting;
+      },
+      { threshold: 0.5 },
+    );
+    const observer3 = new IntersectionObserver(
+      ([entry]) => {
+        isNightVisible = entry.isIntersecting;
+      },
+      { threshold: 0.5 },
+    );
+    if (fadeTrigger) observer.observe(fadeTrigger);
+    if (pointsTrigger) observer2.observe(pointsTrigger);
+    if (nightTrigger) observer3.observe(nightTrigger);
+  });
+</script>
+
+
+  <section id="chapter4" class="relative col-span-full h-[700vh]">
     <div class="sticky top-0 h-screen overflow-hidden z-10">
-        <h2  class="text-2xl font-semibold mb-4">
-      Chapter 2: Mapping the Sangam and the Stakeholders
-    </h2>
+      <!-- Heading at top over image -->
+      <h2
+        class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
+      >
+        Chapter 4: Spatial Context
+      </h2>
       <!-- Base Map -->
       <img
         src={`${base}/Basemap.png`}
@@ -18,15 +61,6 @@
         class:opacity-0={!isOverlayVisible}
         class:opacity-100={isOverlayVisible}
       />
-
-      <!-- Labels overlay -->
-      <!-- <img
-        src={`${base}/Flower-tributes.png`}
-        alt="Labels"
-        class="absolute inset-0 w-full h-full object-contain transition-opacity duration-1000"
-        class:opacity-0={!isOverlayVisible}
-        class:opacity-100={isOverlayVisible}
-      /> -->
 
       <!-- Second overlay (points) -->
       <img
