@@ -92,7 +92,45 @@
       for an Indian model of river rejuvenation and water conservation.
     </p>
 
-    <!-- Image with float for text wrapping -->
-    <img src={`${base}/Satsang.jpg`} alt="Satsang" />
-    <p class="annotation">Devotees gather for a satsang</p>
-  </section>
+    <!-- Image with float for text wrapping
+    <img src={`${base}/Satsang.jpg`} alt="Satsang" /> -->
+    
+
+</section>
+<section class="relative col-span-full h-screen overflow-hidden">
+
+  <!-- Background Video -->
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute top-0 left-0 w-full h-full object-cover z-0"
+  >
+    <source src={`${base}/Interview clip.mp4`} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay Wrapper -->
+  <div class="relative z-10 h-full w-full flex justify-end items-center">
+    
+    <!-- Translucent Overlay Card -->
+    <div
+      class="w-full h-full md:w-1/4 md:h-2/5 bg-white/30 backdrop-blur-sm p-6 md:p-10 md:mr-16 flex items-center justify-center"
+    >
+      <div class="max-w-md">
+        
+        <p>
+          “We believe that taking a dip at the Prayagraj Sangam —the confluence of the Ganga, Yamuna, and the mystical Saraswati,  purifies our soul and liberates us from the bondages of life. A dip in the holy waters will wash away our sins in its flow, as we believe it allows us to be reborn. We are truly fortunate to have the opportunity to attend the Sangam and hope to continue this tradition in the future.”
+
+        </p>
+        <p class="annotation">
+      - Devotees speak to our researcher about the significance of the Kumbh for them
+    </p>
+      </div>
+    </div>
+
+  </div>
+  s
+</section>
+

@@ -67,7 +67,7 @@
     <div class="relative w-screen overflow-x-hidden pt-8 pb-8">
   <!-- Slides Container -->
   <div
-    class="flex transition-transform duration-500 ease-in-out"
+    class="flex transition-transform duration-500 ease-in-out bg-gray-300"
     style="transform: translateX(-{currentSlide * 55}vw); width: {slides.length * 55}vw;"
   >
     {#each slides as slide}

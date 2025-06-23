@@ -35,7 +35,7 @@
 <section class="relative w-full h-screen overflow-hidden">
   <!-- Background Image -->
   <img
-    src={`${base}/Background.webp`}
+    src={`${base}/River.jpg`}
     alt="Background"
     class="absolute inset-0 w-full h-full object-cover"
   />
@@ -216,12 +216,12 @@
     text-align: justify;
   }
 
-  .annotation {
+  :global(.annotation) {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 0.875rem; /* Smaller size */
 
-    color: #555;
+    
     margin-bottom: 1rem;
   }
 </style>
