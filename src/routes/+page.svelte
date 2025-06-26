@@ -8,10 +8,7 @@
 </script>
 
 <svelte:head>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-    rel="stylesheet"
-  />
+  
   <link
     href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
     rel="stylesheet"
@@ -42,22 +39,22 @@
 
   <!-- Dark overlay for better text visibility (optional but recommended) -->
   <div
-    class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"
+    class="absolute inset-0 bg-gradient-to-b from-transparent to-white/20"
   ></div>
 
   <!-- Centered Content -->
   <div
-    class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 transform md:-translate-y-20"
+    class="relative z-10 flex flex-col items-center justify-center h-full text-center  px-4 transform md:-translate-y-20"
   >
     <h1
-      class="text-4xl tracking-wider md:text-6xl font-bold border-b-2 border-white"
-      style="font-family: 'Bebas Neue', sans-serif;"
+      class="text-5xl uppercase tracking-wider md:text-6xl font-bold border-b-2 border-black"
+      style="font-family: 'Khand', sans-serif;"
     >
       A water rejuvenation lesson from the Maha Kumbh
     </h1>
     <h6
-      class="text-base tracking-wider md:text-base font-medium"
-      style="font-family: 'Inter', sans-serif;"
+      class="text-xl md:text-base font-medium"
+      style="font-family: 'Lora', serif;"
     >
       Indigenous practices often embody an ecological ethic of conservation
     </h6>
@@ -65,14 +62,14 @@
 
   <!-- Bottom Flex Container (4 boxes) -->
   <div
-    class="absolute bottom-2 w-full h-[20%] z-10 px-6 py-2 flex flex-wrap md:flex-nowrap justify-between items-stretch text-white uppercase"
+    class="absolute bottom-2 w-full h-[10%] z-10 px-6 py-2 flex flex-wrap md:flex-nowrap justify-between items-stretch  uppercase"
   >
     <!-- Box 1 -->
     <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
       <a href="#chapter1">
-        <h1>1</h1>
+        <!-- <h1>1</h1> -->
         <h6
-          class="text-xl font-light"
+          class="text-2xl font-regular"
           style="font-family: 'Khand', sans-serif;"
         >
           Reading Rituals for Rejuvenating Rivers
@@ -81,14 +78,14 @@
     </div>
 
     <!-- Vertical Divider (hidden on mobile) -->
-    <div class="hidden md:block w-px bg-white"></div>
+    <div class="hidden md:block w-px bg-black"></div>
 
     <!-- Box 2 -->
     <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
       <a href="#chapter2">
-        <h1>2</h1>
+        <!-- <h1>2</h1> -->
         <h6
-          class="text-xl font-light"
+          class="text-2xl font-regular"
           style="font-family: 'Khand', sans-serif;"
         >
           LEGENDS, RITUALS, CUSTOMS & PRACTICES AT THE MAHA KUMBH
@@ -97,14 +94,14 @@
     </div>
 
     <!-- Vertical Divider -->
-    <div class="hidden md:block w-px bg-white"></div>
+    <div class="hidden md:block w-px bg-black"></div>
 
     <!-- Box 3 -->
     <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
       <a href="#chapter3">
-        <h1>3</h1>
+        <!-- <h1>3</h1> -->
         <h6
-          class="text-xl font-light"
+          class="text-2xl font-regular px-2"
           style="font-family: 'Khand', sans-serif;"
         >
         PERMEATING POWER: SPIRITUAL & SPATIAL (RIVER-SOCIETY INTERSECTION)  
@@ -114,14 +111,14 @@
     </div>
 
     <!-- Vertical Divider -->
-    <div class="hidden md:block w-px bg-white"></div>
+    <div class="hidden md:block w-px bg-black"></div>
 
     <!-- Box 4 -->
     <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
       <a href="#chapter4">
-        <h1>4</h1>
+        <!-- <h1>4</h1> -->
         <h6
-          class="text-xl font-light"
+          class="text-2xl font-regular"
           style="font-family: 'Khand', sans-serif;"
         >
           Maha Kumbh - Spatial Context
@@ -171,7 +168,7 @@
   h3,
   h4 {
     font-family: "Khand", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 1.5em;
     margin-bottom: 0.2em;
     line-height: 1.3;
@@ -199,8 +196,11 @@
     margin-left: auto;
     margin-right: auto;
   }
-  h3 {
+  :global(h3) {
+    font-family: "Khand", sans-serif;
     font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
   }
 
   h4 {
