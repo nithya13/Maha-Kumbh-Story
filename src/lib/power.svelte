@@ -100,7 +100,7 @@
 
 
     <!-- Spacer -->
-    <!-- <div class="h-[100vh]"></div> -->
+    <div class="h-[100vh]"></div>
 
     <!-- Overlay Layer 2 -->
     <div class="absolute top-[200vh] left-[40vw] w-full z-20">
@@ -134,5 +134,26 @@
       bind:this={fadeTrigger}
       class="absolute top-[90vh] h-[10vh] w-full"
     ></div>
+
+</section>
+
+<section class = "relative col-span-full h-[900vh]">
+  <div class="sticky top-0 h-screen overflow-hidden z-10">
+      <!-- Heading at top over image -->
+      <h3
+        class="absolute top-6 left-2/3 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
+      >
+        Permeating Power
+      </h3>
+      <!-- Base Map -->
+      <img
+        src={`${base}/Power-mappings.webp`}
+        alt="Power relationships"
+        class="w-full h-full object-cover"
+      />
+
+      
+      
+    </div>
 
 </section>
