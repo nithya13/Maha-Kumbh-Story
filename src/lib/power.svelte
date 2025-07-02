@@ -3,9 +3,9 @@
     import { onMount } from "svelte";
 
 
-  let isOverlayVisible = false;
-  let isPointsVisible = false;
-  let isNightVisible = false;
+  let isOverlay1Visible = false;
+  let isOverlay2Visible = false;
+  let isOverlay3Visible = false;
   let fadeTrigger;
   let pointsTrigger;
   let nightTrigger;
@@ -13,20 +13,20 @@
   onMount(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        isOverlayVisible = entry.isIntersecting;
+        isOverlay1Visible = entry.isIntersecting;
       },
       { threshold: 0.5 },
     );
 
     const observer2 = new IntersectionObserver(
       ([entry]) => {
-        isPointsVisible = entry.isIntersecting;
+        isOverlay2Visible = entry.isIntersecting;
       },
       { threshold: 0.5 },
     );
     const observer3 = new IntersectionObserver(
       ([entry]) => {
-        isNightVisible = entry.isIntersecting;
+        isOverlay3Visible = entry.isIntersecting;
       },
       { threshold: 0.5 },
     );
@@ -87,8 +87,8 @@
         src={`${base}/Pyramid/Main-overlay-1.png`}
         alt="Overlay"
         class="z-30 absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
-        class:opacity-0={!isOverlayVisible}
-        class:opacity-100={isOverlayVisible}
+        class:opacity-0={!isOverlay1Visible}
+        class:opacity-100={isOverlay1Visible}
       />
 
       

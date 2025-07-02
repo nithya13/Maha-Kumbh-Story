@@ -207,14 +207,14 @@
     font-size: 1.25rem;
   }
 
-  :global(p,
+  /* :global(p,
   li) {
     font-family: "Lora", serif;
     font-weight: 400;
     font-size: 1rem;
     margin-bottom: 1.25rem;
-    text-align: justify;
-  }
+    text-align: justify-left;
+  } */
 
   :global(.annotation) {
     font-family: "Inter", sans-serif;

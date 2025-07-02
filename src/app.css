@@ -1,6 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Khand:wght@400;600&display=swap');
+p {
+  font-size: 1rem; /* equivalent to text-base */
+  line-height: 1.625; /* equivalent to leading-relaxed */
+}
+
+h2 {
+    font-family: "Khand", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+h2::after {
+    content: "";
+    display: block;
+    margin-top: 0.5rem;
+    width: 50vw; /* adjust to match image width */
+    height: 10px; /* adjust to match image height */
+    background-image: url("/Border.png"); /* from static folder */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+h3 {
+    font-family: "Khand", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-family: "Khand", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .1rem;
+  }
 
 
 @import 'tailwindcss';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
