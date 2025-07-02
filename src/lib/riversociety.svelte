@@ -48,6 +48,7 @@
     audio-visual documentation of rituals at the Maha Kumbh of Prayagraj. We showcase
     the work carried out under this project on this website.
   </p>
+  <br />
   <h3>Focus of Our Inquiry</h3>
   <p>
     Towards the above goal, our research is driven by the following questions.
