@@ -14,7 +14,7 @@ h2::after {
     display: block;
     margin-top: 0.5rem;
     width: 50vw; /* adjust to match image width */
-    height: 10px; /* adjust to match image height */
+    height: 5px; /* adjust to match image height */
     background-image: url("/Border.png"); /* from static folder */
     background-size: contain;
     background-repeat: no-repeat;
@@ -33,6 +33,12 @@ h3 {
     font-family: "Khand", sans-serif;
     font-size: 2rem;
     font-weight: 500;
+    
+  }
+  .overlays{
+    font-family: "Khand", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
     margin-bottom: .1rem;
   }
 
