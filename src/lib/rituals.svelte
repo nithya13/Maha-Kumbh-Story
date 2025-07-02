@@ -35,186 +35,322 @@
     <img
       src={`${base}/Calendar.jpg`}
       alt="Calendar"
-      class="w-60 h-60 object-contain"
+      class="w-100 h-auto object-contain justify-self-center mb-6"
     />
   </div>
 </section>
 
 <section
-   class="col-span-full bg-[#e5e3d7] h-[100vh] md:h-[75vh] overflow-x-auto overflow-y-hidden flex gap-16 px-4 scrollbar-thin scrollbar-thumb-gray-500"
+  class="col-span-full bg-[#e5e3d7] h-[100vh] md:h-[75vh] overflow-x-auto overflow-y-hidden flex gap-16 px-4 scrollbar-thin scrollbar-thumb-gray-500"
 >
-<div class="flex flex-col md:flex-row items-center">
-  <!-- Card 1 -->
-  <div
-    class="w-[640px] h-[100vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0 "
-  >
-    <!-- Image Row -->
-    <div class="flex justify-start gap-4">
-      <img
-        src={`${base}/Rituals/Rituals smaller/Aarti_1.webp`}
-        alt="Aarti 1"
-        class="flex-1 h-48 object-cover "
-      />
-      <img
-        src={`${base}/Rituals/Rituals smaller/Aarti.webp`}
-        alt="Aarti 2"
-        class="flex-1 h-48 object-cover "
-      />
-    </div>
-
-    <!-- Heading -->
-    <h4 class="text-2xl font-semibold">Aarti</h4>
-
-    <!-- Description -->
-    <div class=" space-y-4">
-      <div>
-        <strong>Brief:</strong>
-        <p class="mt-1">
-          It is performed towards the end of the puja, overcoming any
-          shortcomings in the puja with a lighted lamp representing the removal
-          of darkness with the arrival of divine wisdom.
-        </p>
+  <div class="flex flex-col md:flex-row items-center">
+    <!-- Card 1 -->
+    <div
+      class="w-[640px] h-[100vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0"
+    >
+      <!-- Image Row -->
+      <div class="flex justify-start gap-4">
+        <img
+          src={`${base}/Rituals/Rituals smaller/Aarti_1.webp`}
+          alt="Aarti 1"
+          class="flex-1 h-48 object-cover"
+        />
+        <img
+          src={`${base}/Rituals/Rituals smaller/Aarti.webp`}
+          alt="Aarti 2"
+          class="flex-1 h-48 object-cover"
+        />
       </div>
 
-      <div>
-        <strong>Materials Inputs in the river:</strong>
-        <div class="mt-2">
-          <img
-            src={`${base}/Rituals/Aarati.png`}
-            alt="Materials visual"
-            class="w-24 h-auto mb-1"
-          />
-          <p class="annotation leading-snug">
-            Flowers, Camphor/Oil/Ghee, Deeps (earthen, flour-based, or paper
-            based)
+      <!-- Heading -->
+      <h4 class="text-2xl font-semibold">Aarti</h4>
+
+      <!-- Description -->
+      <div class=" space-y-4">
+        <div>
+          <strong>Brief:</strong>
+          <p class="mt-1">
+            It is performed towards the end of the puja, overcoming any
+            shortcomings in the puja with a lighted lamp representing the
+            removal of darkness with the arrival of divine wisdom.
+          </p>
+        </div>
+
+        <div>
+          <strong>Materials Inputs in the river:</strong>
+          <div class="mt-2">
+            <img
+              src={`${base}/Rituals/Aarati.png`}
+              alt="Materials visual"
+              class="w-24 h-auto mb-1"
+            />
+            <p class="annotation leading-snug">
+              Flowers, Camphor/Oil/Ghee, Deeps (earthen, flour-based, or paper
+              based)
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <strong>Magnitude and Impact:</strong>
+          <p class="mt-2">
+            Millions of flickering lamps ignite the confluence, creating a river
+            of fire that mirrors the stars.
           </p>
         </div>
       </div>
-
-      <div>
-        <strong>Magnitude and Impact:</strong>
-        <p class="mt-2">
-          Millions of flickering lamps ignite the confluence, creating a river
-          of fire that mirrors the stars.
-        </p>
-      </div>
     </div>
+    <!-- Vertical Divider (hidden on mobile) -->
+    <div
+      class="hidden md:block w-px h-[60vh] bg-black self-centerhidden md:block relative z-10 w-px h-[70vh] mx-10 bg-black self-center"
+    ></div>
   </div>
-<!-- Vertical Divider (hidden on mobile) -->
-    <div class="hidden md:block w-px h-[60vh] bg-black self-centerhidden md:block relative z-10 w-px h-[70vh] mx-10 bg-black self-center"></div>
-    </div>
-    <div class="flex flex-col md:flex-row items-center">
-  <!-- Card 2 -->
-   
-  <div
-    class="w-[800px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
-  >
-    <!-- Image Row -->
-    <div class="flex justify-start gap-4">
-      <img
-        src={`${base}/Rituals/Rituals smaller/Amrit Snan_1.webp`}
-        alt="Snan 1"
-        class="flex-1 h-48 object-cover rounded"
-      />
-      <img
-        src={`${base}/Rituals/Rituals smaller/Amrit Snan_2.webp`}
-        alt="Snan 2"
-        class="flex-1 h-48 object-cover rounded"
-      />
-      <img
-        src={`${base}/Rituals/Rituals smaller/Amrit Snan_3.webp`}
-        alt="Snan 3"
-        class="flex-1 h-48 object-cover rounded"
-      />
-    </div>
+  <div class="flex flex-col md:flex-row items-center">
+    <!-- Card 2 -->
 
-    <!-- Heading -->
-    <h4 class="text-2xl font-semibold">Amrit Snan (‘Shahi Snan’)</h4>
-
-    <!-- Description -->
-    <div class="leading-relaxed space-y-4">
-      <div>
-        <strong>Brief:</strong>
-        <p class="mt-1">
-          A bathing ritual at Kumbh Mela on specific cosmic alignments i.e.,
-          Amrit Yog.
-        </p>
+    <div
+      class="w-[800px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+    >
+      <!-- Image Row -->
+      <div class="flex justify-start gap-4">
+        <img
+          src={`${base}/Rituals/Rituals smaller/Amrit Snan_1.webp`}
+          alt="Snan 1"
+          class="flex-1 h-48 object-cover rounded"
+        />
+        <img
+          src={`${base}/Rituals/Rituals smaller/Amrit Snan_2.webp`}
+          alt="Snan 2"
+          class="flex-1 h-48 object-cover rounded"
+        />
+        <img
+          src={`${base}/Rituals/Rituals smaller/Amrit Snan_3.webp`}
+          alt="Snan 3"
+          class="flex-1 h-48 object-cover rounded"
+        />
       </div>
 
-      <div>
-        <strong>Materials Inputs in the river:</strong>
-        <div class="mt-2">
-          <img
-            src={`${base}/Rituals/Faeces.png`}
-            alt="Materials visual"
-            class="w-24 h-auto mb-1"
-          />
-          <p class="annotation leading-snug">Human Waste/Feces</p>
+      <!-- Heading -->
+      <h4 class="text-2xl font-semibold">Amrit Snan (‘Shahi Snan’)</h4>
+
+      <!-- Description -->
+      <div class="leading-relaxed space-y-4">
+        <div>
+          <strong>Brief:</strong>
+          <p class="mt-1">
+            A bathing ritual at Kumbh Mela on specific cosmic alignments i.e.,
+            Amrit Yog.
+          </p>
+        </div>
+
+        <div>
+          <strong>Materials Inputs in the river:</strong>
+          <div class="mt-2">
+            <img
+              src={`${base}/Rituals/Faeces.png`}
+              alt="Materials visual"
+              class="w-24 h-auto mb-1"
+            />
+            <p class="annotation leading-snug">Human Waste/Feces</p>
+          </div>
+        </div>
+
+        <div>
+          <strong>Magnitude and Impact:</strong>
+          <p class="mt-2">
+            66 Crore visitors visited during the 45 days of Maha Kumbh, Snan was
+            the most common ritual
+          </p>
         </div>
       </div>
-
-      <div>
-        <strong>Magnitude and Impact:</strong>
-        <p class="mt-2">
-          66 Crore visitors visited during the 45 days of Maha Kumbh, Snan was
-          the most common ritual
-        </p>
-      </div>
     </div>
+
+    <!-- Vertical Divider (hidden on mobile) -->
+    <div
+      class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center"
+      mx-10
+    ></div>
   </div>
 
-<!-- Vertical Divider (hidden on mobile) -->
-    <div class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center" mx-10></div>
-    </div>
-
-    <div class="flex flex-col md:flex-row items-center">
-  <!-- Card 3 -->
-  <div
-    class="w-[640px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
-  >
-    <!-- Image Row -->
-    <div class="flex justify-start gap-4">
-      <img
-        src={`${base}/Rituals/Rituals smaller/Kalpavas_1.webp`}
-        alt="Snan 1"
-        class="flex-1 h-48 object-cover rounded"
-      />
-      
-    </div>
-
-    <!-- Heading -->
-    <h4 class="text-2xl font-semibold">Kalpavas</h4>
-
-    <!-- Description -->
-    <div class="leading-relaxed space-y-4">
-      <div>
-        <strong>Brief:</strong>
-        <p class="mt-1">
-         Kalpavas is a profound practice leading a minimalist life, observing fasting, and performing various rituals along the banks of the confluence for their spiritual evolution
-        </p>
+  <div class="flex flex-col md:flex-row items-center">
+    <!-- Card 3 -->
+    <div
+      class="w-[640px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+    >
+      <!-- Image Row -->
+      <div class="flex justify-start gap-4">
+        <img
+          src={`${base}/Rituals/Rituals smaller/Kalpavas_1.webp`}
+          alt="Snan 1"
+          class="flex-1 h-48 object-cover rounded"
+        />
       </div>
 
-      <div>
-        <strong>Materials Inputs in the river:</strong>
-        <div class="mt-2">
-          <img
-            src={`${base}/Rituals/Barley-flower-deep.png`}
-            alt="Materials visual"
-            class="w-24 h-auto mb-1"
-          />
-          <p class="annotation leading-snug">Organic materials like Barley, Flowers, Deeps (earthen, flour-based, or paper based)</p>
+      <!-- Heading -->
+      <h4 class="text-2xl font-semibold">Kalpavas</h4>
+
+      <!-- Description -->
+      <div class="leading-relaxed space-y-4">
+        <div>
+          <strong>Brief:</strong>
+          <p class="mt-1">
+            Kalpavas is a profound practice leading a minimalist life, observing
+            fasting, and performing various rituals along the banks of the
+            confluence for their spiritual evolution
+          </p>
+        </div>
+
+        <div>
+          <strong>Materials Inputs in the river:</strong>
+          <div class="mt-2">
+            <img
+              src={`${base}/Rituals/Barley-flower-deep.png`}
+              alt="Materials visual"
+              class="w-24 h-auto mb-1"
+            />
+            <p class="annotation leading-snug">
+              Organic materials like Barley, Flowers, Deeps (earthen,
+              flour-based, or paper based)
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <strong>Magnitude and Impact:</strong>
+          <p class="mt-2">
+            Estimated 10 lakh Kalpavasis resided in Maha Kumbh this year
+          </p>
         </div>
       </div>
+    </div>
+    <!-- Vertical Divider (hidden on mobile) -->
+    <div
+      class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center"
+      mx-10
+    ></div>
+  </div>
 
-      <div>
-        <strong>Magnitude and Impact:</strong>
-        <p class="mt-2">
-          Estimated 10 lakh Kalpavasis resided in Maha Kumbh this year
-        </p>
+  <div class="flex flex-col md:flex-row items-center">
+    <!-- Card 4 -->
+
+    <div
+      class="w-[800px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+    >
+      <!-- Image Row -->
+      <div class="flex justify-start gap-4">
+        <img
+          src={`${base}/Rituals/Rituals smaller/Satsang.webp`}
+          alt="Snan 1"
+          class="flex-1 h-48 object-cover rounded"
+        />
+        <img
+          src={`${base}/Rituals/Rituals smaller/Spiritual teaching on the banks of Ganga.webp`}
+          alt="Snan 2"
+          class="flex-1 h-48 object-cover rounded"
+        />
+      </div>
+
+      <!-- Heading -->
+      <h4 class="text-2xl font-semibold">Satsang</h4>
+
+      <!-- Description -->
+      <div class="leading-relaxed space-y-4">
+        <div>
+          <strong>Brief:</strong>
+          <p class="mt-1">
+            The saints and sages gather at a regular interval and share their
+            knowledge with various experiences for the common good
+          </p>
+        </div>
+
+        <div>
+          <strong>Materials Inputs in the river:</strong>
+          <div class="mt-2">
+            <p class="annotation leading-snug">
+              No direct material inputs in the river
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <strong>Magnitude and Impact:</strong>
+          <p class="mt-2">
+            Spiritual Gurus dominate knowledge sharing; pilgrims hear and obey
+            ritual counsel
+          </p>
+        </div>
       </div>
     </div>
+
+    <!-- Vertical Divider (hidden on mobile) -->
+    <div
+      class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center"
+      mx-10
+    ></div>
   </div>
-  <!-- Vertical Divider (hidden on mobile) -->
-    <div class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center" mx-10></div>
+
+  <div class="flex flex-col md:flex-row items-center">
+    <!-- Card 5 -->
+
+    <div
+      class="w-[800px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+    >
+      <!-- Image Row -->
+      <div class="flex justify-start gap-4">
+        <img
+          src={`${base}/Rituals/Rituals smaller/Deep Daan.webp`}
+          alt="Daan 1"
+          class="flex-1 h-48 object-cover rounded"
+        />
+        <img
+          src={`${base}/Rituals/Rituals smaller/Deep Daan_1.webp`}
+          alt="Daan 2"
+          class="flex-1 h-48 object-cover rounded"
+        />
+      </div>
+
+      <!-- Heading -->
+      <h4 class="text-2xl font-semibold">Daan</h4>
+
+      <!-- Description -->
+      <div class="leading-relaxed space-y-4">
+        <div>
+          <strong>Brief:</strong>
+          <p class="mt-1">
+            Daan is a holy 'act of giving' that blesses the giver and helps the receiver. It is said to cleanse the soul and wash away past karmic sins
+          </p>
+        </div>
+
+        <div>
+          <strong>Materials Inputs in the river:</strong>
+          <div class="mt-2">
+            <img
+              src={`${base}/Rituals/Aarati.png`}
+              alt="Materials visual"
+              class="w-24 h-auto mb-1"
+            />
+            <p class="annotation leading-snug">
+             Flowers, Deeps (earthen, flour-based, or paper based), incense sticks, rice and Kumkum (vermillion).
+
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <strong>Magnitude and Impact:</strong>
+          <p class="mt-2">
+            Some of the most prevalent rituals (usually at least one person from the family/ group afloats Deeps).
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vertical Divider (hidden on mobile) -->
+    <div
+      class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center"
+      mx-10
+    ></div>
   </div>
+
 </section>
