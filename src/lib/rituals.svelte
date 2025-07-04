@@ -7,7 +7,7 @@
 >
   <div>
     <h2 id="chapter2" class="text-2xl font-semibold mb-4">
-      Chapter 2: Legends, Rituals, Customs and Practices at the Maha Kumbh
+      Legends, Rituals, Customs and Practices at the Maha Kumbh
     </h2>
 
     <p class="mb-6">
@@ -41,12 +41,12 @@
 </section>
 
 <section
-  class="col-span-full bg-[#e5e3d7] h-[100vh] md:h-[75vh] overflow-x-auto overflow-y-hidden flex gap-16 px-4 scrollbar-thin scrollbar-thumb-gray-500"
+  class="col-span-full bg-[#e5e3d7] h-[90vh] md:h-[85vh] overflow-x-auto overflow-y-hidden flex gap-16 px-4 scrollbar-thin scrollbar-thumb-gray-500"
 >
   <div class="flex flex-col md:flex-row items-center">
     <!-- Card 1 -->
     <div
-      class="w-[640px] h-[100vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0"
+      class="w-[640px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0"
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">
@@ -109,7 +109,7 @@
     <!-- Card 2 -->
 
     <div
-      class="w-[800px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+      class="w-[740px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">
@@ -175,7 +175,7 @@
   <div class="flex flex-col md:flex-row items-center">
     <!-- Card 3 -->
     <div
-      class="w-[640px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+      class="w-[640px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">
@@ -234,7 +234,7 @@
     <!-- Card 4 -->
 
     <div
-      class="w-[800px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+      class="w-[740px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">
@@ -293,7 +293,7 @@
     <!-- Card 5 -->
 
     <div
-      class="w-[800px] h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+      class="w-[640px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">

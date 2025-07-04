@@ -59,7 +59,7 @@
   class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left"
 >
   <h2 id="chapter3" class="text-2xl font-semibold mb-4">
-    Chapter 3: Permeating Power: Spiritual and Spatial (River-Society
+    Permeating Power: Spiritual and Spatial (River-Society
     Intersection)
   </h2>
   <!-- <p class="text-base leading-relaxed"></p> -->

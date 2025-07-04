@@ -5,6 +5,23 @@
   import Spatial from "$lib/spatial.svelte";
   import Power from "$lib/power.svelte";
   import { base } from "$app/paths";
+
+   let showButton = false;
+
+  // Show the button only after user scrolls a bit
+  const handleScroll = () => {
+    showButton = window.scrollY > 300;
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Attach scroll listener on mount
+  onMount(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
 </script>
 
 <svelte:head>
@@ -62,14 +79,14 @@
 
   <!-- Bottom Flex Container (4 boxes) -->
   <div
-    class="absolute bottom-2 w-full h-[10%] z-10 px-6 py-2 flex flex-wrap md:flex-nowrap justify-between items-stretch  uppercase"
+    class="absolute bottom-2 w-full md:h-[10%] h-[30%] z-10 px-6 py-2 flex flex-wrap md:flex-nowrap justify-between items-stretch  uppercase"
   >
     <!-- Box 1 -->
     <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
       <a href="#chapter1">
         <!-- <h1>1</h1> -->
         <h6
-          class="text-2xl font-regular"
+          class="md:text-2xl font-regular"
           style="font-family: 'Khand', sans-serif;"
         >
           Reading Rituals for Rejuvenating Rivers
@@ -85,7 +102,7 @@
       <a href="#chapter2">
         <!-- <h1>2</h1> -->
         <h6
-          class="text-2xl font-regular"
+          class="md:text-2xl font-regular px-2"
           style="font-family: 'Khand', sans-serif;"
         >
           LEGENDS, RITUALS, CUSTOMS & PRACTICES AT THE MAHA KUMBH
@@ -101,10 +118,10 @@
       <a href="#chapter3">
         <!-- <h1>3</h1> -->
         <h6
-          class="text-2xl font-regular px-2"
+          class="md:text-2xl font-regular px-2"
           style="font-family: 'Khand', sans-serif;"
         >
-        PERMEATING POWER: SPIRITUAL & SPATIAL (RIVER-SOCIETY INTERSECTION)  
+        Maha Kumbh - Spatial Context
         
         </h6>
       </a>
@@ -118,10 +135,11 @@
       <a href="#chapter4">
         <!-- <h1>4</h1> -->
         <h6
-          class="text-2xl font-regular"
+          class="md:text-2xl font-regular px-2"
           style="font-family: 'Khand', sans-serif;"
         >
-          Maha Kumbh - Spatial Context
+        PERMEATING POWER: SPIRITUAL & SPATIAL (RIVER-SOCIETY INTERSECTION)  
+          
         </h6>
       </a>
     </div>
@@ -134,13 +152,23 @@
 >
   <Riversociety {base} />
   <Rituals {base} />
+  <div class="h-[10vh]"></div>
+   <Spatial {base} />
     <Power {base} />
-    <div class="h-[100vh]"></div>
+    
 
-  <Spatial {base} />
+ 
 
 </main>
-
+<!-- Return to Top Button -->
+{#if showButton}
+  <button
+    on:click={scrollToTop}
+    class="fixed bottom-6 right-6 z-50 bg-gray-700 text-white px-4 py-2 rounded-full shadow-lg hover:bg-gray-500 transition-opacity duration-300"
+  >
+    ↑ 
+  </button>
+{/if}
 <style>
   /* Import fonts from Google Fonts */
   @import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
@@ -178,31 +206,7 @@
     font-size: 2.5rem;
   }
 
-  :global(h2) {
-    font-family: "Khand", sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-  }
-  :global(h2::after) {
-    content: "";
-    display: block;
-    margin-top: 0.5rem;
-    width: 1000px; /* adjust to match image width */
-    height: 10px; /* adjust to match image height */
-    background-image: url("/Border.png"); /* from static folder */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  :global(h3) {
-    font-family: "Khand", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-
+  
   h4 {
     font-size: 1.25rem;
   }

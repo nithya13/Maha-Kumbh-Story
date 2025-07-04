@@ -44,7 +44,7 @@
       <h2
         class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
       >
-        Chapter 4: Spatial Context
+        Maha Kumbh - Spatial Context
       </h2>
       <!-- Base Map -->
       <img
@@ -103,9 +103,9 @@
       <div
         class="bg-#c4b2a9 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
-        <h2 class="text-xl mb-2">
+        <h5 class="text-xl mb-2">
           Fecal coliform rose on snan days and then fell
-        </h2>
+        </h5>
         <p class="text-base leading-relaxed">
           The Central Pollution Control Board’s (CPCB) monitoring during this
           Maha Kumbh as well as that in 2013 showed high levels of fecal coli,
@@ -120,7 +120,7 @@
       <div
         class="bg-#c4b2a9 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
-        <h2 class="text-xl mb-2">Floral waste</h2>
+        <h5 class="text-xl mb-2">Floral waste</h5>
         <p class="text-base leading-relaxed">
           With all attempts at waste management, visible piles of floral waste
           congregated along the banks, where sanitation teams frequented
@@ -133,7 +133,7 @@
       <div
         class="bg-#bac0be backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
-        <h2 class="text-xl mb-2">Deep Daan</h2>
+        <h5 class="text-xl mb-2">Deep Daan</h5>
         <p class="text-base leading-relaxed">
           During observations, it was seen that Deep Daan — offering lighted
           lamps to the river — was one of the most commonly done rituals after
