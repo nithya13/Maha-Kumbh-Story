@@ -38,7 +38,7 @@
 </script>
 
 
-  <section id="chapter4" class="relative col-span-full h-[700vh]">
+  <section id="chapter3" class="relative col-span-full h-[700vh]">
     <div class="sticky top-0 h-screen overflow-hidden z-10">
       <!-- Heading at top over image -->
       <h2
