@@ -113,8 +113,7 @@
   <div class="relative z-10 h-full w-full flex justify-end items-center">
     <!-- Translucent Overlay Card -->
     <div
-      class="w-full h-full md:w-1/4 md:h-2/5 bg-white/30 backdrop-blur-sm p-6 md:p-10 md:mr-16 flex items-center justify-center"
-    >
+      class="w-[90%] max-w-md min-h-[40%] md:w-1/3 md:h-auto bg-white/30 backdrop-blur-sm p-6 md:p-10 md:mr-16 flex items-center justify-center">
       <div class="max-w-md">
         <p>
           “We believe that taking a dip at the Prayagraj Sangam —the confluence
@@ -131,5 +130,5 @@
       </div>
     </div>
   </div>
-  s
+  
 </section>

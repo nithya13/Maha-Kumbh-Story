@@ -41,12 +41,12 @@
 </section>
 
 <section
-  class="col-span-full bg-[#e5e3d7] h-[90vh] md:h-[85vh] overflow-x-auto overflow-y-hidden flex gap-16 px-4 scrollbar-thin scrollbar-thumb-gray-500"
+  class="col-span-full bg-[#e5e3d7] overflow-x-auto overflow-y-hidden flex gap-16 px-4 py-8 scrollbar-thin scrollbar-thumb-gray-500"
 >
-  <div class="flex flex-col md:flex-row items-center">
+  <div class="flex flex-col md:flex-row items-start">
     <!-- Card 1 -->
     <div
-      class="w-[640px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0"
+      class="w-[640px] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0 "
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">
@@ -66,7 +66,7 @@
       <h4 class="text-2xl font-semibold">Aarti</h4>
 
       <!-- Description -->
-      <div class=" space-y-4">
+      <div class="space-y-4">
         <div>
           <strong>Brief:</strong>
           <p class="mt-1">
@@ -100,16 +100,17 @@
         </div>
       </div>
     </div>
+
     <!-- Vertical Divider (hidden on mobile) -->
-    <div
-      class="hidden md:block w-px h-[60vh] bg-black self-centerhidden md:block relative z-10 w-px h-[70vh] mx-10 bg-black self-center"
-    ></div>
+    <div class="hidden md:block w-px bg-black mx-10 my-4 self-stretch"></div>
   </div>
+
+
   <div class="flex flex-col md:flex-row items-center">
     <!-- Card 2 -->
 
     <div
-      class="w-[740px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+      class="w-[740px] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0 "
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">
@@ -167,7 +168,7 @@
 
     <!-- Vertical Divider (hidden on mobile) -->
     <div
-      class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center"
+      class="hidden md:block w-px bg-black mx-10 my-4 self-stretch"
       mx-10
     ></div>
   </div>
@@ -175,7 +176,7 @@
   <div class="flex flex-col md:flex-row items-center">
     <!-- Card 3 -->
     <div
-      class="w-[640px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+      class="w-[640px] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0 "
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">
@@ -225,7 +226,7 @@
     </div>
     <!-- Vertical Divider (hidden on mobile) -->
     <div
-      class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center"
+      class="hidden md:block w-px bg-black mx-10 my-4 self-stretch"
       mx-10
     ></div>
   </div>
@@ -234,7 +235,7 @@
     <!-- Card 4 -->
 
     <div
-      class="w-[740px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+      class="w-[740px] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0 "
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">
@@ -284,7 +285,7 @@
 
     <!-- Vertical Divider (hidden on mobile) -->
     <div
-      class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center"
+      class="hidden md:block w-px bg-black mx-10 my-4 self-stretch"
       mx-10
     ></div>
   </div>
@@ -293,7 +294,7 @@
     <!-- Card 5 -->
 
     <div
-      class="w-[640px] h-[90vh] md:h-[70vh] m-4 flex-shrink-0 p-6 flex flex-col gap-6 whitespace-normal z-0"
+      class="w-[640px] m-4 flex-shrink-0 p-6 flex flex-col gap-4 whitespace-normal z-0 "
     >
       <!-- Image Row -->
       <div class="flex justify-start gap-4">
@@ -346,11 +347,7 @@
       </div>
     </div>
 
-    <!-- Vertical Divider (hidden on mobile) -->
-    <div
-      class="hidden md:block relative z-10 w-px h-[70vh] bg-black self-center"
-      mx-10
-    ></div>
+    
   </div>
 
 </section>

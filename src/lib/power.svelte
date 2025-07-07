@@ -1,68 +1,46 @@
 <script>
   export let base = "";
   import { onMount } from "svelte";
-  // Reactive variable to control visibility of the overlay
-  let showOverlay = false;
 
-  // Reference to the DOM element that will act as a scroll trigger
-  let trigger;
-
+  
   let isOverlay1Visible = false;
-  let isOverlay2Visible = false;
-  let isOverlay3Visible = false;
-  let fadeTrigger;
-  let pointsTrigger;
-  let nightTrigger;
+
+    let fadeTrigger;
+let isOverlayTopVisible = false;
+  let isOverlaySecondVisible = false;
+  let isOverlayThirdVisible = false;
+  let isOverlayBottomVisible = false;
+
+  let topTrigger;
+  let secondTrigger;
+  let thirdTrigger;
+  let bottomTrigger;
+  
 
   onMount(() => {
-    // Create a new IntersectionObserver
-    // It will observe when the trigger element enters the viewport
-    const observerPower = new IntersectionObserver(
-      ([entry]) => {
-        // When the trigger is at least 50% visible, toggle `showOverlay`
-        showOverlay = entry.isIntersecting;
-      },
-      {
-        threshold: 0.5, // 50% visibility triggers the observer
-      },
-    );
+    const createObserver = (element, setter) => {
+      if (!element) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => setter(entry.isIntersecting),
+        { threshold: 0.5 }
+      );
+      observer.observe(element);
+    };
 
-    // Start observing the `trigger` element if it's present
-    if (trigger) observerPower.observe(trigger);
+     createObserver(topTrigger, val => isOverlayTopVisible = val);
+    createObserver(secondTrigger, val => isOverlaySecondVisible = val);
+    createObserver(thirdTrigger, val => isOverlayThirdVisible = val);
+    createObserver(bottomTrigger, val => isOverlayBottomVisible = val);
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        isOverlay1Visible = entry.isIntersecting;
-      },
-      { threshold: 0.5 },
-    );
-
-    const observer2 = new IntersectionObserver(
-      ([entry]) => {
-        isOverlay2Visible = entry.isIntersecting;
-      },
-      { threshold: 0.5 },
-    );
-    const observer3 = new IntersectionObserver(
-      ([entry]) => {
-        isOverlay3Visible = entry.isIntersecting;
-      },
-      { threshold: 0.5 },
-    );
-    if (fadeTrigger) observer.observe(fadeTrigger);
-    if (pointsTrigger) observer2.observe(pointsTrigger);
-    if (nightTrigger) observer3.observe(nightTrigger);
+    createObserver(fadeTrigger, val => isOverlay1Visible = val);
   });
 </script>
 
-<section
-  class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left"
->
-  <h2 id="chapter3" class="text-2xl font-semibold mb-4">
-    Permeating Power: Spiritual and Spatial (River-Society
-    Intersection)
+<!-- ✦ SECTION: Textual Explanation -->
+<section class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 text-left">
+  <h2 id="chapter4" class="text-2xl font-semibold mb-4">
+    Permeating Power: Spiritual and Spatial (River-Society Intersection)
   </h2>
-  <!-- <p class="text-base leading-relaxed"></p> -->
   <p>
     The Maha Kumbh involves a diverse array of stakeholders—including
     institutions, groups, and individuals—who shape ritual practices and mediate
@@ -84,49 +62,44 @@
   </p>
 </section>
 
+<!-- ✦ SECTION: First Visual with Overlay 1 -->
 <section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <!-- Heading at top over image -->
-    <h2
-      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
-    >
+    <h2 class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20">
       Permeating Power
     </h2>
-    <!-- Base Map -->
+
+    <!-- Background -->
     <img
       src={`${base}/Pyramid/Main-illustration.jpg`}
       alt="Power relationships"
       class="w-full h-full object-cover"
     />
 
-    <!-- First overlay -->
+    <!-- Overlay 1 -->
     <img
       src={`${base}/Pyramid/Main-overlay-1.png`}
-      alt="Overlay"
-      class="z-30 absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
+      alt="Overlay Layer 1"
+      class="absolute inset-0 w-full h-full object-cover z-30 transition-opacity duration-800"
       class:opacity-0={!isOverlay1Visible}
       class:opacity-100={isOverlay1Visible}
     />
   </div>
 
-  <!-- Spacer -->
+  <!-- Spacer for triggering overlay -->
   <div class="h-[100vh]"></div>
 
-  <!-- Overlay Layer 2 -->
+  <!-- Additional Overlay Boxes -->
   <div class="absolute top-[200vh] left-[40vw] w-full z-20">
-    <div
-      class="z-50 bg-#c4b2a9 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg"
-    >
+    <div class="bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg">
       <p class="text-base leading-relaxed">
         Akhil Bharatiya Akhara Parishad negotiates with Prayagraj Mela Authority
         for the conduction of Kumbh Mela. Leaders of the 13 Akharas dominate the
         spiritual hierarchy at Mahakumbh. Final authority on rituals, disputes,
-        and Akhara policies
+        and Akhara policies.
       </p>
     </div>
-    <div
-      class="z-50 bg-#c4b2a9 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-14 mb-[100vh] shadow-lg"
-    >
+    <div class="bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-14 mb-[100vh] shadow-lg">
       <p class="text-base leading-relaxed">
         An Akhara literally means a ‘wrestling ring’ in Sanskrit, but also
         stands for a place of debate. These are monastic orders of ascetics that
@@ -139,102 +112,62 @@
     </div>
   </div>
 
-  <div
-    bind:this={fadeTrigger}
-    class="absolute top-[90vh] h-[10vh] w-full"
-  ></div>
+  <!-- Trigger for first overlay -->
+  <div bind:this={fadeTrigger} class="absolute top-[90vh] h-[10vh] w-full"></div>
 </section>
 
+<!-- ✦ SECTION: Sequential Image Overlays on Scroll -->
 <section class="relative col-span-full h-[900vh]">
-  <!-- Sticky container with background image and overlay -->
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <!-- Title displayed at the top -->
-    <h2
-      class="absolute top-6 left-2/3 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
-    >
+    <h5 class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20">
       Permeating Power
-    </h2>
-
-    <!-- Fullscreen background image -->
+    </h5>
     <img
-      src={`${base}/Power-mappings.webp`}
+      src={`${base}/Power-mappings.png`}
       alt="Power relationships"
-      class="w-full h-full object-cover"
+      class="w-full h-full object-cover z-0"
     />
-<div
-      class="absolute top-2/13 left-1/9 w-1/2 transform -translate-y-1/2 z-30 transition-opacity duration-700 justify-start"
-      class:opacity-100={showOverlay}
-      class:opacity-0={!showOverlay}
-    >
-    
-      <h3>ABAP</h3>
-    </div>
-<div
-      class="absolute top-1/15 left-2/15 w-1/2 transform -translate-y-1/2 z-30 transition-opacity duration-700 justify-center"
-      class:opacity-100={showOverlay}
-      class:opacity-0={!showOverlay}
-    >
-    
-      <h3>Acharya Mahamandaleshwar</h3>
-    </div>
-    <div
-      class="absolute top-3/15 left-4/15 w-1/2 transform -translate-y-1/2 z-30 transition-opacity duration-700 justify-center"
-      class:opacity-100={showOverlay}
-      class:opacity-0={!showOverlay}
-    >
-    
-      <h3>Mahamandaleshwar</h3>
-    </div>
 
-    <div
-      class="absolute top-5/15 left-5/15 w-1/2 transform -translate-y-1/2 z-30 transition-opacity duration-700 justify-center"
-      class:opacity-100={showOverlay}
-      class:opacity-0={!showOverlay}
-    >
-    
-      <h3>Sri Mahant, Mahant, and other members associated with Akharas</h3>
-    </div>
-    <!-- Overlay that appears/disappears based on scroll -->
-    <div
-      class="absolute top-1/10 left-1/5 w-1/2 transform -translate-y-1/2 z-30 transition-opacity duration-700"
-      class:opacity-100={showOverlay}
-      class:opacity-0={!showOverlay}
-    >
-    
-      <!-- The line takes up all remaining space -->
-      <!-- Horizontal line with text aligned at the end -->
-      <div class="flex items-center gap-4">
-        <!-- The line takes up all remaining space -->
-        <div class="h-px flex-grow bg-black"></div>
+    <!-- Overlay: Top -->
+    <img
+      src={`${base}/Top.png`}
+      alt="Overlay Top"
+      class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-700"
+      class:opacity-0={!isOverlayTopVisible}
+      class:opacity-100={isOverlayTopVisible}
+    />
 
-        <!-- The text appears at the end of the line -->
-        <p class="overlays text-lg  whitespace-nowrap">
-          Akhil Bharatiya Akhara Parishad negotiates with Prayagraj Mela
-          Authority for the conduction of Kumbh Mela.
-        </p>
-      </div>
-    </div>
+    <!-- Overlay: Second -->
+    <img
+      src={`${base}/Second.png`}
+      alt="Overlay Second"
+      class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-700"
+      class:opacity-0={!isOverlaySecondVisible}
+      class:opacity-100={isOverlaySecondVisible}
+    />
 
-    <div
-      class="absolute top-1/6 left-1/3 w-1/2 transform -translate-y-1/2 z-30 transition-opacity duration-700"
-      class:opacity-100={showOverlay}
-      class:opacity-0={!showOverlay}
-    >
-      <!-- Horizontal line with text aligned at the end -->
-      <div class="flex items-center gap-4">
-        <!-- The line takes up all remaining space -->
-        <div class="h-px flex-grow bg-black"></div>
+    <!-- Overlay: Third -->
+    <img
+      src={`${base}/Third.png`}
+      alt="Overlay Third"
+      class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-700"
+      class:opacity-0={!isOverlayThirdVisible}
+      class:opacity-100={isOverlayThirdVisible}
+    />
 
-        <!-- The text appears at the end of the line -->
-        <p class="overlays text-lg">
-          Leaders of the 13 Akharas dominate the spiritual hierarchy at Mahakumbh. Final authority on rituals, disputes, and Akhara policies
-
-        </p>
-      </div>
-    </div>
+    <!-- Overlay: Bottom -->
+    <img
+      src={`${base}/Bottom.png`}
+      alt="Overlay Bottom"
+      class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-700"
+      class:opacity-0={!isOverlayBottomVisible}
+      class:opacity-100={isOverlayBottomVisible}
+    />
   </div>
 
-  <!-- Invisible div that acts as the scroll trigger -->
-  <!-- When this div enters the viewport, `showOverlay` becomes true -->
-  <div bind:this={trigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
+  <!-- Scroll triggers -->
+  <div bind:this={topTrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
+  <div bind:this={secondTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
+  <div bind:this={thirdTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
+  <div bind:this={bottomTrigger} class="absolute top-[500vh] h-[10vh] w-full"></div>
 </section>
