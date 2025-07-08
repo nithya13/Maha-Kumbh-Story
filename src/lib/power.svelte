@@ -238,7 +238,7 @@
     <img
       src={`${base}/Institutional-framework.png`}
       alt="Background"
-      class="w-[70%] mx-10 h-auto object-contain">
+      class="w-[70%] mx-10 mt-20 h-auto object-contain">
   </div>
 </section>
 
