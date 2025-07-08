@@ -68,7 +68,7 @@
       <!-- Description -->
       <div class="space-y-4">
         <div>
-          <strong>Brief:</strong>
+          
           <p class="mt-1">
             It is performed towards the end of the puja, overcoming any
             shortcomings in the puja with a lighted lamp representing the
@@ -82,7 +82,7 @@
             <img
               src={`${base}/Rituals/Aarati.png`}
               alt="Materials visual"
-              class="w-24 h-auto mb-1"
+              class="w-50 h-auto mb-1"
             />
             <p class="annotation leading-snug">
               Flowers, Camphor/Oil/Ghee, Deeps (earthen, flour-based, or paper
@@ -136,8 +136,7 @@
 
       <!-- Description -->
       <div class="leading-relaxed space-y-4">
-        <div>
-          <strong>Brief:</strong>
+        <div> 
           <p class="mt-1">
             A bathing ritual at Kumbh Mela on specific cosmic alignments i.e.,
             Amrit Yog.
@@ -193,7 +192,7 @@
       <!-- Description -->
       <div class="leading-relaxed space-y-4">
         <div>
-          <strong>Brief:</strong>
+          
           <p class="mt-1">
             Kalpavas is a profound practice leading a minimalist life, observing
             fasting, and performing various rituals along the banks of the
@@ -202,19 +201,19 @@
         </div>
 
         <div>
-          <strong>Materials Inputs in the river:</strong>
-          <div class="mt-2">
-            <img
-              src={`${base}/Rituals/Barley-flower-deep.png`}
-              alt="Materials visual"
-              class="w-24 h-auto mb-1"
-            />
-            <p class="annotation leading-snug">
-              Organic materials like Barley, Flowers, Deeps (earthen,
-              flour-based, or paper based)
-            </p>
-          </div>
-        </div>
+  <strong>Materials Inputs in the river:</strong>
+
+  <!-- Background Repeat Image -->
+  <div
+    class="h-12 bg-repeat-x bg-[url('/Rituals/Barley-flower-deep.png')]"
+    style="background-size: auto 100%;"  
+  ></div>
+
+  <p class="annotation leading-snug mt-2">
+    Organic materials like Barley, Flowers, Deeps (earthen,
+    flour-based, or paper based)
+  </p>
+</div>
 
         <div>
           <strong>Magnitude and Impact:</strong>
@@ -257,7 +256,7 @@
       <!-- Description -->
       <div class="leading-relaxed space-y-4">
         <div>
-          <strong>Brief:</strong>
+          
           <p class="mt-1">
             The saints and sages gather at a regular interval and share their
             knowledge with various experiences for the common good
@@ -316,7 +315,7 @@
       <!-- Description -->
       <div class="leading-relaxed space-y-4">
         <div>
-          <strong>Brief:</strong>
+          
           <p class="mt-1">
             Daan is a holy 'act of giving' that blesses the giver and helps the receiver. It is said to cleanse the soul and wash away past karmic sins
           </p>
@@ -328,7 +327,7 @@
             <img
               src={`${base}/Rituals/Aarati.png`}
               alt="Materials visual"
-              class="w-24 h-auto mb-1"
+              class="w-50 h-auto mb-1"
             />
             <p class="annotation leading-snug">
              Flowers, Deeps (earthen, flour-based, or paper based), incense sticks, rice and Kumkum (vermillion).
