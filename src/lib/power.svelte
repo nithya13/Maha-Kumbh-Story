@@ -233,6 +233,15 @@
   ></div>
 </section>
 
+<section class = "relative col-span-full h-screen">
+  <div class="sticky top-0 h-screen overflow-hidden z-10">
+    <img
+      src={`${base}/Institutional-framework.png`}
+      alt="Background"
+      class="w-full h-full object-contain">
+  </div>
+</section>
+
 <style>
   .fade {
     transition: opacity 0.8s ease;
