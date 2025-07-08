@@ -2,11 +2,10 @@
   export let base = "";
   import { onMount } from "svelte";
 
-  
   let isOverlay1Visible = false;
 
-    let fadeTrigger;
-let isOverlayTopVisible = false;
+  let fadeTrigger;
+  let isOverlayTopVisible = false;
   let isOverlaySecondVisible = false;
   let isOverlayThirdVisible = false;
   let isOverlayBottomVisible = false;
@@ -15,29 +14,40 @@ let isOverlayTopVisible = false;
   let secondTrigger;
   let thirdTrigger;
   let bottomTrigger;
-  
+
+  const overlayTexts = [
+    `The Akharas—monastic orders—sit at the apex of spiritual authority. Their decisions influence the rituals performed and the sequence of holy bathing.`,
+    `Spiritual leaders and socio-cultural organizations serve as intermediaries, providing both spiritual guidance and logistical infrastructure for followers.`,
+    `Pandas and Purohits are the ritual specialists who facilitate the ceremonies and serve as local cultural authorities within the Mela.`,
+    `Pilgrims and Kalpavasis, though at the base of the structure, are central to the scale and sanctity of the event through their participation and devotion.`,
+  ];
 
   onMount(() => {
     const createObserver = (element, setter) => {
       if (!element) return;
       const observer = new IntersectionObserver(
         ([entry]) => setter(entry.isIntersecting),
-        { threshold: 0.5 }
+        { threshold: 0.5 },
       );
       observer.observe(element);
     };
 
-     createObserver(topTrigger, val => isOverlayTopVisible = val);
-    createObserver(secondTrigger, val => isOverlaySecondVisible = val);
-    createObserver(thirdTrigger, val => isOverlayThirdVisible = val);
-    createObserver(bottomTrigger, val => isOverlayBottomVisible = val);
+    createObserver(topTrigger, (val) => (isOverlayTopVisible = val));
+    createObserver(secondTrigger, (val) => (isOverlaySecondVisible = val));
+    createObserver(thirdTrigger, (val) => (isOverlayThirdVisible = val));
+    createObserver(bottomTrigger, (val) => (isOverlayBottomVisible = val));
 
-    createObserver(fadeTrigger, val => isOverlay1Visible = val);
+    createObserver(fadeTrigger, (val) => (isOverlay1Visible = val));
+   
   });
+
+ 
 </script>
 
 <!-- ✦ SECTION: Textual Explanation -->
-<section class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 text-left">
+<section
+  class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 text-left"
+>
   <h2 id="chapter4" class="text-2xl font-semibold mb-4">
     Permeating Power: Spiritual and Spatial (River-Society Intersection)
   </h2>
@@ -65,7 +75,9 @@ let isOverlayTopVisible = false;
 <!-- ✦ SECTION: First Visual with Overlay 1 -->
 <section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <h2 class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20">
+    <h2
+      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
+    >
       Permeating Power
     </h2>
 
@@ -91,7 +103,9 @@ let isOverlayTopVisible = false;
 
   <!-- Additional Overlay Boxes -->
   <div class="absolute top-[200vh] left-[40vw] w-full z-20">
-    <div class="bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg">
+    <div
+      class="bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg"
+    >
       <p class="text-base leading-relaxed">
         Akhil Bharatiya Akhara Parishad negotiates with Prayagraj Mela Authority
         for the conduction of Kumbh Mela. Leaders of the 13 Akharas dominate the
@@ -99,7 +113,9 @@ let isOverlayTopVisible = false;
         and Akhara policies.
       </p>
     </div>
-    <div class="bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-14 mb-[100vh] shadow-lg">
+    <div
+      class="bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-14 mb-[100vh] shadow-lg"
+    >
       <p class="text-base leading-relaxed">
         An Akhara literally means a ‘wrestling ring’ in Sanskrit, but also
         stands for a place of debate. These are monastic orders of ascetics that
@@ -113,13 +129,18 @@ let isOverlayTopVisible = false;
   </div>
 
   <!-- Trigger for first overlay -->
-  <div bind:this={fadeTrigger} class="absolute top-[90vh] h-[10vh] w-full"></div>
+  <div
+    bind:this={fadeTrigger}
+    class="absolute top-[90vh] h-[10vh] w-full"
+  ></div>
 </section>
 
 <!-- ✦ SECTION: Sequential Image Overlays on Scroll -->
 <section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <h5 class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20">
+    <h5
+      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
+    >
       Permeating Power
     </h5>
     <img
@@ -132,42 +153,88 @@ let isOverlayTopVisible = false;
     <img
       src={`${base}/Top.png`}
       alt="Overlay Top"
-      class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-700"
+      class="absolute inset-0 w-full h-full object-cover z-10 fade"
       class:opacity-0={!isOverlayTopVisible}
       class:opacity-100={isOverlayTopVisible}
     />
+    <div
+      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class:opacity-0={!isOverlayTopVisible}
+      class:opacity-100={isOverlayTopVisible}
+    >
+      <p class="text-base leading-relaxed">{overlayTexts[0]}</p>
+    </div>
 
     <!-- Overlay: Second -->
     <img
       src={`${base}/Second.png`}
       alt="Overlay Second"
-      class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-700"
+      class="absolute inset-0 w-full h-full object-cover z-10 fade"
       class:opacity-0={!isOverlaySecondVisible}
       class:opacity-100={isOverlaySecondVisible}
     />
+    <div
+      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class:opacity-0={!isOverlaySecondVisible}
+      class:opacity-100={isOverlaySecondVisible}
+    >
+      <p class="text-base leading-relaxed">{overlayTexts[1]}</p>
+    </div>
 
     <!-- Overlay: Third -->
     <img
       src={`${base}/Third.png`}
       alt="Overlay Third"
-      class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-700"
+      class="absolute inset-0 w-full h-full object-cover z-10 fade"
       class:opacity-0={!isOverlayThirdVisible}
       class:opacity-100={isOverlayThirdVisible}
     />
+    <div
+      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class:opacity-0={!isOverlayThirdVisible}
+      class:opacity-100={isOverlayThirdVisible}
+    >
+      <p class="text-base leading-relaxed">{overlayTexts[2]}</p>
+    </div>
 
     <!-- Overlay: Bottom -->
     <img
       src={`${base}/Bottom.png`}
       alt="Overlay Bottom"
-      class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-700"
+      class="absolute inset-0 w-full h-full object-cover z-10 fade"
       class:opacity-0={!isOverlayBottomVisible}
       class:opacity-100={isOverlayBottomVisible}
     />
+    <div
+      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class:opacity-0={!isOverlayBottomVisible}
+      class:opacity-100={isOverlayBottomVisible}
+    >
+      <p class="text-base leading-relaxed">{overlayTexts[3]}</p>
+    </div>
   </div>
 
   <!-- Scroll triggers -->
-  <div bind:this={topTrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
-  <div bind:this={secondTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
-  <div bind:this={thirdTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
-  <div bind:this={bottomTrigger} class="absolute top-[500vh] h-[10vh] w-full"></div>
+  <div
+    bind:this={topTrigger}
+    class="absolute top-[200vh] h-[10vh] w-full"
+  ></div>
+  <div
+    bind:this={secondTrigger}
+    class="absolute top-[300vh] h-[10vh] w-full"
+  ></div>
+  <div
+    bind:this={thirdTrigger}
+    class="absolute top-[400vh] h-[10vh] w-full"
+  ></div>
+  <div
+    bind:this={bottomTrigger}
+    class="absolute top-[500vh] h-[10vh] w-full"
+  ></div>
 </section>
+
+<style>
+  .fade {
+    transition: opacity 0.8s ease;
+  }
+</style>
