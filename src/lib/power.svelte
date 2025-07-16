@@ -136,7 +136,7 @@
 </section>
 
 <!-- ✦ SECTION: Sequential Image Overlays on Scroll -->
-<section class="relative col-span-full h-[900vh]">
+<section class="relative col-span-full h-[900vh] ">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
     <h5
       class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
