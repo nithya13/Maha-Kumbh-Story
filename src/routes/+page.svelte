@@ -173,7 +173,7 @@
     Chokkakula
 
     </ul> 
-    <ul><strong>Design and Visualization Lead:</strong> <a href="poppadomco.com"
+    <ul><strong>Design and Visualization Lead:</strong> <a href="https://poppadomco.com"
       class="text-slate-700 hover:text-slate-700 hover:font-bold">
       Nithya Subramanian
     </a></ul>
