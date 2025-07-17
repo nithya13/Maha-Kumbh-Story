@@ -103,9 +103,9 @@
     muted
     loop
     playsinline
-    class="absolute top-0 left-0 w-full h-full object-cover z-0"
+    class="absolute top-0 left-0 w-full h-full object-contain z-0"
   >
-    <source src={`${base}/Interview clip.mp4`} type="video/mp4" />
+    <source src={`${base}/Interview Clip 1.mp4`} type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
@@ -113,7 +113,7 @@
   <div class="relative z-10 h-full w-full flex justify-end items-center">
     <!-- Translucent Overlay Card -->
     <div
-      class="w-[90%] max-w-md min-h-[40%] md:w-1/3 md:h-auto bg-white/30 backdrop-blur-sm p-6 md:p-10 md:mr-16 flex items-center justify-center">
+      class="w-[80%] max-w-md min-h-[40%] md:w-1/3 md:h-auto bg-white/30 backdrop-blur-sm p-6 md:p-10 md:mr-24 flex items-center justify-center">
       <div class="max-w-md">
         <p>
           “We believe that taking a dip at the Prayagraj Sangam —the confluence

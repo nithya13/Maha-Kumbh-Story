@@ -3,8 +3,10 @@
   import { onMount } from "svelte";
 
   let isOverlay1Visible = false;
+  let isOverlay2Visible = false;
 
-  let fadeTrigger;
+  let fadeTrigger1;
+  let fadeTrigger2;
   let isOverlayTopVisible = false;
   let isOverlaySecondVisible = false;
   let isOverlayThirdVisible = false;
@@ -37,7 +39,8 @@
     createObserver(thirdTrigger, (val) => (isOverlayThirdVisible = val));
     createObserver(bottomTrigger, (val) => (isOverlayBottomVisible = val));
 
-    createObserver(fadeTrigger, (val) => (isOverlay1Visible = val));
+    createObserver(fadeTrigger1, (val) => (isOverlay1Visible = val));
+    createObserver(fadeTrigger2, (val) => (isOverlay2Visible = val));
    
   });
 
@@ -75,26 +78,30 @@
 <!-- ✦ SECTION: First Visual with Overlay 1 -->
 <section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <h2
-      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
-    >
-      Permeating Power
-    </h2>
+   
 
     <!-- Background -->
     <img
-      src={`${base}/Pyramid/Main-illustration.jpg`}
+      src={`${base}/Pyramid/Main-illustration.png`}
       alt="Power relationships"
-      class="w-full h-full object-cover"
+      class="w-full h-full object-contain"
     />
 
     <!-- Overlay 1 -->
     <img
       src={`${base}/Pyramid/Main-overlay-1.png`}
       alt="Overlay Layer 1"
-      class="absolute inset-0 w-full h-full object-cover z-30 transition-opacity duration-800"
+      class="absolute inset-0 w-full h-full object-contain z-30 transition-opacity duration-800"
       class:opacity-0={!isOverlay1Visible}
       class:opacity-100={isOverlay1Visible}
+    />
+
+    <img
+      src={`${base}/Pyramid/Main-overlay-2.png`}
+      alt="Overlay Layer 1"
+      class="absolute inset-0 w-full h-full object-contain z-30 transition-opacity duration-2600"
+      class:opacity-0={!isOverlay2Visible}
+      class:opacity-100={isOverlay2Visible}
     />
   </div>
 
@@ -102,9 +109,9 @@
   <div class="h-[100vh]"></div>
 
   <!-- Additional Overlay Boxes -->
-  <div class="absolute top-[200vh] left-[40vw] w-full z-20">
+  <div class="absolute top-[50vh] left-[40vw] w-full z-20">
     <div
-      class="bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg"
+      class="bg-[#fcf5eb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg"
     >
       <p class="text-base leading-relaxed">
         Akhil Bharatiya Akhara Parishad negotiates with Prayagraj Mela Authority
@@ -114,7 +121,7 @@
       </p>
     </div>
     <div
-      class="bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-14 mb-[100vh] shadow-lg"
+      class="bg-[#fcf5eb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-14 mb-[100vh] shadow-lg"
     >
       <p class="text-base leading-relaxed">
         An Akhara literally means a ‘wrestling ring’ in Sanskrit, but also
@@ -126,12 +133,24 @@
         both scriptures and armaments.
       </p>
     </div>
+
+    <div
+      class="bg-[#fcf5eb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg"
+    >
+      <p class="text-base leading-relaxed">
+       The Uttar Pradesh government, through the Uttar Pradesh Prayagraj Mela Authority (Allahabad Act) of 2017, established the Prayagraj Mela Authority for the management of Magh Melas annually and the Ardh Kumbh and the Kumbh Mela at intervals of 6 and 12 years, respectively. The Authority is a body corporate and has been assigned the mandate of infrastructure provision, including civic amenities, health facilities, and power supply
+      </p>
+    </div>
   </div>
 
   <!-- Trigger for first overlay -->
   <div
-    bind:this={fadeTrigger}
-    class="absolute top-[90vh] h-[10vh] w-full"
+    bind:this={fadeTrigger1}
+    class="absolute top-[10vh] h-[10vh] w-full"
+  ></div>
+  <div
+    bind:this={fadeTrigger2}
+    class="absolute top-[290vh] h-[10vh] w-full"
   ></div>
 </section>
 
