@@ -35,8 +35,7 @@
     <!-- Menu (right) -->
     <nav>
       <ul class="flex space-x-10 text-sm text-white">
-        <a
-          href="https://cprindia.org/research/treads-transboundary-rivers-ecologies-development-studies/"
+        <a href = "https://treads.org.in/"
         >
           <li><h4>About TREADS</h4></li>
         </a>
@@ -158,7 +157,7 @@
   <Spatial {base} />
   <Power {base} />
   <section
-  class="annotation col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left"
+  class="annotation col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left bg-[#e5e3d7]"
 >
   <p class = "annotation">
     This is a pilot project supported by the National Mission for Clean Ganga
@@ -178,8 +177,7 @@
       Nithya Subramanian
     </a></ul>
     <ul><strong>Project Team: </strong> Archit Shukla, Subia Ahmad, Debarshee Dasgupta, Sarang Barbarwar</ul>
-     
-    <ul><a href = "https://treads.org.in/" class="text-slate-700 hover:text-slate-700 hover:font-bold">TREADS Website</a></ul></div>
+     </div>
     
   
 </section>

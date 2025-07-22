@@ -74,38 +74,35 @@
     who constitute the base of this hierarchical structure.
   </p>
 </section>
-
-<!-- ✦ SECTION: First Visual with Overlay 1 -->
 <section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-   
-
     <!-- Background -->
     <img
-      src={`${base}/Pyramid/Main-illustration.png`}
+      src={`${base}/Pyramid/Main-illustration.jpg`}
       alt="Power relationships"
-      class="w-full h-full object-contain"
+      class="w-full h-full object-cover"
     />
 
+    
     <!-- Overlay 1 -->
     <img
-      src={`${base}/Pyramid/Main-overlay-1.png`}
+      src={`${base}/Pyramid/ABAP-Akhara-overlay.png`}
       alt="Overlay Layer 1"
-      class="absolute inset-0 w-full h-full object-contain z-30 transition-opacity duration-800"
+      class="absolute inset-0 w-full h-full object-cover z-30 transition-opacity duration-800"
       class:opacity-0={!isOverlay1Visible}
       class:opacity-100={isOverlay1Visible}
     />
 
     <img
-      src={`${base}/Pyramid/Main-overlay-2.png`}
+      src={`${base}/Pyramid/pma.png`}
       alt="Overlay Layer 1"
-      class="absolute inset-0 w-full h-full object-contain z-30 transition-opacity duration-2600"
+      class="absolute inset-0 w-full h-full object-cover z-30 transition-opacity duration-2600"
       class:opacity-0={!isOverlay2Visible}
       class:opacity-100={isOverlay2Visible}
     />
-  </div>
+    </div>
 
-  <!-- Spacer for triggering overlay -->
+     <!-- Spacer for triggering overlay -->
   <div class="h-[100vh]"></div>
 
   <!-- Additional Overlay Boxes -->
@@ -114,17 +111,13 @@
       class="bg-[#fcf5eb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg"
     >
       <p class="text-base leading-relaxed">
-        Akhil Bharatiya Akhara Parishad negotiates with Prayagraj Mela Authority
+       <strong>Akhil Bharatiya Akhara Parishad</strong>  negotiates with Prayagraj Mela Authority
         for the conduction of Kumbh Mela. Leaders of the 13 Akharas dominate the
         spiritual hierarchy at Mahakumbh. Final authority on rituals, disputes,
         and Akhara policies.
-      </p>
-    </div>
-    <div
-      class="bg-[#fcf5eb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-14 mb-[100vh] shadow-lg"
-    >
+      </p> <br>
       <p class="text-base leading-relaxed">
-        An Akhara literally means a ‘wrestling ring’ in Sanskrit, but also
+        An <strong>Akhara</strong> literally means a ‘wrestling ring’ in Sanskrit, but also
         stands for a place of debate. These are monastic orders of ascetics that
         date as far back as the early 8th century. Sri Adi Shankaracharya is
         believed to have established 7 Akharas evolved from the Dasnaami
@@ -133,7 +126,7 @@
         both scriptures and armaments.
       </p>
     </div>
-
+    
     <div
       class="bg-[#fcf5eb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg"
     >
@@ -152,6 +145,22 @@
     bind:this={fadeTrigger2}
     class="absolute top-[290vh] h-[10vh] w-full"
   ></div>
+  </section>
+<!-- ✦ SECTION: First Visual with Overlay 1 -->
+<section class="relative col-span-full h-[900vh]">
+  <div class="sticky top-0 h-screen overflow-hidden z-10">
+   
+
+    <!-- Background -->
+    <img
+      src={`${base}/Pyramid/Main-illustration.png`}
+      alt="Power relationships"
+      class="w-full h-full object-contain"
+    />
+
+  </div>
+
+ 
 </section>
 
 <!-- ✦ SECTION: Sequential Image Overlays on Scroll -->

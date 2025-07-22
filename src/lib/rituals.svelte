@@ -1,9 +1,37 @@
 <script>
   export let base = "";
+ 
+ import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
+
+  let calendarSection;
+  let showFirstOverlay = false;
+  let showSecondOverlay = false;
+
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !showFirstOverlay) {
+          showFirstOverlay = true;
+
+          setTimeout(() => {
+            showFirstOverlay = false;
+            showSecondOverlay = true;
+          }, 4500); // 3s visible + 1.5s fade out
+        }
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+
+    if (calendarSection) observer.observe(calendarSection);
+  });
 </script>
 
 <section
-  class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left"
+  bind:this={calendarSection}
+  class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left relative"
 >
   <div>
     <h2 id="chapter2" class="text-2xl font-semibold mb-4">
@@ -32,14 +60,37 @@
       with the river in ritual performance.
     </p>
 
-    <img
-      src={`${base}/Calendar.jpg`}
-      alt="Calendar"
-      class="w-100 h-auto object-contain justify-self-center mb-6"
-    />
+    <div class="relative w-full">
+      <!-- Main Calendar Image -->
+      <img
+        src={`${base}/Calendar.jpg`}
+        alt="Calendar"
+        class="w-full h-auto object-contain justify-self-center mb-6"
+      />
+
+      <!-- Overlay 1 -->
+      {#if showFirstOverlay}
+        <img
+          src={`${base}/Dates-overlay.png`}
+          alt="Dates Overlay"
+          class="absolute top-0 left-0 w-full h-full object-contain"
+          in:fade={{ duration: 1500 }}
+          out:fade={{ duration: 1500 }}
+        />
+      {/if}
+
+      <!-- Overlay 2 -->
+      {#if showSecondOverlay}
+        <img
+          src={`${base}/Snan-dates.png`}
+          alt="Snan Dates Overlay"
+          class="absolute top-0 left-0 w-full h-full object-contain"
+          in:fade={{ duration: 1500 }}
+        />
+      {/if}
+    </div>
   </div>
 </section>
-
 <section
   class="col-span-full bg-[#e5e3d7] overflow-x-auto overflow-y-hidden flex gap-16 px-4 py-8 scrollbar-thin scrollbar-thumb-gray-500"
 >
@@ -350,3 +401,8 @@
   </div>
 
 </section>
+<style>
+  .fade-in {
+    transition: opacity 1s ease;
+  }
+</style>
