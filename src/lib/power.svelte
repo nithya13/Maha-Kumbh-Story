@@ -96,7 +96,7 @@
     <img
       src={`${base}/Pyramid/pma.png`}
       alt="Overlay Layer 1"
-      class="absolute inset-0 w-full h-full object-cover z-30 transition-opacity duration-2600"
+      class="absolute inset-0 w-full h-full object-cover z-30 transition-opacity duration-800"
       class:opacity-0={!isOverlay2Visible}
       class:opacity-100={isOverlay2Visible}
     />
@@ -143,11 +143,11 @@
   ></div>
   <div
     bind:this={fadeTrigger2}
-    class="absolute top-[290vh] h-[10vh] w-full"
+    class="absolute top-[390vh] h-[10vh] w-full"
   ></div>
   </section>
 <!-- ✦ SECTION: First Visual with Overlay 1 -->
-<section class="relative col-span-full h-[900vh]">
+<section class="relative col-span-full h-[100vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
    
 
