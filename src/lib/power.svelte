@@ -12,6 +12,22 @@
   let isOverlayThirdVisible = false;
   let isOverlayBottomVisible = false;
 
+  let isOverlayAVisible = false;
+  let isOverlayBVisible = false;
+  let isOverlayCVisible = false;
+  let isOverlayDVisible = false;
+  let isOverlayEVisible = false;    
+  let isOverlayFVisible = false;
+  let isOverlayGVisible = false;
+
+  let ATrigger;
+  let BTrigger;
+  let CTrigger;
+  let DTrigger;
+  let ETrigger;
+  let FTrigger;
+  let GTrigger;
+
   let topTrigger;
   let secondTrigger;
   let thirdTrigger;
@@ -22,6 +38,19 @@
     `Spiritual leaders and socio-cultural organizations serve as intermediaries, providing both spiritual guidance and logistical infrastructure for followers.`,
     `Pandas and Purohits are the ritual specialists who facilitate the ceremonies and serve as local cultural authorities within the Mela.`,
     `Pilgrims and Kalpavasis, though at the base of the structure, are central to the scale and sanctity of the event through their participation and devotion.`,
+  ];
+
+  const overlayExplainerTexts = [
+    `An Akhara literally means a ‘wrestling ring’ in Sanskrit, but also stands for a place of debate. These are monastic orders of ascetics that date as far back as the early 8th century. Sri Adi Shankaracharya is believed to have established 7 Akharas evolved from the Dasnaami tradition: Mahanirvani, Niranjani, Juna, Atal, Avahan, Agni and Anand Akhara. The saints and ascetics associated with an Akhara specialized in both scriptures and armaments.`,
+    `The Akhil Bharatiya Akhara Parishad (ABAP) is an organization of the Akharas that was formed in 1954 post the tragic stampede at Prayagraj Kumbh Mela. The organization acts as a link between the saints, akharas, people and the administration aiding the management of the event and continuance of the customs, practices and rituals of Kumbh Mela in a proper manner. The Parishad does this task at all the four venues of the Mela. The committee of ABAP consists of two members from each Akharas and it recognizes thirteen Akharas except for the Kinnar Akhara and the Dasnami Sanyasini Akhara.
+`,
+    `The Uttar Pradesh government, through the Uttar Pradesh Prayagraj Mela Authority (Allahabad Act) of 2017, established the Prayagraj Mela Authority for the management of Magh Melas annually and the Ardh Kumbh and the Kumbh Mela at intervals of 6 and 12 years, respectively. The Authority is a body corporate and has been assigned the mandate of infrastructure provision, including civic amenities, health facilities, and power supply.
+`,
+    `The Prayagwals, or the Pragwals, are the priests, or Panda Pujaris, associated with the sacred Triveni Sangam similar to the Gayawals at Gaya or the Gangaputras at Varanasi. They lead the pilgrims through the rituals that are performed at the confluence. The Pragwals belong to the Brahmins and also claim to be the ones with privileged rights to perform pujas since Akbar’s reign, according to a royal decree from 1593.
+`,
+`Kalpavas is a profound practice leading a minimalist life, observing fasting, and performing various rituals along the banks of the confluence for their spiritual evolution.`,
+`Naga Sadhu`,
+'Businesses and small vendors'
   ];
 
   onMount(() => {
@@ -38,6 +67,24 @@
     createObserver(secondTrigger, (val) => (isOverlaySecondVisible = val));
     createObserver(thirdTrigger, (val) => (isOverlayThirdVisible = val));
     createObserver(bottomTrigger, (val) => (isOverlayBottomVisible = val));
+
+
+createObserver(topTrigger, (val) => (isOverlayAVisible = val));
+    createObserver(secondTrigger, (val) => (isOverlayBVisible = val));
+    createObserver(thirdTrigger, (val) => (isOverlayCVisible = val));
+    createObserver(bottomTrigger, (val) => (isOverlayDVisible = val));
+     createObserver(bottomTrigger, (val) => (isOverlayEVisible = val));
+      createObserver(bottomTrigger, (val) => (isOverlayFVisible = val));
+       createObserver(bottomTrigger, (val) => (isOverlayGVisible = val));
+
+       createObserver(ATrigger, (val) => (isOverlayAVisible = val));
+    createObserver(BTrigger, (val) => (isOverlayBVisible = val));     
+    createObserver(CTrigger, (val) => (isOverlayCVisible = val));
+    createObserver(DTrigger, (val) => (isOverlayDVisible = val));
+    createObserver(ETrigger, (val) => (isOverlayEVisible = val));
+    createObserver(FTrigger, (val) => (isOverlayFVisible = val));
+    createObserver(GTrigger, (val) => (isOverlayGVisible = val));
+
 
     createObserver(fadeTrigger1, (val) => (isOverlay1Visible = val));
     createObserver(fadeTrigger2, (val) => (isOverlay2Visible = val));
@@ -74,94 +121,105 @@
     who constitute the base of this hierarchical structure.
   </p>
 </section>
-<section class="relative col-span-full h-[900vh]">
+<!-- ✦ Main Illustration SECTION: Sequential Image Overlays on Scroll -->
+<section class="relative col-span-full h-[900vh] ">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <!-- Background -->
+    <h5
+      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
+    >
+      Stakeholders and their Interactions
+    </h5>
     <img
-      src={`${base}/Pyramid/Main-illustration.jpg`}
-      alt="Power relationships"
-      class="w-full h-full object-cover"
+      src={`${base}/Main/Main-illustration.jpg`}
+      alt="Spiritual and economic relationships"
+      class="w-full h-full object-cover z-0"
     />
 
-    
-    <!-- Overlay 1 -->
+    <!-- Overlay: Top -->
     <img
-      src={`${base}/Pyramid/ABAP-Akhara-overlay.png`}
-      alt="Overlay Layer 1"
-      class="absolute inset-0 w-full h-full object-cover z-30 transition-opacity duration-800"
-      class:opacity-0={!isOverlay1Visible}
-      class:opacity-100={isOverlay1Visible}
+      src={`${base}/Main/ABAP-Akhara-overlay.png`}
+      alt="Overlay A"
+      class="absolute inset-0 w-full h-full object-cover z-10 fade"
+      class:opacity-0={!isOverlayAVisible}
+      class:opacity-100={isOverlayAVisible}
     />
-
-    <img
-      src={`${base}/Pyramid/pma.png`}
-      alt="Overlay Layer 1"
-      class="absolute inset-0 w-full h-full object-cover z-30 transition-opacity duration-800"
-      class:opacity-0={!isOverlay2Visible}
-      class:opacity-100={isOverlay2Visible}
-    />
+    <div
+      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class:opacity-0={!isOverlayAVisible}
+      class:opacity-100={isOverlayAVisible}
+    >
+      <p class="text-base leading-relaxed">{overlayExplainerTexts[0]}</p>
     </div>
 
-     <!-- Spacer for triggering overlay -->
-  <div class="h-[100vh]"></div>
-
-  <!-- Additional Overlay Boxes -->
-  <div class="absolute top-[50vh] left-[40vw] w-full z-20">
+    <!-- Overlay: Second -->
+    <img
+      src={`${base}/Main/pma.png`}
+      alt="Overlay Second"
+      class="absolute inset-0 w-full h-full object-cover z-10 fade"
+      class:opacity-0={!isOverlayBVisible}
+      class:opacity-100={isOverlayBVisible}
+    />
     <div
-      class="bg-[#fcf5eb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg"
+      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class:opacity-0={!isOverlayBVisible}
+      class:opacity-100={isOverlayBVisible}
     >
-      <p class="text-base leading-relaxed">
-       <strong>Akhil Bharatiya Akhara Parishad</strong>  negotiates with Prayagraj Mela Authority
-        for the conduction of Kumbh Mela. Leaders of the 13 Akharas dominate the
-        spiritual hierarchy at Mahakumbh. Final authority on rituals, disputes,
-        and Akhara policies.
-      </p> <br>
-      <p class="text-base leading-relaxed">
-        An <strong>Akhara</strong> literally means a ‘wrestling ring’ in Sanskrit, but also
-        stands for a place of debate. These are monastic orders of ascetics that
-        date as far back as the early 8th century. Sri Adi Shankaracharya is
-        believed to have established 7 Akharas evolved from the Dasnaami
-        tradition: Mahanirvani, Niranjani, Juna, Atal, Avahan, Agni and Anand
-        Akhara. The saints and ascetics associated with an Akhara specialized in
-        both scriptures and armaments.
-      </p>
+      <p class="text-base leading-relaxed">{overlayExplainerTexts[1]}</p>
     </div>
-    
+
+    <!-- Overlay: Third -->
+    <img
+      src={`${base}/Main/pma.png`}
+      alt="Overlay C"
+      class="absolute inset-0 w-full h-full object-cover z-10 fade"
+      class:opacity-0={!isOverlayCVisible}
+      class:opacity-100={isOverlayCVisible}
+    />
     <div
-      class="bg-[#fcf5eb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-2 mb-[100vh] shadow-lg"
+      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class:opacity-0={!isOverlayCVisible}
+      class:opacity-100={isOverlayCVisible}
+    > <h5 class="text-xl mb-2">Businesses</h5>
+      <p class="text-base leading-relaxed">{overlayExplainerTexts[2]}</p>
+    </div>
+
+    <!-- Overlay: Bottom -->
+    <img
+      src={`${base}/Main/pma.png`}
+      alt="Overlay D"
+      class="absolute inset-0 w-full h-full object-cover z-10 fade"
+      class:opacity-0={!isOverlayDVisible}
+      class:opacity-100={isOverlayDVisible}
+    />
+    <div
+      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class:opacity-0={!isOverlayDVisible}
+      class:opacity-100={isOverlayDVisible}
     >
-      <p class="text-base leading-relaxed">
-       The Uttar Pradesh government, through the Uttar Pradesh Prayagraj Mela Authority (Allahabad Act) of 2017, established the Prayagraj Mela Authority for the management of Magh Melas annually and the Ardh Kumbh and the Kumbh Mela at intervals of 6 and 12 years, respectively. The Authority is a body corporate and has been assigned the mandate of infrastructure provision, including civic amenities, health facilities, and power supply
-      </p>
+      <p class="text-base leading-relaxed">{overlayExplainerTexts[3]}</p>
     </div>
   </div>
 
-  <!-- Trigger for first overlay -->
+  <!-- Scroll triggers -->
   <div
-    bind:this={fadeTrigger1}
-    class="absolute top-[10vh] h-[10vh] w-full"
+    bind:this={ATrigger}
+    class="absolute top-[200vh] h-[10vh] w-full"
   ></div>
   <div
-    bind:this={fadeTrigger2}
-    class="absolute top-[390vh] h-[10vh] w-full"
+    bind:this={BTrigger}
+    class="absolute top-[300vh] h-[10vh] w-full"
   ></div>
-  </section>
-<!-- ✦ SECTION: First Visual with Overlay 1 -->
-<section class="relative col-span-full h-[100vh]">
-  <div class="sticky top-0 h-screen overflow-hidden z-10">
-   
-
-    <!-- Background -->
-    <img
-      src={`${base}/Pyramid/Main-illustration.png`}
-      alt="Power relationships"
-      class="w-full h-full object-contain"
-    />
-
-  </div>
-
- 
+  <div
+    bind:this={CTrigger}
+    class="absolute top-[400vh] h-[10vh] w-full"
+  ></div>
+  <div
+    bind:this={DTrigger}
+    class="absolute top-[500vh] h-[10vh] w-full"
+  ></div>
 </section>
+
+
 
 <!-- ✦ SECTION: Sequential Image Overlays on Scroll -->
 <section class="relative col-span-full h-[900vh] ">

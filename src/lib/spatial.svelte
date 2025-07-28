@@ -101,7 +101,7 @@
     <!-- Floating cards area -->
     <div class="absolute top-[100vh] left-[10vw] w-full z-20">
       <div
-        class="bg-#c4b2a9 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h5 class="text-xl mb-2">
           Fecal coliform rose on snan days and then fell
@@ -118,7 +118,7 @@
       </div>
 
       <div
-        class="bg-#c4b2a9 backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h5 class="text-xl mb-2">Floral waste</h5>
         <p class="text-base leading-relaxed">
@@ -131,7 +131,7 @@
       </div>
 
       <div
-        class="bg-#bac0be backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+        class="bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h5 class="text-xl mb-2">Deep Daan</h5>
         <p class="text-base leading-relaxed">

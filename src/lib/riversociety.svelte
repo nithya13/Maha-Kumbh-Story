@@ -40,6 +40,9 @@
     Ganga (the Goddess) in the form of a variety of rituals and practices along the
     river.
   </p>
+  <div class="float-right w-full md:w-1/3 ml-6 mb-6 mt-6 italic text-pink-600 text-right text-2xl md:text-xl font-semibold">
+  “This is a pull quote that will be at least two lines long”
+</div>
   <p>
     The primary goal of our research is to unpack and understand the <em
       >Aastha</em
@@ -96,14 +99,14 @@
     conservation.
   </p>
 </section>
-<section class="relative col-span-full h-screen overflow-hidden">
+<section class="relative col-span-full h-[90vh] overflow-hidden">
   <!-- Background Video -->
   <video
     autoplay
     muted
     loop
     playsinline
-    class="absolute top-0 left-0 w-full h-full object-contain z-0"
+    class="absolute top-0  w-[60%] h-full object-contain z-0"
   >
     <source src={`${base}/Interview Clip 1.mp4`} type="video/mp4" />
     Your browser does not support the video tag.
@@ -113,9 +116,9 @@
   <div class="relative z-10 h-full w-full flex justify-end items-center">
     <!-- Translucent Overlay Card -->
     <div
-      class="w-[80%] max-w-md min-h-[40%] md:w-1/3 md:h-auto bg-white/30 backdrop-blur-sm p-6 md:p-10 md:mr-24 flex items-center justify-center">
+      class="w-[70%] max-w-md min-h-[40%] md:w-1/3 md:h-auto bg-white/30 backdrop-blur-sm p-6 md:p-10 md:mr-48 flex items-center justify-center">
       <div class="max-w-md">
-        <p>
+        <p class = " italic">
           “We believe that taking a dip at the Prayagraj Sangam —the confluence
           of the Ganga, Yamuna, and the mystical Saraswati, purifies our soul
           and liberates us from the bondages of life. A dip in the holy waters
