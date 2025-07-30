@@ -121,18 +121,24 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
     who constitute the base of this hierarchical structure.
   </p>
 </section>
-<!-- ✦ Main Illustration SECTION: Sequential Image Overlays on Scroll -->
+<!-- ✦ Key stakeholders -->
 <section class="relative col-span-full h-[900vh] ">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <h5
-      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
-    >
-      Stakeholders and their Interactions
-    </h5>
+
+    <div class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8">
+    <!-- Right: Text Content -->
+      <div class="lg:w-1/4 text-left z-20">
+        <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
+          Stakeholders
+        </h5>
+        <p class="text-sm md:text-base lg:text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim blanditiis error quod eligendi, distinctio autem accusamus, repellat ducimus repudiandae pariatur.
+        </p>
+      </div>
     <img
       src={`${base}/Main/Main-illustration.jpg`}
       alt="Spiritual and economic relationships"
-      class="w-full h-full object-cover z-0"
+      class="w-full lg:w-3/4 h-auto object-contain mt-10 lg:mt-0"
     />
 
     <!-- Overlay: Top -->
@@ -198,6 +204,7 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
     >
       <p class="text-base leading-relaxed">{overlayExplainerTexts[3]}</p>
     </div>
+    </div>
   </div>
 
   <!-- Scroll triggers -->
@@ -218,17 +225,47 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
     class="absolute top-[500vh] h-[10vh] w-full"
   ></div>
 </section>
-
-
-
-<!-- ✦ SECTION: Sequential Image Overlays on Scroll -->
-<section class="relative col-span-full h-[900vh] ">
+<!-- ✦ Spiritual and economic relationships -->
+<section class="relative col-span-full h-screen">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <h5
-      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
-    >
+    <div class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8">
+
+      <!-- Left: Image -->
+      <img
+        src={`${base}/Pyramid/Main-illustration.png`}
+        alt="Background"
+        class="w-full lg:w-3/4 h-auto object-contain mt-10 lg:mt-0"
+      />
+
+      <!-- Right: Text Content -->
+      <div class="lg:w-1/4 text-left z-20">
+        <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
+          Spiritual and economic relationships
+        </h5>
+        <p class="text-sm md:text-base lg:text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim blanditiis error quod eligendi, distinctio autem accusamus, repellat ducimus repudiandae pariatur.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ✦ SECTION: Pyramid -->
+<section class="relative col-span-full h-[900vh]">
+  <div class="sticky top-0 h-screen overflow-hidden z-10">
+    
+    
+    <!-- Title -->
+    <h5 class="absolute top-6 left-1/2 transform -translate-x-1/2 text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-center px-4">
       Permeating Power
     </h5>
+ <!-- Subheading -->
+    <p class="absolute top-20 left-1/2 transform -translate-x-1/2 text-base text-left px-4 max-w-xl z-20">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed viverra, sapien a hendrerit blandit, enim elit ultrices urna, ac dignissim risus lorem ac neque.
+    </p>
+    <!-- Background image -->
     <img
       src={`${base}/Power-mappings.png`}
       alt="Power relationships"
@@ -244,11 +281,11 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
       class:opacity-100={isOverlayTopVisible}
     />
     <div
-      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class="absolute top-1/4 right-4 md:right-10 lg:right-20 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-sm z-20 fade"
       class:opacity-0={!isOverlayTopVisible}
       class:opacity-100={isOverlayTopVisible}
     >
-      <p class="text-base leading-relaxed">{overlayTexts[0]}</p>
+      <p class="text-sm md:text-base leading-relaxed">{overlayTexts[0]}</p>
     </div>
 
     <!-- Overlay: Second -->
@@ -260,11 +297,11 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
       class:opacity-100={isOverlaySecondVisible}
     />
     <div
-      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class="absolute top-1/4 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#c4b2a9] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
       class:opacity-0={!isOverlaySecondVisible}
       class:opacity-100={isOverlaySecondVisible}
     >
-      <p class="text-base leading-relaxed">{overlayTexts[1]}</p>
+      <p class="text-sm md:text-base leading-relaxed">{overlayTexts[1]}</p>
     </div>
 
     <!-- Overlay: Third -->
@@ -276,11 +313,11 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
       class:opacity-100={isOverlayThirdVisible}
     />
     <div
-      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class="absolute top-1/4 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#c4b2a9] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
       class:opacity-0={!isOverlayThirdVisible}
       class:opacity-100={isOverlayThirdVisible}
     >
-      <p class="text-base leading-relaxed">{overlayTexts[2]}</p>
+      <p class="text-sm md:text-base leading-relaxed">{overlayTexts[2]}</p>
     </div>
 
     <!-- Overlay: Bottom -->
@@ -292,39 +329,44 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
       class:opacity-100={isOverlayBottomVisible}
     />
     <div
-      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#c4b2a9] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+      class="absolute top-1/4 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#c4b2a9] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
       class:opacity-0={!isOverlayBottomVisible}
       class:opacity-100={isOverlayBottomVisible}
     >
-      <p class="text-base leading-relaxed">{overlayTexts[3]}</p>
+      <p class="text-sm md:text-base leading-relaxed">{overlayTexts[3]}</p>
     </div>
   </div>
 
   <!-- Scroll triggers -->
-  <div
-    bind:this={topTrigger}
-    class="absolute top-[200vh] h-[10vh] w-full"
-  ></div>
-  <div
-    bind:this={secondTrigger}
-    class="absolute top-[300vh] h-[10vh] w-full"
-  ></div>
-  <div
-    bind:this={thirdTrigger}
-    class="absolute top-[400vh] h-[10vh] w-full"
-  ></div>
-  <div
-    bind:this={bottomTrigger}
-    class="absolute top-[500vh] h-[10vh] w-full"
-  ></div>
+  <div bind:this={topTrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
+  <div bind:this={secondTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
+  <div bind:this={thirdTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
+  <div bind:this={bottomTrigger} class="absolute top-[500vh] h-[10vh] w-full"></div>
 </section>
 
-<section class = "relative col-span-full h-screen">
+
+<section class="relative col-span-full h-screen">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <img
-      src={`${base}/Institutional-framework.png`}
-      alt="Background"
-      class="w-[70%] mx-10 mt-20 h-auto object-contain">
+    <div class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8">
+
+      <!-- Left: Image -->
+      <img
+        src={`${base}/Institutional-framework.png`}
+        alt="Background"
+        class="w-full lg:w-2/3 h-auto object-contain mt-10 lg:mt-0"
+      />
+
+      <!-- Right: Text Content -->
+      <div class="lg:w-1/3 text-left z-20">
+        <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
+          Institutional Framework
+        </h5>
+        <p class="text-sm md:text-base lg:text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim blanditiis error quod eligendi, distinctio autem accusamus, repellat ducimus repudiandae pariatur.
+        </p>
+      </div>
+
+    </div>
   </div>
 </section>
 
