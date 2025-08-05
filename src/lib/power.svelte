@@ -16,7 +16,7 @@
   let isOverlayBVisible = false;
   let isOverlayCVisible = false;
   let isOverlayDVisible = false;
-  let isOverlayEVisible = false;    
+  let isOverlayEVisible = false;
   let isOverlayFVisible = false;
   let isOverlayGVisible = false;
 
@@ -48,9 +48,9 @@
 `,
     `The Prayagwals, or the Pragwals, are the priests, or Panda Pujaris, associated with the sacred Triveni Sangam similar to the Gayawals at Gaya or the Gangaputras at Varanasi. They lead the pilgrims through the rituals that are performed at the confluence. The Pragwals belong to the Brahmins and also claim to be the ones with privileged rights to perform pujas since Akbar’s reign, according to a royal decree from 1593.
 `,
-`Kalpavas is a profound practice leading a minimalist life, observing fasting, and performing various rituals along the banks of the confluence for their spiritual evolution.`,
-`Naga Sadhu`,
-'Businesses and small vendors'
+    `Kalpavas is a profound practice leading a minimalist life, observing fasting, and performing various rituals along the banks of the confluence for their spiritual evolution.`,
+    `Naga Sadhu`,
+    "Businesses and small vendors",
   ];
 
   onMount(() => {
@@ -68,30 +68,25 @@
     createObserver(thirdTrigger, (val) => (isOverlayThirdVisible = val));
     createObserver(bottomTrigger, (val) => (isOverlayBottomVisible = val));
 
-
-createObserver(topTrigger, (val) => (isOverlayAVisible = val));
+    createObserver(topTrigger, (val) => (isOverlayAVisible = val));
     createObserver(secondTrigger, (val) => (isOverlayBVisible = val));
     createObserver(thirdTrigger, (val) => (isOverlayCVisible = val));
     createObserver(bottomTrigger, (val) => (isOverlayDVisible = val));
-     createObserver(bottomTrigger, (val) => (isOverlayEVisible = val));
-      createObserver(bottomTrigger, (val) => (isOverlayFVisible = val));
-       createObserver(bottomTrigger, (val) => (isOverlayGVisible = val));
+    createObserver(bottomTrigger, (val) => (isOverlayEVisible = val));
+    createObserver(bottomTrigger, (val) => (isOverlayFVisible = val));
+    createObserver(bottomTrigger, (val) => (isOverlayGVisible = val));
 
-       createObserver(ATrigger, (val) => (isOverlayAVisible = val));
-    createObserver(BTrigger, (val) => (isOverlayBVisible = val));     
+    createObserver(ATrigger, (val) => (isOverlayAVisible = val));
+    createObserver(BTrigger, (val) => (isOverlayBVisible = val));
     createObserver(CTrigger, (val) => (isOverlayCVisible = val));
     createObserver(DTrigger, (val) => (isOverlayDVisible = val));
     createObserver(ETrigger, (val) => (isOverlayEVisible = val));
     createObserver(FTrigger, (val) => (isOverlayFVisible = val));
     createObserver(GTrigger, (val) => (isOverlayGVisible = val));
 
-
     createObserver(fadeTrigger1, (val) => (isOverlay1Visible = val));
     createObserver(fadeTrigger2, (val) => (isOverlay2Visible = val));
-   
   });
-
- 
 </script>
 
 <!-- ✦ SECTION: Textual Explanation -->
@@ -122,114 +117,130 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
   </p>
 </section>
 <!-- ✦ Key stakeholders -->
-<section class="relative col-span-full h-[900vh] ">
+<section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-
-    <div class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8">
-    <!-- Right: Text Content -->
+    <div
+      class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8"
+    >
+      <!-- Right: Text Content -->
       <div class="lg:w-1/4 text-left z-20">
         <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
           Stakeholders
         </h5>
         <p class="text-sm md:text-base lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim blanditiis error quod eligendi, distinctio autem accusamus, repellat ducimus repudiandae pariatur.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+          ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim
+          blanditiis error quod eligendi, distinctio autem accusamus, repellat
+          ducimus repudiandae pariatur.
         </p>
       </div>
-    <img
-      src={`${base}/Main/Main-illustration.jpg`}
-      alt="Spiritual and economic relationships"
-      class="w-full lg:w-3/4 h-auto object-contain mt-10 lg:mt-0"
-    />
 
-    <!-- Overlay: Top -->
-    <img
-      src={`${base}/Main/ABAP-Akhara-overlay.png`}
-      alt="Overlay A"
-      class="absolute inset-0 w-full h-full object-cover z-10 fade"
-      class:opacity-0={!isOverlayAVisible}
-      class:opacity-100={isOverlayAVisible}
-    />
-    <div
-      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
-      class:opacity-0={!isOverlayAVisible}
-      class:opacity-100={isOverlayAVisible}
-    >
-      <p class="text-base leading-relaxed">{overlayExplainerTexts[0]}</p>
-    </div>
+      <!-- Illustration & Overlay Container -->
+      <div class="relative w-full lg:w-3/4 h-auto">
+        <!-- Main Illustration -->
+        <img
+          src={`${base}/Main/Main-illustration.jpg`}
+          alt="Spiritual and economic relationships"
+          class="w-full h-auto object-contain z-0"
+        />
 
-    <!-- Overlay: Second -->
-    <img
-      src={`${base}/Main/pma.png`}
-      alt="Overlay Second"
-      class="absolute inset-0 w-full h-full object-cover z-10 fade"
-      class:opacity-0={!isOverlayBVisible}
-      class:opacity-100={isOverlayBVisible}
-    />
-    <div
-      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
-      class:opacity-0={!isOverlayBVisible}
-      class:opacity-100={isOverlayBVisible}
-    >
-      <p class="text-base leading-relaxed">{overlayExplainerTexts[1]}</p>
-    </div>
+        <!-- Overlay: Top -->
+        <img
+          src={`${base}/Main/Akhara.png`}
+          alt="Overlay A"
+          class="absolute top-0 left-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
+          class:opacity-0={!isOverlayAVisible}
+          class:opacity-100={isOverlayAVisible}
+        />
 
-    <!-- Overlay: Third -->
-    <img
-      src={`${base}/Main/pma.png`}
-      alt="Overlay C"
-      class="absolute inset-0 w-full h-full object-cover z-10 fade"
-      class:opacity-0={!isOverlayCVisible}
-      class:opacity-100={isOverlayCVisible}
-    />
-    <div
-      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
-      class:opacity-0={!isOverlayCVisible}
-      class:opacity-100={isOverlayCVisible}
-    > <h5 class="text-xl mb-2">Businesses</h5>
-      <p class="text-base leading-relaxed">{overlayExplainerTexts[2]}</p>
-    </div>
+        <!-- Overlay Explainer Box -->
+        <div
+          class="absolute top-1/4 right-4 md:right-16 w-[80%] md:w-1/2 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
+          class:opacity-0={!isOverlayAVisible}
+          class:opacity-100={isOverlayAVisible}
+        ><h5 class="text-xl mb-2">Akharas</h5>
+          <p class="text-base leading-relaxed">{overlayExplainerTexts[0]}</p>
+        </div>
 
-    <!-- Overlay: Bottom -->
-    <img
-      src={`${base}/Main/pma.png`}
-      alt="Overlay D"
-      class="absolute inset-0 w-full h-full object-cover z-10 fade"
-      class:opacity-0={!isOverlayDVisible}
-      class:opacity-100={isOverlayDVisible}
-    />
-    <div
-      class="absolute top-1/4 right-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
-      class:opacity-0={!isOverlayDVisible}
-      class:opacity-100={isOverlayDVisible}
-    >
-      <p class="text-base leading-relaxed">{overlayExplainerTexts[3]}</p>
-    </div>
+        <!-- Overlay: Second -->
+        <img
+          src={`${base}/Main/ABAP.png`}
+          alt="Overlay Second"
+          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          class:opacity-0={!isOverlayBVisible}
+          class:opacity-100={isOverlayBVisible}
+        />
+        <div
+          class="absolute top-1/4 left-4 md:right-16 w-[80%] md:w-1/2 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
+          class:opacity-0={!isOverlayBVisible}
+          class:opacity-100={isOverlayBVisible}
+        >
+        <h5 class="text-xl mb-2">ABAP</h5>
+          <p class="text-base leading-relaxed">{overlayExplainerTexts[1]}</p>
+        </div>
+
+        <!-- Overlay: Third -->
+        <img
+          src={`${base}/Main/Businesses.png`}
+          alt="Overlay C"
+          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          class:opacity-0={!isOverlayCVisible}
+          class:opacity-100={isOverlayCVisible}
+        />
+        <div
+          class="absolute top-1/4 right-24 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class:opacity-0={!isOverlayCVisible}
+          class:opacity-100={isOverlayCVisible}
+        >
+          <h5 class="text-xl mb-2">Businesses</h5>
+          <p class="text-base leading-relaxed">{overlayExplainerTexts[2]}</p>
+        </div>
+
+        <!-- Overlay: Bottom -->
+        <img
+          src={`${base}/Main/Pandas.png`}
+          alt="Overlay D"
+          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          class:opacity-0={!isOverlayDVisible}
+          class:opacity-100={isOverlayDVisible}
+        />
+        <div
+          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class:opacity-0={!isOverlayDVisible}
+          class:opacity-100={isOverlayDVisible}
+        ><h5 class="text-xl mb-2">Pandas, Pujaris and Priests</h5>
+          <p class="text-base leading-relaxed">{overlayExplainerTexts[3]}</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Scroll triggers -->
-  <div
-    bind:this={ATrigger}
-    class="absolute top-[200vh] h-[10vh] w-full"
-  ></div>
-  <div
-    bind:this={BTrigger}
-    class="absolute top-[300vh] h-[10vh] w-full"
-  ></div>
-  <div
-    bind:this={CTrigger}
-    class="absolute top-[400vh] h-[10vh] w-full"
-  ></div>
-  <div
-    bind:this={DTrigger}
-    class="absolute top-[500vh] h-[10vh] w-full"
-  ></div>
+
+    <!-- Scroll triggers -->
+    <div
+      bind:this={ATrigger}
+      class="absolute top-[200vh] h-[10vh] w-full"
+    ></div>
+    <div
+      bind:this={BTrigger}
+      class="absolute top-[300vh] h-[10vh] w-full"
+    ></div>
+    <div
+      bind:this={CTrigger}
+      class="absolute top-[400vh] h-[10vh] w-full"
+    ></div>
+    <div
+      bind:this={DTrigger}
+      class="absolute top-[500vh] h-[10vh] w-full"
+    ></div>
+
 </section>
 <!-- ✦ Spiritual and economic relationships -->
 <section class="relative col-span-full h-screen">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <div class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8">
-
+    <div
+      class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8"
+    >
       <!-- Left: Image -->
       <img
         src={`${base}/Pyramid/Main-illustration.png`}
@@ -243,27 +254,32 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
           Spiritual and economic relationships
         </h5>
         <p class="text-sm md:text-base lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim blanditiis error quod eligendi, distinctio autem accusamus, repellat ducimus repudiandae pariatur.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+          ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim
+          blanditiis error quod eligendi, distinctio autem accusamus, repellat
+          ducimus repudiandae pariatur.
         </p>
       </div>
-
     </div>
   </div>
 </section>
 
-
 <!-- ✦ SECTION: Pyramid -->
 <section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    
-    
     <!-- Title -->
-    <h5 class="absolute top-6 left-1/2 transform -translate-x-1/2 text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-center px-4">
+    <h5
+      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-center px-4"
+    >
       Permeating Power
     </h5>
- <!-- Subheading -->
-    <p class="absolute top-20 left-1/2 transform -translate-x-1/2 text-base text-left px-4 max-w-xl z-20">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed viverra, sapien a hendrerit blandit, enim elit ultrices urna, ac dignissim risus lorem ac neque.
+    <!-- Subheading -->
+    <p
+      class="absolute top-20 left-1/2 transform -translate-x-1/2 text-base text-left px-4 max-w-xl z-20"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+      Sed viverra, sapien a hendrerit blandit, enim elit ultrices urna, ac
+      dignissim risus lorem ac neque.
     </p>
     <!-- Background image -->
     <img
@@ -338,17 +354,29 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
   </div>
 
   <!-- Scroll triggers -->
-  <div bind:this={topTrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
-  <div bind:this={secondTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
-  <div bind:this={thirdTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
-  <div bind:this={bottomTrigger} class="absolute top-[500vh] h-[10vh] w-full"></div>
+  <div
+    bind:this={topTrigger}
+    class="absolute top-[200vh] h-[10vh] w-full"
+  ></div>
+  <div
+    bind:this={secondTrigger}
+    class="absolute top-[300vh] h-[10vh] w-full"
+  ></div>
+  <div
+    bind:this={thirdTrigger}
+    class="absolute top-[400vh] h-[10vh] w-full"
+  ></div>
+  <div
+    bind:this={bottomTrigger}
+    class="absolute top-[500vh] h-[10vh] w-full"
+  ></div>
 </section>
-
 
 <section class="relative col-span-full h-screen">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
-    <div class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8">
-
+    <div
+      class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8"
+    >
       <!-- Left: Image -->
       <img
         src={`${base}/Institutional-framework.png`}
@@ -362,10 +390,12 @@ createObserver(topTrigger, (val) => (isOverlayAVisible = val));
           Institutional Framework
         </h5>
         <p class="text-sm md:text-base lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim blanditiis error quod eligendi, distinctio autem accusamus, repellat ducimus repudiandae pariatur.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+          ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim
+          blanditiis error quod eligendi, distinctio autem accusamus, repellat
+          ducimus repudiandae pariatur.
         </p>
       </div>
-
     </div>
   </div>
 </section>
