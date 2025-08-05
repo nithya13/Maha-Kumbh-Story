@@ -181,7 +181,7 @@
 
         <!-- Overlay: Third -->
         <img
-          src={`${base}/Main/Businesses.png`}
+          src={`${base}/Main/pma.png`}
           alt="Overlay C"
           class="absolute inset-0 w-full h-full object-cover z-10 fade"
           class:opacity-0={!isOverlayCVisible}
@@ -192,11 +192,11 @@
           class:opacity-0={!isOverlayCVisible}
           class:opacity-100={isOverlayCVisible}
         >
-          <h5 class="text-xl mb-2">Businesses</h5>
+          <h5 class="text-xl mb-2">PMA</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[2]}</p>
         </div>
 
-        <!-- Overlay: Bottom -->
+        <!-- Overlay: Fourth -->
         <img
           src={`${base}/Main/Pandas.png`}
           alt="Overlay D"
@@ -208,9 +208,56 @@
           class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
           class:opacity-0={!isOverlayDVisible}
           class:opacity-100={isOverlayDVisible}
-        ><h5 class="text-xl mb-2">Pandas, Pujaris and Priests</h5>
+        ><h5 class="text-xl mb-2">Panda Pujaris /Prayagwalas</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[3]}</p>
         </div>
+<!-- Overlay: Fifth -->
+         <img
+          src={`${base}/Main/Kalpavas.png`}
+          alt="Overlay D"
+          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          class:opacity-0={!isOverlayEVisible}
+          class:opacity-100={isOverlayEVisible}
+        />
+        <div
+          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class:opacity-0={!isOverlayEVisible}
+          class:opacity-100={isOverlayEVisible}
+        ><h5 class="text-xl mb-2">Kalpavas</h5>
+          <p class="text-base leading-relaxed">{overlayExplainerTexts[4]}</p>
+        </div>
+
+        <!-- Overlay: Sixth -->
+         <img
+          src={`${base}/Main/Naga-Sadhu.png`}
+          alt="Overlay D"
+          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          class:opacity-0={!isOverlayFVisible}
+          class:opacity-100={isOverlayFVisible}
+        />
+        <div
+          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class:opacity-0={!isOverlayFVisible}
+          class:opacity-100={isOverlayFVisible}
+        ><h5 class="text-xl mb-2">Naga Sadhus</h5>
+          <p class="text-base leading-relaxed">{overlayExplainerTexts[5]}</p>
+        </div>
+<!-- Overlay: Seventh -->
+         <img
+          src={`${base}/Main/Businesses.png`}
+          alt="Overlay D"
+          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          class:opacity-0={!isOverlayGVisible}
+          class:opacity-100={isOverlayGVisible}
+        />
+        <div
+          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class:opacity-0={!isOverlayGVisible}
+          class:opacity-100={isOverlayGVisible}
+        ><h5 class="text-xl mb-2">Businesses and small vendors</h5>
+          <p class="text-base leading-relaxed">{overlayExplainerTexts[6]}</p>
+        </div>
+
       </div>
     </div>
   </div>
@@ -232,6 +279,18 @@
     <div
       bind:this={DTrigger}
       class="absolute top-[500vh] h-[10vh] w-full"
+    ></div>
+    <div
+      bind:this={ETrigger}
+      class="absolute top-[600vh] h-[10vh] w-full"
+    ></div>
+    <div
+      bind:this={FTrigger}
+      class="absolute top-[700vh] h-[10vh] w-full"
+    ></div>
+    <div
+      bind:this={GTrigger}
+      class="absolute top-[800vh] h-[10vh] w-full"
     ></div>
 
 </section>
