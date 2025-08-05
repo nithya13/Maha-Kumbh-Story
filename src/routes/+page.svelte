@@ -88,7 +88,7 @@
       <a href="#chapter1">
         <!-- <h1>1</h1> -->
         <h6
-          class="md:text-2xl font-regular hover:font-bold"
+          class="md:text-[1.5rem] hover:text-[1.6rem] font-normal px-1 transition-all duration-200"
           style="font-family: 'Khand', sans-serif;"
         >
           Reading Rituals for Rejuvenating Rivers
@@ -104,7 +104,7 @@
       <a href="#chapter2">
         <!-- <h1>2</h1> -->
         <h6
-          class="md:text-2xl font-regular px-2 hover:font-bold"
+          class="md:text-[1.5rem] hover:text-[1.6rem] font-normal px-1 transition-all duration-200"
           style="font-family: 'Khand', sans-serif;"
         >
           LEGENDS, RITUALS, CUSTOMS & PRACTICES AT THE MAHA KUMBH
@@ -120,7 +120,7 @@
       <a href="#chapter3">
         <!-- <h1>3</h1> -->
         <h6 
-          class="md:text-2xl font-regular px-2 hover:font-bold"
+          class="md:text-[1.5rem] hover:text-[1.6rem] font-normal px-1 transition-all duration-200"
           style="font-family: 'Khand', sans-serif;"
         >
           Maha Kumbh - Spatial Context
@@ -136,7 +136,7 @@
       <a href="#chapter4">
         <!-- <h1>4</h1> -->
         <h6
-          class="md:text-2xl font-regular px-2 hover:font-bold"
+          class="md:text-[1.5rem] hover:text-[1.6rem] font-normal px-1 transition-all duration-200"
           style="font-family: 'Khand', sans-serif;"
         >
           PERMEATING POWER: SPIRITUAL & SPATIAL (RIVER-SOCIETY INTERSECTION)
@@ -156,32 +156,30 @@
   <div class="h-[10vh]"></div>
   <Spatial {base} />
   <Power {base} />
-  <section
-  class="annotation col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 md:px-4 text-left bg-[#e5e3d7]"
->
-  <p class = "annotation">
-    This is a pilot project supported by the National Mission for Clean Ganga
-    (NMCG) under the CPR–NMCG Collaborative Research Programme towards shaping
-    informed, evidence-based policy and governance frameworks for the
-    rejuvenation of India’s rivers. The project aspires to evolve into a more
-    expansive programme documenting the river-society intersection through the
-    various river gatherings and festivals and how they can potentially
-    contribute to river rejuvenation efforts. 
-  </p>
-  <div class = "leading-loose"><ul><strong>Team Project Lead:</strong> Dr. Srinivas
-    Chokkakula
-
-    </ul> 
-    <ul><strong>Design and Visualization Lead:</strong> <a href="https://poppadomco.com"
-      class="text-slate-700 hover:text-slate-700 hover:font-bold">
-      Nithya Subramanian
-    </a></ul>
-    <ul><strong>Project Team: </strong> Archit Shukla, Subia Ahmad, Debarshee Dasgupta, Sarang Barbarwar</ul>
-     </div>
-    
   
-</section>
+
 </main>
+<footer class="w-full bg-[#e5e3d7] py-8 px-4 text-left">
+  <div class="max-w-4xl mx-auto">
+    <p class="mb-6 text-base leading-relaxed">
+      This is a pilot project supported by the National Mission for Clean Ganga (NMCG) under the CPR–NMCG Collaborative Research Programme towards shaping informed, evidence-based policy and governance frameworks for the rejuvenation of India’s rivers. The project aspires to evolve into a more expansive programme documenting the river-society intersection through the various river gatherings and festivals and how they can potentially contribute to river rejuvenation efforts.
+    </p>
+    
+    <div class="text-base leading-loose">
+      <p><strong>Team Project Lead:</strong> Dr. Srinivas Chokkakula</p>
+      <p>
+        <strong>Design and Visualization Lead:</strong>
+        <a href="https://poppadomco.com"
+           class="text-pink-700 hover:text-pink-500">
+          Nithya Subramanian
+        </a>
+      </p>
+      <p>
+        <strong>Project Team:</strong> Archit Shukla, Subia Ahmad, Debarshee Dasgupta, Sarang Barbarwar
+      </p>
+    </div>
+  </div>
+</footer>
 <!-- Return to Top Button -->
 {#if showButton}
   <button

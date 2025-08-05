@@ -10,94 +10,44 @@
   </h2>
 
   <p>
-    The Maha Kumbh of 2025 in Prayagraj, Uttar Pradesh, at the Triveni Sangam of
-    the Ganga, Yamuna, and the mythical Saraswati gathered over 60 crore
-    pilgrims and visitors over a span of 45 days.
-  </p>
-  <p>A spectacle embodying people’s spiritual connection with the river.</p>
-  <p>A measure of the river’s cultural convening power.</p>
-  <p>
-    An ecological ethic deeply embedded in religious practices, legends, and
-    beliefs.
-  </p>
-  <p>
-    This colossal event of Maha Kumbh has been subjected to two outwardly
-    divergent narratives. One focused on society and spirituality: the virtues
-    of the Indian spiritual traditions of respect and reverence towards nature.
-    The other on the environmental concerns and sensibilities: how mass
-    gatherings and the ritual practices impact river ecologies.
-  </p>
-  <p>
-    These two appear conflicting, but we see powerful convergence for river
-    rejuvenation. We believe it is possible if we focus on the river-society
-    relationship embodying Maha Kumbh and similar gatherings along the rivers
-    and explore beyond the binary views of the spiritual and the environmental.
-  </p>
-  <p>
-    The river-society relationship is often described as <em>Aastha</em>
-    (loosely translated from faith). <em>Aastha</em> is the most potent power mobilizing
-    the masses of populations to come and express their deep reverence to the river
-    Ganga (the Goddess) in the form of a variety of rituals and practices along the
-    river.
-  </p>
+  The Mahakumbh 2025 in Prayagraj, Uttar Pradesh, held at the sacred Sangam of three rivers—where the Ganga, the Yamuna, and the mythical Saraswati converge—drew more than 65 crore visitors over a span of 45 days, manifesting a profound spiritual bond with the river. The event underscores an immense cultural convening power, embedding ecological ethics within the religious practice, legends, and beliefs.
+</p>
+<br>
+<p>The monumental gathering drove two contrasting narratives:</p>
+
+<ul class="list-disc list-inside">
+  <li>Celebrating the societal and spiritual virtues of the Indian traditions that cherish nature</li>
+  <li>Examining the environmental impacts of mass congregations during ritual practices that shear river ecologies</li>
+</ul>
+
   <div class="float-right w-full md:w-1/3 ml-6 mb-6 mt-6 italic text-pink-600 text-right text-2xl md:text-xl font-semibold">
   “This is a pull quote that will be at least two lines long”
 </div>
+<br>
+<br />
+  <h3>UNPACKING <em>“AASTHA”</em> AS AN <em>“ASTRA”</em>
+</h3>
   <p>
-    The primary goal of our research is to unpack and understand the <em
-      >Aastha</em
-    > and turn it into Astra for river rejuvenation. This is a pilot project initiated
-    by the TREADS Initiative at CPR and supported by the NMCG, beginning with an
-    audio-visual documentation of rituals at the Maha Kumbh of Prayagraj. We showcase
-    the work carried out under this project on this website.
+   We want to bring rituals and practices to the centre of analysis in thinking about rejuvenating rivers. The approach recognises the rituals and practices are informed and produced by an ecosystem where a variety of agents, actors, and networks actively participate. These range from priests, pandas, pandits to popular preachers and spiritual thought leaders, extending to the institutionalised versions, including ashrams, akharas, and other institutional forms. 
+
   </p>
   <br />
-  <h3>Focus of Our Inquiry</h3>
+  
   <p>
-    Towards the above goal, our research is driven by the following questions.
+    The political and economic interests are also a part of the ecosystem, transcending the spiritual or religious networks. Therefore, to make rejuvenating rivers a people’s programme, reimagining rituals must work with these networks and institutions.
+
   </p>
+  <br />
   <p>
-    What are the rituals and practices along the river? How do these impact the
-    river ecologies?
+    Our research is driven by the following question:
+
   </p>
+  <br />
   <p>
-    What/who informs, prescribes, and sanctions the rituals and practices - the
-    spiritual consciousness? Who are the agents, institutions, and networks?
-    What are the embedded power relations?
+    <strong>Can we reimagine the rituals and practices for river rejuvenation? How can we redeploy the power relations towards river rejuvenation?
+</strong>
   </p>
-  <p>
-    Can we unpack and understand the ecological ethic, if any, underlying the
-    spiritual consciousness?
-  </p>
-  <p>
-    Can we reimagine the rituals and practices for river rejuvenation? How can
-    we redeploy the power relations towards river rejuvenation?
-  </p>
-  <p>
-    How can we pursue Rejuvenating Rivers as a people’s programme, where
-    people’s engagement in the river-society intersectional spaces contribute to
-    improving rivers’ ecological status?
-  </p>
-  <p>
-    We want to bring rituals and practices to the centre of analysis in thinking
-    about rejuvenating rivers. The approach recognizes that the rituals and
-    practices are informed and produced by an ecosystem where a variety of
-    agents, actors, and networks actively participate. These range from priests,
-    pandas, pandits to popular preachers and spiritual thought-leaders -
-    extending to the institutionalized versions including ashrams, akharas, and
-    other institutional forms. Political and economic interests too are part of
-    the ecosystem, transcending the spiritual or religious networks. Reimagining
-    rituals must work with these networks and institutions towards making
-    rejuvenating rivers a truly people’s programme.
-  </p>
-  <p>
-    India’s rivers and water bodies are often hosts to gatherings and events of
-    cultural and spiritual significance. These are not restricted to Kumbh
-    gatherings alone but extend to other festivals such as the Chhath Puja. It
-    is time for bringing this cultural confluence with river ecologies to the
-    centre of analysis for an Indian model of river rejuvenation and water
-    conservation.
-  </p>
+  
 </section>
 <section class="relative col-span-full h-[90vh] overflow-hidden">
   <!-- Background Video -->
