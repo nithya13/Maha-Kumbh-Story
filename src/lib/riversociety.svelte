@@ -1,5 +1,35 @@
 <script>
   export let base = "";
+   let activeStep = null;
+
+  const steps = [
+    {
+      id: 1,
+      title: "Pre-Kumbh Visit",
+      items: [
+        "Survey and mapping of various activities",
+        "Key informant interviews"
+      ]
+    },
+    {
+      id: 2,
+      title: "During Kumbh Visit",
+      items: [
+        "Audio-visual documentation through interviews of:\n→ the pilgrims\n→ the Akhadas\n→ Pondo Pujaris",
+        "Drone shoot"
+      ]
+    },
+    {
+      id: 3,
+      title: "Post-Kumbh Analysis",
+      items: [
+        "Documenting various rituals",
+        "Analysis of state and non-state actors and their role in Maha Kumbh",
+        "Analysis of power hierarchy",
+        "Actor-network diagram"
+      ]
+    }
+  ];
 </script>
 
 <section
@@ -85,3 +115,13 @@
   </div>
   
 </section>
+<section
+  class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 text-left bg-[#f1efe2]"
+>
+  <h2 class="text-xl font-bold mb-6">Our Approach</h2>
+ <img src = "{base}/process.png" alt = "Process" class="md:w-[80%] sm:w-[100%] mb-6">
+  
+ 
+</section>
+
+
