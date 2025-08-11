@@ -39,27 +39,14 @@
     </h2>
 
     <p class="mb-6">
-      The Kumbh Mela is an assembly of rituals and the largest sacred cultural
-      gathering in the world – Amrit Snan being the most prominent and prevalent
-      among all of them. These traditions, rooted deep within the Hindu
-      cosmography, mythology, and yogic practices, serve a variety of purposes –
-      spiritual cleansing to affirm social bonds. Most interviewees underscored
-      that attending the Maha Kumbh at Prayagraj was not an individual
-      pilgrimage but a moment of history that would be an iconic memory for
-      generations to come, considering the unusual phenomenon of having such a
-      magnificent Maha Kumbh after 144 years. The Rituals and Practices reflect
-      the traditions of Sanatana, which have been followed throughout the
-      centuries. In this section, we have detailed the rituals and their
-      connections to mythology, while interpreting them through reflections
-      drawn from our field observations. The section highlights the centrality
-      of water-based rituals ranging from Snans as the most prominent ritual and
-      others including Tarpan, Kalpavas and Daans. It also describes the
-      material engagement at the Maha Kumbh that largely comprises natural
-      materials such as flowers, cereals (barley, rice, sesame seeds), milk, and
-      honey. These engagements reflect a deep ecologically sensitive engagement
-      with the river in ritual performance.
+      The Kumbh Mela is an assembly of rituals, with Amrit Snan (earlier Shahi Snan) being the most prominent and prevalent among all of them. These traditions, rooted deep within the Hindu cosmography, mythology, and yogic practices, serve a variety of purposes, ranging from spiritual cleansing to affirming social bonds. Most interviewees underscored that attending the Maha Kumbh at Prayagraj was not an individual pilgrimage but a moment of history that would be a memory for generations to come, considering the occurrence of the Maha Kumbh after 144 years. 
+
     </p>
 
+    <p class="mb-6">
+      In this section, we have detailed the rituals and their connections to mythology while interpreting them through reflections drawn from our field observations. The section details the range of rituals with water at its core, ranging from Snans as the most prominent ritual and others including Kalpavas, Aarti, and various Daans. It also describes the material engagement at the Maha Kumbh that largely comprises natural materials such as flowers, cereals (barley, rice, sesame seeds), milk, honey, etc. These engagements reflect a deep, ecologically sensitive engagement with the river in ritual performance.
+
+    </p>
     <div class="relative w-full">
       <!-- Main Calendar Image -->
       <img

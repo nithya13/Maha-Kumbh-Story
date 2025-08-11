@@ -97,24 +97,21 @@
     Permeating Power: Spiritual and Spatial (River-Society Intersection)
   </h2>
   <p>
-    The Maha Kumbh involves a diverse array of stakeholders—including
-    institutions, groups, and individuals—who shape ritual practices and mediate
-    interactions between the river and society in both formal and informal
-    settings. In this section, through visual illustrations, we outline the key
-    stakeholders and their interactions, the informal hierarchical power
-    structures that influence pilgrims and ultimately the rituals, and, finally,
-    the formal institutional framework responsible for managing river water
-    quality during the Kumbh Mela.
+    The Maha Kumbh involves a diverse array of stakeholders—including institutions, groups, and individuals—who shape ritual practices and mediate interactions between the river and society in both formal and informal settings. In this section, through visual illustrations, we outline:
+
   </p>
-  <p>
-    This visual captures the spiritual and cultural hierarchy that informs
-    ritual practices and shapes informal interactions with devotees and
-    pilgrims. The illustration delineates four levels within this projection of
-    power or influence—beginning with the Akharas at the top, followed by
-    influential spiritual gurus and socio-cultural organizations, then the
-    Pandas and Purohits, and finally culminating in the pilgrims and Kalpavasis,
-    who constitute the base of this hierarchical structure.
-  </p>
+  <br>
+  <ul class="list-disc list-inside">
+  <li><strong>Stakeholders:</strong> The key stakeholders and their interactions.
+</li><br>
+  <li><strong>Spiritual Religious and Economic Relationships:</strong> The  political economy of  large scale human gathering for  spiritual and religious purposes — interactions and transactions between the pilgrims and large and small scale businesses. </li>
+<br>
+<li> <strong>Permeating Power:</strong> The informal hierarchical power structures which influence the pilgrims and their ritual practice.
+</li><br>
+<li><strong>Institutional Framework:</strong> The state institutions across scales —  from the central government to the local bodies responsible for the management of the river water quality during the Kumbh Mela 
+</li>
+
+</ul>
 </section>
 <!-- ✦ Key stakeholders -->
 <section class="relative col-span-full h-[900vh]">
@@ -127,12 +124,16 @@
         <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
           Stakeholders
         </h5>
-        <p class="text-sm md:text-base lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-          ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim
-          blanditiis error quod eligendi, distinctio autem accusamus, repellat
-          ducimus repudiandae pariatur.
-        </p>
+        
+          
+<p class="text-sm md:text-base lg:text-lg">
+  The visual depicts a varied and vast set of stakeholders engaged in the Maha Kumbh. Mahakumbh is not only about the pilgrims but is also known for its huge economic impact. This manifests in various economic and social interactions with varied intensity. The Kumbh Mela displays delicate interactions between rituals and commerce. The interactions are further shaped by various power relations. 
+</p>
+<br>
+<p class="annotation">
+  (Our stakeholder mappings and field observations indicated that Akharas had considerable power to negotiate crucial matters such as in procession planning and land allocation. The interaction between the PMA and Akaharas are indicative of this where the PMA actively consults with the Akahadas in advance in planning of the Mahalumbh. The Akhara leaders, who were elected in their traditional councils, coordinated both intra- and inter-Akhara and made sure that their spatial and ritualistic concerns were protected.)
+</p>
+        
       </div>
 
       <!-- Illustration & Overlay Container -->
@@ -302,7 +303,7 @@
     >
       <!-- Left: Image -->
       <img
-        src={`${base}/Pyramid/Main-illustration.png`}
+        src={`${base}/Main-illustration.png`}
         alt="Background"
         class="w-full lg:w-3/4 h-auto object-contain mt-10 lg:mt-0"
       />
@@ -313,10 +314,10 @@
           Spiritual and economic relationships
         </h5>
         <p class="text-sm md:text-base lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-          ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim
-          blanditiis error quod eligendi, distinctio autem accusamus, repellat
-          ducimus repudiandae pariatur.
+          The fringes of this organised spiritual-commercial space were inhabited by miniature vendors and spiritual-cultural organisations. Vendors offering Puja-related items, cuisine, Deep Daan lamps, and religious paraphernalia did business informally. The PMA determined whether or not they could do business.
+<br>
+In parallel, cultural and religious organisations organised Satsangs, Kathas, Havans, and other large devotional events. They provided a valuable spiritual add-on, with varied points of interaction for pilgrims, but were once again reliant on PMA's event permissions and land allocation. Here too, a hierarchy emerged: larger, wealthier organisations got better locations and timings, while smaller organisations had less preferred conditions.)
+
         </p>
       </div>
     </div>
@@ -328,17 +329,16 @@
   <div class="sticky top-0 h-screen overflow-hidden z-10">
     <!-- Title -->
     <h5
-      class="absolute top-6 left-1/2 transform -translate-x-1/2 text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-center px-4"
+      class="absolute top-6 left-2/3 transform -translate-x-1/2 text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-left px-4"
     >
       Permeating Power
     </h5>
     <!-- Subheading -->
     <p
-      class="absolute top-20 left-1/2 transform -translate-x-1/2 text-base text-left px-4 max-w-xl z-20"
+      class="absolute top-20 left-2/3 transform -translate-x-1/2 text-base text-left px-4 max-w-xl z-20"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-      Sed viverra, sapien a hendrerit blandit, enim elit ultrices urna, ac
-      dignissim risus lorem ac neque.
+     This visual captures the spiritual and cultural hierarchy that informs ritual practices and shapes informal interactions with devotees and pilgrims. The illustration delineates four levels within this projection of power or influence—beginning with the Akharas at the top, followed by influential spiritual gurus and socio-cultural organisations, then the Pandas and Purohits, and finally culminating in the pilgrims and Kalpavasis, who constitute the base of this hierarchical structure.
+
     </p>
     <!-- Background image -->
     <img
@@ -356,7 +356,7 @@
       class:opacity-100={isOverlayTopVisible}
     />
     <div
-      class="absolute top-1/4 right-4 md:right-10 lg:right-20 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-sm z-20 fade"
+      class="absolute top-1/3 right-4 md:right-10 lg:right-20 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-sm z-20 fade"
       class:opacity-0={!isOverlayTopVisible}
       class:opacity-100={isOverlayTopVisible}
     >
@@ -372,7 +372,7 @@
       class:opacity-100={isOverlaySecondVisible}
     />
     <div
-      class="absolute top-1/4 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#c4b2a9] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
+      class="absolute top-1/3 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
       class:opacity-0={!isOverlaySecondVisible}
       class:opacity-100={isOverlaySecondVisible}
     >
@@ -388,7 +388,7 @@
       class:opacity-100={isOverlayThirdVisible}
     />
     <div
-      class="absolute top-1/4 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#c4b2a9] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
+      class="absolute top-1/3 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
       class:opacity-0={!isOverlayThirdVisible}
       class:opacity-100={isOverlayThirdVisible}
     >
@@ -404,7 +404,7 @@
       class:opacity-100={isOverlayBottomVisible}
     />
     <div
-      class="absolute top-1/4 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#c4b2a9] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
+      class="absolute top-1/3 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
       class:opacity-0={!isOverlayBottomVisible}
       class:opacity-100={isOverlayBottomVisible}
     >
@@ -449,10 +449,8 @@
           Institutional Framework
         </h5>
         <p class="text-sm md:text-base lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-          ullam, eveniet rerum laudantium libero nostrum vitae ab similique enim
-          blanditiis error quod eligendi, distinctio autem accusamus, repellat
-          ducimus repudiandae pariatur.
+          At Maha Kumbh 2025, river water quality and sanitation were managed through a multi-tiered institutional framework involving judicial bodies like the NGT, regulatory agencies such as CPCB and UPPCB, and implementing bodies like NMCG, UP Jal Nigam, and the Prayagraj Mela Authority. These institutions coordinated efforts across legal, infrastructural, and administrative levels to balance river water quality compliance.
+
         </p>
       </div>
     </div>
