@@ -480,12 +480,12 @@
         <img
           src={`${base}/Institutional-framework.png`}
           alt="Institutional Framework"
-          class="w-full h-auto object-contain mt-10 lg:mt-0"
+          class="w-full h-auto object-contain lg:mt-0"
         />
       </picture>
 
       <!-- Right: Text Content -->
-      <div class="lg:w-1/3 text-left z-20 mb-10">
+      <div class="lg:w-1/3 text-left z-20">
         <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
           Institutional Framework
         </h5>
