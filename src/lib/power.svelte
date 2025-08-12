@@ -301,20 +301,29 @@
   <div bind:this={GTrigger} class="absolute top-[800vh] h-[10vh] w-full"></div>
 </section>
 <!-- ✦ Spiritual and economic relationships -->
-<section class="relative col-span-full h-screen bg-[#f1efe2]">
-  <div class="sticky top-0 h-screen overflow-hidden z-10">
+
+<section class="relative col-span-full bg-[#f1efe2]">
+  <div class="sticky top-0 z-10 mt-10">
     <div
-      class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8"
+      class="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen lg:h-screen px-4 md:px-10 gap-8"
     >
       <!-- Left: Image -->
-      <img
-        src={`${base}/Main-illustration.png`}
-        alt="Background"
-        class="w-full lg:w-3/4 h-auto object-contain mt-10 lg:mt-0"
-      />
+      <picture class="w-full lg:w-2/3">
+        <!-- Mobile -->
+        <source
+          srcset={`${base}/Alluvial-mobile.png`}
+          media="(max-width: 1023px)"
+        />
+        <!-- Desktop -->
+        <img
+          src={`${base}/Main-illustration.png`}
+          alt="Institutional Framework"
+          class="w-full h-auto object-contain mt-10 lg:mt-0"
+        />
+      </picture>
 
       <!-- Right: Text Content -->
-      <div class="lg:w-1/4 text-left z-20">
+      <div class="lg:w-1/3 text-left z-20">
         <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
           Spiritual and economic relationships
         </h5>
@@ -330,20 +339,22 @@
           add-on, with varied points of interaction for pilgrims, but were once again
           reliant on PMA's event permissions and land allocation. Here too, a hierarchy
           emerged: larger, wealthier organisations got better locations and timings,
-          while smaller organisations had less preferred conditions.)
+          while smaller organisations had less preferred conditions.
         </p>
       </div>
     </div>
   </div>
 </section>
 
+
+
+
 <!-- ✦ SECTION: Pyramid -->
 <section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
     <!-- Title -->
-    <h5
-      class="absolute top-6 left-2/3 transform -translate-x-1/2 text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-left px-4"
-    >
+    <h5 class="absolute top-4 left-1/2 transform -translate-x-1/2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-center px-2 sm:px-4">
+
       Permeating Power
     </h5>
     <!-- Subheading -->
@@ -362,7 +373,7 @@
     <img
       src={`${base}/Power-mappings.png`}
       alt="Power relationships"
-      class="w-full h-full object-cover z-0"
+      class="w-full h-full object-contain sm:object-cover z-0"
     />
 
     <!-- Overlay: Top -->
@@ -374,7 +385,8 @@
       class:opacity-100={isOverlayTopVisible}
     />
     <div
-      class="absolute top-1/3 right-4 md:right-10 lg:right-20 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-sm z-20 fade"
+      class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
+
       class:opacity-0={!isOverlayTopVisible}
       class:opacity-100={isOverlayTopVisible}
     >
@@ -390,7 +402,8 @@
       class:opacity-100={isOverlaySecondVisible}
     />
     <div
-      class="absolute top-1/3 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
+      class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
+
       class:opacity-0={!isOverlaySecondVisible}
       class:opacity-100={isOverlaySecondVisible}
     >
@@ -406,7 +419,8 @@
       class:opacity-100={isOverlayThirdVisible}
     />
     <div
-      class="absolute top-1/3 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
+      class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
+
       class:opacity-0={!isOverlayThirdVisible}
       class:opacity-100={isOverlayThirdVisible}
     >
@@ -422,7 +436,8 @@
       class:opacity-100={isOverlayBottomVisible}
     />
     <div
-      class="absolute top-1/3 right-4 md:right-12 lg:right-24 w-11/12 sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-4 md:p-6 shadow-lg z-20 fade"
+      class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
+
       class:opacity-0={!isOverlayBottomVisible}
       class:opacity-100={isOverlayBottomVisible}
     >
