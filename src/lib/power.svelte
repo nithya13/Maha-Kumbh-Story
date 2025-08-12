@@ -97,21 +97,35 @@
     Permeating Power: Spiritual and Spatial (River-Society Intersection)
   </h2>
   <p>
-    The Maha Kumbh involves a diverse array of stakeholders—including institutions, groups, and individuals—who shape ritual practices and mediate interactions between the river and society in both formal and informal settings. In this section, through visual illustrations, we outline:
-
+    The Maha Kumbh involves a diverse array of stakeholders—including
+    institutions, groups, and individuals—who shape ritual practices and mediate
+    interactions between the river and society in both formal and informal
+    settings. In this section, through visual illustrations, we outline:
   </p>
-  <br>
+  <br />
   <ul class="list-disc list-inside">
-  <li><strong>Stakeholders:</strong> The key stakeholders and their interactions.
-</li><br>
-  <li><strong>Spiritual Religious and Economic Relationships:</strong> The  political economy of  large scale human gathering for  spiritual and religious purposes — interactions and transactions between the pilgrims and large and small scale businesses. </li>
-<br>
-<li> <strong>Permeating Power:</strong> The informal hierarchical power structures which influence the pilgrims and their ritual practice.
-</li><br>
-<li><strong>Institutional Framework:</strong> The state institutions across scales —  from the central government to the local bodies responsible for the management of the river water quality during the Kumbh Mela 
-</li>
-
-</ul>
+    <li>
+      <strong>Stakeholders:</strong> The key stakeholders and their interactions.
+    </li>
+    <br />
+    <li>
+      <strong>Spiritual Religious and Economic Relationships:</strong> The political
+      economy of large scale human gathering for spiritual and religious purposes
+      — interactions and transactions between the pilgrims and large and small scale
+      businesses.
+    </li>
+    <br />
+    <li>
+      <strong>Permeating Power:</strong> The informal hierarchical power structures
+      which influence the pilgrims and their ritual practice.
+    </li>
+    <br />
+    <li>
+      <strong>Institutional Framework:</strong> The state institutions across scales
+      — from the central government to the local bodies responsible for the management
+      of the river water quality during the Kumbh Mela
+    </li>
+  </ul>
 </section>
 <!-- ✦ Key stakeholders -->
 <section class="relative col-span-full h-[900vh]">
@@ -124,16 +138,26 @@
         <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
           Stakeholders
         </h5>
-        
-          
-<p class="text-sm md:text-base lg:text-lg">
-  The visual depicts a varied and vast set of stakeholders engaged in the Maha Kumbh. Mahakumbh is not only about the pilgrims but is also known for its huge economic impact. This manifests in various economic and social interactions with varied intensity. The Kumbh Mela displays delicate interactions between rituals and commerce. The interactions are further shaped by various power relations. 
-</p>
-<br>
-<p class="annotation">
-  (Our stakeholder mappings and field observations indicated that Akharas had considerable power to negotiate crucial matters such as in procession planning and land allocation. The interaction between the PMA and Akaharas are indicative of this where the PMA actively consults with the Akahadas in advance in planning of the Mahalumbh. The Akhara leaders, who were elected in their traditional councils, coordinated both intra- and inter-Akhara and made sure that their spatial and ritualistic concerns were protected.)
-</p>
-        
+
+        <p class="text-sm md:text-base lg:text-lg">
+          The visual depicts a varied and vast set of stakeholders engaged in
+          the Maha Kumbh. Mahakumbh is not only about the pilgrims but is also
+          known for its huge economic impact. This manifests in various economic
+          and social interactions with varied intensity. The Kumbh Mela displays
+          delicate interactions between rituals and commerce. The interactions
+          are further shaped by various power relations.
+        </p>
+        <br />
+        <p class="annotation">
+          (Our stakeholder mappings and field observations indicated that
+          Akharas had considerable power to negotiate crucial matters such as in
+          procession planning and land allocation. The interaction between the
+          PMA and Akaharas are indicative of this where the PMA actively
+          consults with the Akahadas in advance in planning of the Mahalumbh.
+          The Akhara leaders, who were elected in their traditional councils,
+          coordinated both intra- and inter-Akhara and made sure that their
+          spatial and ritualistic concerns were protected.)
+        </p>
       </div>
 
       <!-- Illustration & Overlay Container -->
@@ -159,7 +183,8 @@
           class="absolute top-1/4 right-4 md:right-16 w-[80%] md:w-1/2 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
           class:opacity-0={!isOverlayAVisible}
           class:opacity-100={isOverlayAVisible}
-        ><h5 class="text-xl mb-2">Akharas</h5>
+        >
+          <h5 class="text-xl mb-2">Akharas</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[0]}</p>
         </div>
 
@@ -176,7 +201,7 @@
           class:opacity-0={!isOverlayBVisible}
           class:opacity-100={isOverlayBVisible}
         >
-        <h5 class="text-xl mb-2">ABAP</h5>
+          <h5 class="text-xl mb-2">Akhil Bharatiya Akhara Parishad</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[1]}</p>
         </div>
 
@@ -193,7 +218,7 @@
           class:opacity-0={!isOverlayCVisible}
           class:opacity-100={isOverlayCVisible}
         >
-          <h5 class="text-xl mb-2">PMA</h5>
+          <h5 class="text-xl mb-2">Prayagraj Mela Authority</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[2]}</p>
         </div>
 
@@ -209,11 +234,12 @@
           class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
           class:opacity-0={!isOverlayDVisible}
           class:opacity-100={isOverlayDVisible}
-        ><h5 class="text-xl mb-2">Panda Pujaris /Prayagwalas</h5>
+        >
+          <h5 class="text-xl mb-2">Panda Pujaris /Prayagwalas</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[3]}</p>
         </div>
-<!-- Overlay: Fifth -->
-         <img
+        <!-- Overlay: Fifth -->
+        <img
           src={`${base}/Main/Kalpavas.png`}
           alt="Overlay D"
           class="absolute inset-0 w-full h-full object-cover z-10 fade"
@@ -224,12 +250,13 @@
           class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
           class:opacity-0={!isOverlayEVisible}
           class:opacity-100={isOverlayEVisible}
-        ><h5 class="text-xl mb-2">Kalpavas</h5>
+        >
+          <h5 class="text-xl mb-2">Kalpavas</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[4]}</p>
         </div>
 
         <!-- Overlay: Sixth -->
-         <img
+        <img
           src={`${base}/Main/Naga-Sadhu.png`}
           alt="Overlay D"
           class="absolute inset-0 w-full h-full object-cover z-10 fade"
@@ -240,11 +267,12 @@
           class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
           class:opacity-0={!isOverlayFVisible}
           class:opacity-100={isOverlayFVisible}
-        ><h5 class="text-xl mb-2">Naga Sadhus</h5>
+        >
+          <h5 class="text-xl mb-2">Naga Sadhus</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[5]}</p>
         </div>
-<!-- Overlay: Seventh -->
-         <img
+        <!-- Overlay: Seventh -->
+        <img
           src={`${base}/Main/Businesses.png`}
           alt="Overlay D"
           class="absolute inset-0 w-full h-full object-cover z-10 fade"
@@ -255,48 +283,25 @@
           class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
           class:opacity-0={!isOverlayGVisible}
           class:opacity-100={isOverlayGVisible}
-        ><h5 class="text-xl mb-2">Businesses and small vendors</h5>
+        >
+          <h5 class="text-xl mb-2">Businesses and Small Vendors</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[6]}</p>
         </div>
-
       </div>
     </div>
   </div>
 
-
-    <!-- Scroll triggers -->
-    <div
-      bind:this={ATrigger}
-      class="absolute top-[200vh] h-[10vh] w-full"
-    ></div>
-    <div
-      bind:this={BTrigger}
-      class="absolute top-[300vh] h-[10vh] w-full"
-    ></div>
-    <div
-      bind:this={CTrigger}
-      class="absolute top-[400vh] h-[10vh] w-full"
-    ></div>
-    <div
-      bind:this={DTrigger}
-      class="absolute top-[500vh] h-[10vh] w-full"
-    ></div>
-    <div
-      bind:this={ETrigger}
-      class="absolute top-[600vh] h-[10vh] w-full"
-    ></div>
-    <div
-      bind:this={FTrigger}
-      class="absolute top-[700vh] h-[10vh] w-full"
-    ></div>
-    <div
-      bind:this={GTrigger}
-      class="absolute top-[800vh] h-[10vh] w-full"
-    ></div>
-
+  <!-- Scroll triggers -->
+  <div bind:this={ATrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
+  <div bind:this={BTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
+  <div bind:this={CTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
+  <div bind:this={DTrigger} class="absolute top-[500vh] h-[10vh] w-full"></div>
+  <div bind:this={ETrigger} class="absolute top-[600vh] h-[10vh] w-full"></div>
+  <div bind:this={FTrigger} class="absolute top-[700vh] h-[10vh] w-full"></div>
+  <div bind:this={GTrigger} class="absolute top-[800vh] h-[10vh] w-full"></div>
 </section>
 <!-- ✦ Spiritual and economic relationships -->
-<section class="relative col-span-full h-screen">
+<section class="relative col-span-full h-screen bg-[#f1efe2]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
     <div
       class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8"
@@ -314,10 +319,18 @@
           Spiritual and economic relationships
         </h5>
         <p class="text-sm md:text-base lg:text-lg">
-          The fringes of this organised spiritual-commercial space were inhabited by miniature vendors and spiritual-cultural organisations. Vendors offering Puja-related items, cuisine, Deep Daan lamps, and religious paraphernalia did business informally. The PMA determined whether or not they could do business.
-<br>
-In parallel, cultural and religious organisations organised Satsangs, Kathas, Havans, and other large devotional events. They provided a valuable spiritual add-on, with varied points of interaction for pilgrims, but were once again reliant on PMA's event permissions and land allocation. Here too, a hierarchy emerged: larger, wealthier organisations got better locations and timings, while smaller organisations had less preferred conditions.)
-
+          The fringes of this organised spiritual-commercial space were
+          inhabited by miniature vendors and spiritual-cultural organisations.
+          Vendors offering Puja-related items, cuisine, Deep Daan lamps, and
+          religious paraphernalia did business informally. The PMA determined
+          whether or not they could do business.
+          <br />
+          In parallel, cultural and religious organisations organised Satsangs, Kathas,
+          Havans, and other large devotional events. They provided a valuable spiritual
+          add-on, with varied points of interaction for pilgrims, but were once again
+          reliant on PMA's event permissions and land allocation. Here too, a hierarchy
+          emerged: larger, wealthier organisations got better locations and timings,
+          while smaller organisations had less preferred conditions.)
         </p>
       </div>
     </div>
@@ -337,8 +350,13 @@ In parallel, cultural and religious organisations organised Satsangs, Kathas, Ha
     <p
       class="absolute top-20 left-2/3 transform -translate-x-1/2 text-base text-left px-4 max-w-xl z-20"
     >
-     This visual captures the spiritual and cultural hierarchy that informs ritual practices and shapes informal interactions with devotees and pilgrims. The illustration delineates four levels within this projection of power or influence—beginning with the Akharas at the top, followed by influential spiritual gurus and socio-cultural organisations, then the Pandas and Purohits, and finally culminating in the pilgrims and Kalpavasis, who constitute the base of this hierarchical structure.
-
+      This visual captures the spiritual and cultural hierarchy that informs
+      ritual practices and shapes informal interactions with devotees and
+      pilgrims. The illustration delineates four levels within this projection
+      of power or influence—beginning with the Akharas at the top, followed by
+      influential spiritual gurus and socio-cultural organisations, then the
+      Pandas and Purohits, and finally culminating in the pilgrims and
+      Kalpavasis, who constitute the base of this hierarchical structure.
     </p>
     <!-- Background image -->
     <img
@@ -430,27 +448,40 @@ In parallel, cultural and religious organisations organised Satsangs, Kathas, Ha
     class="absolute top-[500vh] h-[10vh] w-full"
   ></div>
 </section>
-
-<section class="relative col-span-full h-screen">
-  <div class="sticky top-0 h-screen overflow-hidden z-10">
+<!-- ✦ SECTION: Institutional Framework -->
+<section class="relative col-span-full bg-[#f1efe2]">
+  <div class="sticky top-0 z-10 mt-10">
     <div
-      class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8"
+      class="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen lg:h-screen px-4 md:px-10 gap-8"
     >
       <!-- Left: Image -->
-      <img
-        src={`${base}/Institutional-framework.png`}
-        alt="Background"
-        class="w-full lg:w-2/3 h-auto object-contain mt-10 lg:mt-0"
-      />
+      <picture class="w-full lg:w-2/3">
+        <!-- Mobile -->
+        <source
+          srcset={`${base}/Institutional-Framework-mobile.png`}
+          media="(max-width: 1023px)"
+        />
+        <!-- Desktop -->
+        <img
+          src={`${base}/Institutional-framework.png`}
+          alt="Institutional Framework"
+          class="w-full h-auto object-contain mt-10 lg:mt-0"
+        />
+      </picture>
 
       <!-- Right: Text Content -->
-      <div class="lg:w-1/3 text-left z-20">
+      <div class="lg:w-1/3 text-left z-20 mb-10">
         <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
           Institutional Framework
         </h5>
         <p class="text-sm md:text-base lg:text-lg">
-          At Maha Kumbh 2025, river water quality and sanitation were managed through a multi-tiered institutional framework involving judicial bodies like the NGT, regulatory agencies such as CPCB and UPPCB, and implementing bodies like NMCG, UP Jal Nigam, and the Prayagraj Mela Authority. These institutions coordinated efforts across legal, infrastructural, and administrative levels to balance river water quality compliance.
-
+          At Maha Kumbh 2025, river water quality and sanitation were managed
+          through a multi-tiered institutional framework involving judicial
+          bodies like the NGT, regulatory agencies such as CPCB and UPPCB, and
+          implementing bodies like NMCG, UP Jal Nigam, and the Prayagraj Mela
+          Authority. These institutions coordinated efforts across legal,
+          infrastructural, and administrative levels to balance river water
+          quality compliance.
         </p>
       </div>
     </div>
