@@ -1,35 +1,6 @@
 <script>
   export let base = "";
-   let activeStep = null;
-
-  const steps = [
-    {
-      id: 1,
-      title: "Pre-Kumbh Visit",
-      items: [
-        "Survey and mapping of various activities",
-        "Key informant interviews"
-      ]
-    },
-    {
-      id: 2,
-      title: "During Kumbh Visit",
-      items: [
-        "Audio-visual documentation through interviews of:\n→ the pilgrims\n→ the Akhadas\n→ Pondo Pujaris",
-        "Drone shoot"
-      ]
-    },
-    {
-      id: 3,
-      title: "Post-Kumbh Analysis",
-      items: [
-        "Documenting various rituals",
-        "Analysis of state and non-state actors and their role in Maha Kumbh",
-        "Analysis of power hierarchy",
-        "Actor-network diagram"
-      ]
-    }
-  ];
+   
 </script>
 
 <section
@@ -79,26 +50,28 @@
   </p>
   
 </section>
-<section class="relative col-span-full h-[90vh] overflow-hidden">
+
+<section class="relative col-span-full h-auto lg:h-[90vh] overflow-hidden">
   <!-- Background Video -->
   <video
     autoplay
     muted
     loop
     playsinline
-    class="absolute top-0  w-[60%] h-full object-contain z-0"
+    class="w-full lg:w-[60%] h-auto lg:h-full object-contain z-0 lg:absolute lg:top-0"
   >
     <source src={`${base}/Interview Clip 1.mp4`} type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
   <!-- Overlay Wrapper -->
-  <div class="relative z-10 h-full w-full flex justify-end items-center">
+  <div class="flex flex-col lg:flex-row lg:justify-end lg:items-center relative z-10 lg:h-full w-full">
     <!-- Translucent Overlay Card -->
     <div
-      class="w-[70%] max-w-md min-h-[40%] md:w-1/3 md:h-auto bg-white/30 backdrop-blur-sm p-6 md:p-10 md:mr-48 flex items-center justify-center">
+      class="w-full lg:w-[70%] max-w-md min-h-[40%] md:w-1/3 md:h-auto bg-white/30 backdrop-blur-sm p-6 md:p-10 lg:mr-48 flex items-center justify-center"
+    >
       <div class="max-w-md">
-        <p class = " italic">
+        <p class="italic">
           “We believe that taking a dip at the Prayagraj Sangam —the confluence
           of the Ganga, Yamuna, and the mystical Saraswati, purifies our soul
           and liberates us from the bondages of life. A dip in the holy waters
@@ -113,8 +86,8 @@
       </div>
     </div>
   </div>
-  
 </section>
+
 <section
   class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 text-left bg-[#f1efe2]"
 >
