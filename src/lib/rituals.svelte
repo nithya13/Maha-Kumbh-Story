@@ -9,15 +9,22 @@
   let showSecondOverlay = false;
 
   onMount(() => {
-    const observer = new IntersectionObserver(
+   const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !showFirstOverlay) {
+        if (entry.isIntersecting) {
+          // Reset both to start fresh
           showFirstOverlay = true;
+          showSecondOverlay = false;
 
+          // After delay, switch to second overlay
           setTimeout(() => {
             showFirstOverlay = false;
             showSecondOverlay = true;
-          }, 4500); // 3s visible + 1.5s fade out
+          }, 4500); // 3s display + 1.5s fade
+        } else {
+          // Clear when leaving viewport so it can trigger again next time
+          showFirstOverlay = false;
+          showSecondOverlay = false;
         }
       },
       {
@@ -26,6 +33,8 @@
     );
 
     if (calendarSection) observer.observe(calendarSection);
+
+    return () => observer.disconnect();
   });
 </script>
 
@@ -79,7 +88,7 @@
   </div>
 </section>
 <section
-  class="col-span-full bg-[#e5e3d7] overflow-x-auto overflow-y-hidden flex gap-16 px-4 py-8 scrollbar-thin scrollbar-thumb-gray-500"
+  class="col-span-full bg-slate-300 overflow-x-auto overflow-y-hidden flex gap-16 px-4 py-8 scrollbar-thin scrollbar-thumb-gray-500"
 >
   <div class="flex flex-col md:flex-row items-start">
     <!-- Card 1 -->

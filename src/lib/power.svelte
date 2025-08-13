@@ -127,7 +127,12 @@
     </li>
   </ul>
 </section>
+
+
+
 <!-- ✦ Key stakeholders -->
+
+
 <section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
     <div
@@ -300,6 +305,10 @@
   <div bind:this={FTrigger} class="absolute top-[700vh] h-[10vh] w-full"></div>
   <div bind:this={GTrigger} class="absolute top-[800vh] h-[10vh] w-full"></div>
 </section>
+
+
+
+
 <!-- ✦ Spiritual and economic relationships -->
 
 <section class="relative col-span-full bg-[#f1efe2]">

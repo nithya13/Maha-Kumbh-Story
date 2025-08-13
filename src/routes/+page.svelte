@@ -58,7 +58,7 @@
   </video>
   <!-- Dark overlay for better text visibility (optional but recommended) -->
   <div
-    class="absolute inset-0 bg-gradient-to-b from-black-60 to-black/80"
+    class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"
   ></div>
 
   <!-- Centered Content -->
@@ -72,7 +72,7 @@
       A water rejuvenation lesson from the Maha Kumbh
     </h1>
     <h6
-      class="text-xl md:text-base font-medium"
+      class="text-base font-medium"
       style="font-family: 'Lora', serif;"
     >
       Indigenous practices often embody an ecological ethic of conservation
@@ -81,7 +81,7 @@
 
   <!-- Bottom Flex Container (4 boxes) -->
   <div
-    class="absolute bottom-2 w-full md:h-[10%] h-[30%] z-10 px-6 py-2 flex flex-wrap md:flex-nowrap justify-between items-stretch uppercase text-white"
+    class="absolute bottom-2 w-full md:h-[15%] h-[30%] z-10 px-6 py-2 flex flex-wrap md:flex-nowrap justify-between items-stretch uppercase text-white"
   >
     <!-- Box 1 -->
     <div class="w-1/2 md:w-1/4 text-center flex items-start justify-center">
@@ -148,7 +148,7 @@
 
 
 <main
-  class="grid grid-cols-1 md:grid-cols-12 gap-4 w-full"
+  class="grid grid-cols-1 md:grid-cols-12 gap-4 w-full bg-[#f1efe2]"
   style="font-family: 'Lora', serif;"
 >
   <Riversociety {base} />

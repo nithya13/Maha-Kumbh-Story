@@ -21,8 +21,11 @@
   <li>Examining the environmental impacts of mass congregations during ritual practices that shear river ecologies</li>
 </ul>
 
-  <div class="float-right w-full md:w-1/3 ml-6 mb-6 mt-6 italic text-pink-600 text-right text-2xl md:text-xl font-semibold">
-  “This is a pull quote that will be at least two lines long”
+  <div class="float-right w-full md:w-1/3 ml-6 mb-6 mt-6 text-pink-600">
+  <p class = "italic  text-right text-xl md:text-2xl font-semibold">
+  “It is an occasion where saints, sages, and devotees come together, transcending boundaries to celebrate the divine.”
+  </p> <br>
+  <p class = "annotation text-right"> - Swami Kailashanand Giri Ji (Acharya Mahamandaleshwar, Niranjani Akhara) </p>
 </div>
 <br>
 <br />
@@ -68,7 +71,7 @@
   <div class="flex flex-col lg:flex-row lg:justify-end lg:items-center relative z-10 lg:h-full w-full">
     <!-- Translucent Overlay Card -->
     <div
-      class="w-full lg:w-[70%] max-w-md min-h-[40%] md:w-1/3 md:h-auto bg-white/30 backdrop-blur-sm p-6 md:p-10 lg:mr-48 flex items-center justify-center"
+      class="w-full lg:w-[70%] max-w-md min-h-[40%] md:w-1/3 md:h-auto bg-orange-200 backdrop-blur-sm p-6 md:p-10 lg:mr-48 rounded flex items-center justify-center"
     >
       <div class="max-w-md">
         <p class="italic">

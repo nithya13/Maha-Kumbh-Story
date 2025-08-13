@@ -44,7 +44,7 @@
       <h2
         class="absolute top-6 left-1/2 transform -translate-x-1/2 text-2xl md:text-4xl font-semibold z-20"
       >
-        Maha Kumbh - Spatial Context
+        Maha Kumbh: Observations from the Field
       </h2>
       <!-- Base Map -->
       <img
