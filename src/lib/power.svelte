@@ -154,11 +154,11 @@
         </p>
         <br />
         <p class="annotation">
-          (Our stakeholder mappings and field observations indicated that
+          (Our stakeholder mapping and field observations indicated that
           Akharas had considerable power to negotiate crucial matters such as in
           procession planning and land allocation. The interaction between the
           PMA and Akaharas are indicative of this where the PMA actively
-          consults with the Akahadas in advance in planning of the Mahalumbh.
+          consults with the Akaharas in advance in planning of the Mahakumbh.
           The Akhara leaders, who were elected in their traditional councils,
           coordinated both intra- and inter-Akhara and made sure that their
           spatial and ritualistic concerns were protected.)

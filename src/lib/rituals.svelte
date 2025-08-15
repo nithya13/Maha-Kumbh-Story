@@ -88,7 +88,7 @@
   </div>
 </section>
 <section
-  class="col-span-full bg-slate-300 overflow-x-auto overflow-y-hidden flex gap-16 px-4 py-8 scrollbar-thin scrollbar-thumb-gray-500"
+  class="col-span-full bg-[#cce2cf] overflow-x-auto overflow-y-hidden flex gap-16 px-4 py-8 scrollbar-thin scrollbar-thumb-gray-500"
 >
   <div class="flex flex-col md:flex-row items-start">
     <!-- Card 1 -->

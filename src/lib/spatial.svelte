@@ -5,8 +5,10 @@
 
 
   let isOverlayVisible = false;
+   let isZonesVisible = false;
   let isPointsVisible = false;
   let isNightVisible = false;
+  let zonesTrigger;
   let fadeTrigger;
   let pointsTrigger;
   let nightTrigger;
@@ -14,26 +16,33 @@
   onMount(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        isOverlayVisible = entry.isIntersecting;
+        isZonesVisible = entry.isIntersecting;
       },
       { threshold: 0.5 },
     );
 
     const observer2 = new IntersectionObserver(
       ([entry]) => {
-        isPointsVisible = entry.isIntersecting;
+        isOverlayVisible = entry.isIntersecting;
       },
       { threshold: 0.5 },
     );
     const observer3 = new IntersectionObserver(
       ([entry]) => {
+        isPointsVisible = entry.isIntersecting;
+      },
+      { threshold: 0.3 },
+    );
+    const observer4 = new IntersectionObserver(
+      ([entry]) => {
         isNightVisible = entry.isIntersecting;
       },
       { threshold: 0.5 },
     );
-    if (fadeTrigger) observer.observe(fadeTrigger);
-    if (pointsTrigger) observer2.observe(pointsTrigger);
-    if (nightTrigger) observer3.observe(nightTrigger);
+    if (zonesTrigger) observer.observe(zonesTrigger);
+    if (fadeTrigger) observer2.observe(fadeTrigger);
+    if (pointsTrigger) observer3.observe(pointsTrigger);
+    if (nightTrigger) observer4.observe(nightTrigger);
   });
 </script>
 
@@ -52,8 +61,15 @@
         alt="Zoning"
         class="w-full h-full object-cover"
       />
-
-      <!-- First overlay -->
+<!-- First overlay -->
+      <img
+        src={`${base}/Zones.png`}
+        alt="Overlay"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
+        class:opacity-0={!isZonesVisible}
+        class:opacity-100={isZonesVisible}
+      />
+      <!-- Second overlay -->
       <img
         src={`${base}/Fecal-coliform.png`}
         alt="Overlay"
@@ -62,25 +78,29 @@
         class:opacity-100={isOverlayVisible}
       />
 
-      <!-- Second overlay (points) -->
+      <!-- Third overlay (points) -->
       <img
         src={`${base}/Flower-tributes.png`}
         alt="Points"
-        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
         class:opacity-0={!isPointsVisible}
         class:opacity-100={isPointsVisible}
       />
-
+<!-- Fourth overlay (points) -->
       <img
-        src={`${base}/Nightmap.jpg`}
+        src={`${base}/Diyas.png`}
         alt="Points"
-        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
         class:opacity-0={!isNightVisible}
         class:opacity-100={isNightVisible}
       />
     </div>
 
     <!-- Trigger area between the first and second overlay -->
+     <div
+      bind:this={zonesTrigger}
+      class="absolute top-[90vh] h-[10vh] w-full"
+    ></div>
     <div
       bind:this={fadeTrigger}
       class="absolute top-[190vh] h-[10vh] w-full"
@@ -95,11 +115,23 @@
     <!-- Trigger area for night overlay -->
     <div
       bind:this={nightTrigger}
-      class="absolute top-[470vh] h-[10vh] w-full"
+      class="absolute top-[490vh] h-[10vh] w-full"
     ></div>
 
     <!-- Floating cards area -->
-    <div class="absolute top-[100vh] left-[10vw] w-full z-20">
+    <div class="absolute top-[90vh] md:left-[10vw] w-full z-20">
+
+<div
+        class="bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
+      >
+        <h5 class="text-xl mb-2">
+          Administrative zones
+        </h5>
+        <p class="text-base leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+        </p>
+      </div>
+
       <div
         class="bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
