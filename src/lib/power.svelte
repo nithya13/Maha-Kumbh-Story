@@ -20,6 +20,22 @@
   let isOverlayFVisible = false;
   let isOverlayGVisible = false;
 
+  let isOverlayMAVisible = false;
+  let isOverlayMBVisible = false;
+  let isOverlayMCVisible = false;
+  let isOverlayMDVisible = false;
+  let isOverlayMEVisible = false;
+  let isOverlayMFVisible = false;
+
+  let isOverlayMGVisible = false;
+  let MATrigger;
+  let MBTrigger;
+  let MCTrigger;
+  let MDTrigger;
+  let METrigger;
+  let MFTrigger;
+  let MGTrigger;
+
   let ATrigger;
   let BTrigger;
   let CTrigger;
@@ -83,6 +99,16 @@
     createObserver(ETrigger, (val) => (isOverlayEVisible = val));
     createObserver(FTrigger, (val) => (isOverlayFVisible = val));
     createObserver(GTrigger, (val) => (isOverlayGVisible = val));
+
+createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
+    createObserver(MBTrigger, (val) => (isOverlayMBVisible = val));
+    createObserver(MCTrigger, (val) => (isOverlayMCVisible = val));
+    createObserver(MDTrigger, (val) => (isOverlayMDVisible = val));
+    createObserver(METrigger, (val) => (isOverlayMEVisible = val));
+    createObserver(MFTrigger, (val) => (isOverlayMFVisible = val));
+    createObserver(MGTrigger, (val) => (isOverlayMGVisible = val));
+
+
 
     createObserver(fadeTrigger1, (val) => (isOverlay1Visible = val));
     createObserver(fadeTrigger2, (val) => (isOverlay2Visible = val));
@@ -309,6 +335,7 @@
   <div bind:this={GTrigger} class="absolute top-[800vh] h-[10vh] w-full"></div>
 </section>
 
+
 <!-- Mobile Section -->
 <section class="block lg:hidden relative col-span-full">
   <!-- Intro Text -->
@@ -350,8 +377,8 @@
         src={`${base}/Main/Akhara.png`}
         alt="Overlay A"
         class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
-        class:opacity-0={!isOverlayAVisible}
-        class:opacity-100={isOverlayAVisible}
+        class:opacity-0={!isOverlayMAVisible}
+        class:opacity-100={isOverlayMAVisible}
       />
 
       <!-- Overlay B -->
@@ -359,16 +386,16 @@
         src={`${base}/Main/ABAP.png`}
         alt="Overlay B"
         class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
-        class:opacity-0={!isOverlayBVisible}
-        class:opacity-100={isOverlayBVisible}
+        class:opacity-0={!isOverlayMBVisible}
+        class:opacity-100={isOverlayMBVisible}
       />
       <!-- Overlay C -->
       <img
         src={`${base}/Main/pma.png`}
         alt="Overlay C"
         class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
-        class:opacity-0={!isOverlayCVisible}
-        class:opacity-100={isOverlayCVisible}
+        class:opacity-0={!isOverlayMCVisible}
+        class:opacity-100={isOverlayMCVisible}
       />
 
       <!-- Overlay D -->
@@ -376,8 +403,8 @@
         src={`${base}/Main/Pandas.png`}
         alt="Overlay D"
         class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
-        class:opacity-0={!isOverlayDVisible}
-        class:opacity-100={isOverlayDVisible}
+        class:opacity-0={!isOverlayMDVisible}
+        class:opacity-100={isOverlayMDVisible}
       />
 
       <!-- Overlay E -->
@@ -385,16 +412,16 @@
         src={`${base}/Main/Kalpavas.png`}
         alt="Overlay E"
         class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
-        class:opacity-0={!isOverlayEVisible}
-        class:opacity-100={isOverlayEVisible}
+        class:opacity-0={!isOverlayMEVisible}
+        class:opacity-100={isOverlayMEVisible}
       />
       <!-- Overlay F -->
       <img
         src={`${base}/Main/Naga-Sadhu.png`}
         alt="Overlay F"
         class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
-        class:opacity-0={!isOverlayFVisible}
-        class:opacity-100={isOverlayFVisible}
+        class:opacity-0={!isOverlayMFVisible}
+        class:opacity-100={isOverlayMFVisible}
       />
 
       <!-- Overlay G -->
@@ -402,16 +429,16 @@
         src={`${base}/Main/Businesses.png`}
         alt="Overlay G"
         class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
-        class:opacity-0={!isOverlayGVisible}
-        class:opacity-100={isOverlayGVisible}
+        class:opacity-0={!isOverlayMGVisible}
+        class:opacity-100={isOverlayMGVisible}
       />
     </div>
 
     <!-- Explainer Texts (fixed, independent) -->
     <div
       class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
-      class:opacity-0={!isOverlayAVisible}
-      class:opacity-100={isOverlayAVisible}
+      class:opacity-0={!isOverlayMAVisible}
+      class:opacity-100={isOverlayMAVisible}
     >
       <h5>Akharas</h5>
       <p>{overlayExplainerTexts[0]}</p>
@@ -419,16 +446,17 @@
 
     <div
       class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
-      class:opacity-0={!isOverlayBVisible}
-      class:opacity-100={isOverlayBVisible}
+      class:opacity-0={!isOverlayMBVisible}
+      class:opacity-100={isOverlayMBVisible}
     >
       <h5>Akhil Bharatiya Akhara Parishad</h5>
       <p>{overlayExplainerTexts[1]}</p>
     </div>
 
     <div
-      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"      class:opacity-0={!isOverlayCVisible}
-      class:opacity-100={isOverlayCVisible}
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"     
+       class:opacity-0={!isOverlayMCVisible}
+      class:opacity-100={isOverlayMCVisible}
     >
       <h5>Prayagraj Mela Authority</h5>
       <p>{overlayExplainerTexts[2]}</p>
@@ -436,32 +464,32 @@
 
     <div
       class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
-      class:opacity-0={!isOverlayDVisible}
-      class:opacity-100={isOverlayDVisible}
+      class:opacity-0={!isOverlayMDVisible}
+      class:opacity-100={isOverlayMDVisible}
     >
       <h5>Panda Pujaris / Prayagwalas</h5>
       <p>{overlayExplainerTexts[3]}</p>
     </div>
     <div
       class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
-      class:opacity-0={!isOverlayEVisible}
-      class:opacity-100={isOverlayEVisible}
+      class:opacity-0={!isOverlayMEVisible}
+      class:opacity-100={isOverlayMEVisible}
     >
       <h5>Kalpavas</h5>
       <p>{overlayExplainerTexts[4]}</p>
     </div>
     <div
       class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
-      class:opacity-0={!isOverlayFVisible}
-      class:opacity-100={isOverlayFVisible}
+      class:opacity-0={!isOverlayMFVisible}
+      class:opacity-100={isOverlayMFVisible}
     >
       <h5>Naga Sadhus</h5>
       <p>{overlayExplainerTexts[5]}</p>
     </div>
     <div
       class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
-      class:opacity-0={!isOverlayGVisible}
-      class:opacity-100={isOverlayGVisible}
+      class:opacity-0={!isOverlayMGVisible}
+      class:opacity-100={isOverlayMGVisible}
     >
       <h5>Businesses and Small Vendors</h5>
       <p>{overlayExplainerTexts[6]}</p>
@@ -469,13 +497,13 @@
   </div>
 
   <!-- Scroll Trigger for Overlay A -->
-  <div bind:this={ATrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
-  <div bind:this={BTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
-  <div bind:this={CTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
-  <div bind:this={DTrigger} class="absolute top-[500vh] h-[10vh] w-full"></div>
-  <div bind:this={ETrigger} class="absolute top-[600vh] h-[10vh] w-full"></div>
-  <div bind:this={FTrigger} class="absolute top-[700vh] h-[10vh] w-full"></div>
-  <div bind:this={GTrigger} class="absolute top-[800vh] h-[10vh] w-full"></div>
+  <div bind:this={MATrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
+  <div bind:this={MBTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
+  <div bind:this={MCTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
+  <div bind:this={MDTrigger} class="absolute top-[500vh] h-[10vh] w-full"></div>
+  <div bind:this={METrigger} class="absolute top-[600vh] h-[10vh] w-full"></div>
+  <div bind:this={MFTrigger} class="absolute top-[700vh] h-[10vh] w-full"></div>
+  <div bind:this={MGTrigger} class="absolute top-[800vh] h-[10vh] w-full"></div>
 </section>
 
 <!-- ✦ Spiritual and economic relationships -->
