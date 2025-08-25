@@ -119,16 +119,16 @@
     ></div>
 
     <!-- Floating cards area -->
-    <div class="absolute top-[90vh] md:left-[10vw] w-full z-20">
+    <div class="absolute top-[90vh] left-[5vw] w-full z-20">
 
 <div
         class="bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
       >
         <h5 class="text-xl mb-2">
-          Administrative zones
+          Spatial Layout
         </h5>
         <p class="text-base leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          The Mela ground is divided into 25 sectors, where PMA provides specific sectors to the stakeholders. Sectors 1-3 cover Parade Ground and Sangam; Sectors 4-10 include Shastri Bridge, Jhunsi, and key temples; Sectors 11-20 cover Jhunsi Kachar and all major akharas; Sectors 22-25 extend along Ganga riverbanks from Jhunsi to the old Naini Bridge. 
         </p>
       </div>
 

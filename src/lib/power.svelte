@@ -49,8 +49,8 @@
     `The Prayagwals, or the Pragwals, are the priests, or Panda Pujaris, associated with the sacred Triveni Sangam similar to the Gayawals at Gaya or the Gangaputras at Varanasi. They lead the pilgrims through the rituals that are performed at the confluence. The Pragwals belong to the Brahmins and also claim to be the ones with privileged rights to perform pujas since Akbar’s reign, according to a royal decree from 1593.
 `,
     `Kalpavas is a profound practice leading a minimalist life, observing fasting, and performing various rituals along the banks of the confluence for their spiritual evolution.`,
-    `Naga Sadhu`,
-    "Businesses and small vendors",
+    `A revered warrior ascetic order established by Adi Shankaracharya with the founding of the Akharas embodies spiritual supremacy. Traditionally leading the holy dip during Amrit Snan, being the first army protecting the dharma.`,
+    "They play a vital role by providing essential goods, food, and services to crores of pilgrims, supporting the event's vast logistical needs. Their participation not only enriches the visitor experience but also creates significant livelihood opportunities and economic activity throughout the Mela period.",
   ];
 
   onMount(() => {
@@ -128,25 +128,21 @@
   </ul>
 </section>
 
-
-
-<!-- ✦ Key stakeholders -->
-
-
-<section class="relative col-span-full h-[900vh]">
-  <div class="sticky top-0 h-screen overflow-hidden z-10">
+<!-- ✦ Key stakeholders DESKTOP-->
+<section class="hidden lg:block relative col-span-full h-[900vh]">
+  <!-- Sticky Container -->
+  <div class="md:sticky md:top-0 md:h-screen overflow-hidden z-10">
     <div
       class="flex flex-col lg:flex-row items-center justify-center h-full px-4 md:px-10 gap-8"
     >
-      <!-- Right: Text Content -->
+      <!-- Text Content -->
       <div class="lg:w-1/4 text-left z-20">
         <h5 class="text-xl md:text-3xl lg:text-4xl font-semibold mb-4">
           Stakeholders
         </h5>
-
         <p class="text-sm md:text-base lg:text-lg">
           The visual depicts a varied and vast set of stakeholders engaged in
-          the Maha Kumbh. Mahakumbh is not only about the pilgrims but is also
+          the Maha Kumbh. Maha Kumbh is not only about the pilgrims but is also
           known for its huge economic impact. This manifests in various economic
           and social interactions with varied intensity. The Kumbh Mela displays
           delicate interactions between rituals and commerce. The interactions
@@ -154,18 +150,18 @@
         </p>
         <br />
         <p class="annotation">
-          (Our stakeholder mapping and field observations indicated that
-          Akharas had considerable power to negotiate crucial matters such as in
+          (Our stakeholder mapping and field observations indicated that Akharas
+          had considerable power to negotiate crucial matters such as in
           procession planning and land allocation. The interaction between the
           PMA and Akaharas are indicative of this where the PMA actively
-          consults with the Akaharas in advance in planning of the Mahakumbh.
+          consults with the Akahadas in advance in planning of the Mahalumbh.
           The Akhara leaders, who were elected in their traditional councils,
           coordinated both intra- and inter-Akhara and made sure that their
           spatial and ritualistic concerns were protected.)
         </p>
       </div>
 
-      <!-- Illustration & Overlay Container -->
+      <!-- Illustration & Overlays -->
       <div class="relative w-full lg:w-3/4 h-auto">
         <!-- Main Illustration -->
         <img
@@ -174,7 +170,7 @@
           class="w-full h-auto object-contain z-0"
         />
 
-        <!-- Overlay: Top -->
+        <!-- Overlay A -->
         <img
           src={`${base}/Main/Akhara.png`}
           alt="Overlay A"
@@ -182,10 +178,9 @@
           class:opacity-0={!isOverlayAVisible}
           class:opacity-100={isOverlayAVisible}
         />
-
-        <!-- Overlay Explainer Box -->
         <div
-          class="absolute top-1/4 right-4 md:right-16 w-[80%] md:w-1/2 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
+          class="lg:absolute lg:top-1/4 lg:right-16 w-full lg:w-1/2 bg-[#f1efe2bb] backdrop-blur-lg
+                 rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500 mt-4 lg:mt-0"
           class:opacity-0={!isOverlayAVisible}
           class:opacity-100={isOverlayAVisible}
         >
@@ -193,16 +188,17 @@
           <p class="text-base leading-relaxed">{overlayExplainerTexts[0]}</p>
         </div>
 
-        <!-- Overlay: Second -->
+        <!-- Overlay B -->
         <img
           src={`${base}/Main/ABAP.png`}
-          alt="Overlay Second"
-          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          alt="Overlay B"
+          class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayBVisible}
           class:opacity-100={isOverlayBVisible}
         />
         <div
-          class="absolute top-1/4 left-4 md:right-16 w-[80%] md:w-1/2 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
+          class="absolute top-1/4 left-4 md:right-16 w-[80%] md:w-1/2 bg-[#f1efe2bb] backdrop-blur-lg
+                 rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
           class:opacity-0={!isOverlayBVisible}
           class:opacity-100={isOverlayBVisible}
         >
@@ -210,16 +206,17 @@
           <p class="text-base leading-relaxed">{overlayExplainerTexts[1]}</p>
         </div>
 
-        <!-- Overlay: Third -->
+        <!-- Overlay C -->
         <img
           src={`${base}/Main/pma.png`}
           alt="Overlay C"
-          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayCVisible}
           class:opacity-100={isOverlayCVisible}
         />
         <div
-          class="absolute top-1/4 right-24 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class="absolute top-1/3 left-14 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg
+                 rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
           class:opacity-0={!isOverlayCVisible}
           class:opacity-100={isOverlayCVisible}
         >
@@ -227,32 +224,35 @@
           <p class="text-base leading-relaxed">{overlayExplainerTexts[2]}</p>
         </div>
 
-        <!-- Overlay: Fourth -->
+        <!-- Overlay D -->
         <img
           src={`${base}/Main/Pandas.png`}
           alt="Overlay D"
-          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayDVisible}
           class:opacity-100={isOverlayDVisible}
         />
         <div
-          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg
+                 rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
           class:opacity-0={!isOverlayDVisible}
           class:opacity-100={isOverlayDVisible}
         >
-          <h5 class="text-xl mb-2">Panda Pujaris /Prayagwalas</h5>
+          <h5 class="text-xl mb-2">Panda Pujaris / Prayagwalas</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[3]}</p>
         </div>
-        <!-- Overlay: Fifth -->
+
+        <!-- Overlay E -->
         <img
           src={`${base}/Main/Kalpavas.png`}
-          alt="Overlay D"
-          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          alt="Overlay E"
+          class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayEVisible}
           class:opacity-100={isOverlayEVisible}
         />
         <div
-          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class="absolute bottom-10 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg
+                 rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
           class:opacity-0={!isOverlayEVisible}
           class:opacity-100={isOverlayEVisible}
         >
@@ -260,32 +260,35 @@
           <p class="text-base leading-relaxed">{overlayExplainerTexts[4]}</p>
         </div>
 
-        <!-- Overlay: Sixth -->
+        <!-- Overlay F -->
         <img
           src={`${base}/Main/Naga-Sadhu.png`}
-          alt="Overlay D"
-          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          alt="Overlay F"
+          class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayFVisible}
           class:opacity-100={isOverlayFVisible}
         />
         <div
-          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg
+                 rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
           class:opacity-0={!isOverlayFVisible}
           class:opacity-100={isOverlayFVisible}
         >
           <h5 class="text-xl mb-2">Naga Sadhus</h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[5]}</p>
         </div>
-        <!-- Overlay: Seventh -->
+
+        <!-- Overlay G -->
         <img
           src={`${base}/Main/Businesses.png`}
-          alt="Overlay D"
-          class="absolute inset-0 w-full h-full object-cover z-10 fade"
+          alt="Overlay G"
+          class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayGVisible}
           class:opacity-100={isOverlayGVisible}
         />
         <div
-          class="absolute top-24 left-12 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 shadow-lg z-20 fade"
+          class="absolute top-24 left-24 md:right-24 w-1/3 bg-[#f1efe2bb] backdrop-blur-lg
+                 rounded p-6 md:p-8 shadow-lg z-20 transition-opacity duration-500"
           class:opacity-0={!isOverlayGVisible}
           class:opacity-100={isOverlayGVisible}
         >
@@ -296,7 +299,7 @@
     </div>
   </div>
 
-  <!-- Scroll triggers -->
+  <!-- Scroll Triggers -->
   <div bind:this={ATrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
   <div bind:this={BTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
   <div bind:this={CTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
@@ -306,8 +309,174 @@
   <div bind:this={GTrigger} class="absolute top-[800vh] h-[10vh] w-full"></div>
 </section>
 
+<!-- Mobile Section -->
+<section class="block lg:hidden relative col-span-full">
+  <!-- Intro Text -->
+  <div class="px-4 md:px-6 py-8 text-left">
+    <h5 class="text-xl md:text-3xl font-semibold mb-4">Stakeholders</h5>
+    <p class="text-sm md:text-base">
+      The visual depicts a varied and vast set of stakeholders engaged in the
+      Maha Kumbh. Mahakumbh is not only about the pilgrims but is also known for
+      its huge economic impact. This manifests in various economic and social
+      interactions with varied intensity. The Kumbh Mela displays delicate
+      interactions between rituals and commerce. The interactions are further
+      shaped by various power relations.
+    </p>
+    <br />
+    <p class="annotation text-sm">
+      (Our stakeholder mapping and field observations indicated that Akharas had
+      considerable power to negotiate crucial matters such as in procession
+      planning and land allocation. The interaction between the PMA and Akaharas
+      are indicative of this where the PMA actively consults with the Akaharas
+      in advance in planning of the Mahakumbh. The Akhara leaders, who were
+      elected in their traditional councils, coordinated both intra- and
+      inter-Akhara and made sure that their spatial and ritualistic concerns
+      were protected.)
+    </p>
+  </div>
 
+  <!-- Sticky Illustration & Overlay Container -->
+  <div class="relative h-[850vh]">
+    <div class="sticky top-20 h-screen w-full">
+      <!-- Main Illustration -->
+      <img
+        src={`${base}/Main/Main-illustration.jpg`}
+        alt="Spiritual and economic relationships"
+        class="w-full h-auto object-contain z-0"
+      />
 
+      <!-- Overlay A -->
+      <img
+        src={`${base}/Main/Akhara.png`}
+        alt="Overlay A"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class:opacity-0={!isOverlayAVisible}
+        class:opacity-100={isOverlayAVisible}
+      />
+
+      <!-- Overlay B -->
+      <img
+        src={`${base}/Main/ABAP.png`}
+        alt="Overlay B"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class:opacity-0={!isOverlayBVisible}
+        class:opacity-100={isOverlayBVisible}
+      />
+      <!-- Overlay C -->
+      <img
+        src={`${base}/Main/pma.png`}
+        alt="Overlay C"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class:opacity-0={!isOverlayCVisible}
+        class:opacity-100={isOverlayCVisible}
+      />
+
+      <!-- Overlay D -->
+      <img
+        src={`${base}/Main/Pandas.png`}
+        alt="Overlay D"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class:opacity-0={!isOverlayDVisible}
+        class:opacity-100={isOverlayDVisible}
+      />
+
+      <!-- Overlay E -->
+      <img
+        src={`${base}/Main/Kalpavas.png`}
+        alt="Overlay E"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class:opacity-0={!isOverlayEVisible}
+        class:opacity-100={isOverlayEVisible}
+      />
+      <!-- Overlay F -->
+      <img
+        src={`${base}/Main/Naga-Sadhu.png`}
+        alt="Overlay F"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class:opacity-0={!isOverlayFVisible}
+        class:opacity-100={isOverlayFVisible}
+      />
+
+      <!-- Overlay G -->
+      <img
+        src={`${base}/Main/Businesses.png`}
+        alt="Overlay G"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class:opacity-0={!isOverlayGVisible}
+        class:opacity-100={isOverlayGVisible}
+      />
+    </div>
+
+    <!-- Explainer Texts (fixed, independent) -->
+    <div
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class:opacity-0={!isOverlayAVisible}
+      class:opacity-100={isOverlayAVisible}
+    >
+      <h5>Akharas</h5>
+      <p>{overlayExplainerTexts[0]}</p>
+    </div>
+
+    <div
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class:opacity-0={!isOverlayBVisible}
+      class:opacity-100={isOverlayBVisible}
+    >
+      <h5>Akhil Bharatiya Akhara Parishad</h5>
+      <p>{overlayExplainerTexts[1]}</p>
+    </div>
+
+    <div
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"      class:opacity-0={!isOverlayCVisible}
+      class:opacity-100={isOverlayCVisible}
+    >
+      <h5>Prayagraj Mela Authority</h5>
+      <p>{overlayExplainerTexts[2]}</p>
+    </div>
+
+    <div
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class:opacity-0={!isOverlayDVisible}
+      class:opacity-100={isOverlayDVisible}
+    >
+      <h5>Panda Pujaris / Prayagwalas</h5>
+      <p>{overlayExplainerTexts[3]}</p>
+    </div>
+    <div
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class:opacity-0={!isOverlayEVisible}
+      class:opacity-100={isOverlayEVisible}
+    >
+      <h5>Kalpavas</h5>
+      <p>{overlayExplainerTexts[4]}</p>
+    </div>
+    <div
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class:opacity-0={!isOverlayFVisible}
+      class:opacity-100={isOverlayFVisible}
+    >
+      <h5>Naga Sadhus</h5>
+      <p>{overlayExplainerTexts[5]}</p>
+    </div>
+    <div
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class:opacity-0={!isOverlayGVisible}
+      class:opacity-100={isOverlayGVisible}
+    >
+      <h5>Businesses and Small Vendors</h5>
+      <p>{overlayExplainerTexts[6]}</p>
+    </div>
+  </div>
+
+  <!-- Scroll Trigger for Overlay A -->
+  <div bind:this={ATrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
+  <div bind:this={BTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
+  <div bind:this={CTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
+  <div bind:this={DTrigger} class="absolute top-[500vh] h-[10vh] w-full"></div>
+  <div bind:this={ETrigger} class="absolute top-[600vh] h-[10vh] w-full"></div>
+  <div bind:this={FTrigger} class="absolute top-[700vh] h-[10vh] w-full"></div>
+  <div bind:this={GTrigger} class="absolute top-[800vh] h-[10vh] w-full"></div>
+</section>
 
 <!-- ✦ Spiritual and economic relationships -->
 
@@ -355,15 +524,13 @@
   </div>
 </section>
 
-
-
-
 <!-- ✦ SECTION: Pyramid -->
 <section class="relative col-span-full h-[900vh]">
   <div class="sticky top-0 h-screen overflow-hidden z-10">
     <!-- Title -->
-    <h5 class="absolute top-4 left-1/2 transform -translate-x-1/2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-center px-2 sm:px-4">
-
+    <h5
+      class="absolute top-4 left-1/2 transform -translate-x-1/2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-center px-2 sm:px-4"
+    >
       Permeating Power
     </h5>
     <!-- Subheading -->
@@ -395,7 +562,6 @@
     />
     <div
       class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
-
       class:opacity-0={!isOverlayTopVisible}
       class:opacity-100={isOverlayTopVisible}
     >
@@ -412,7 +578,6 @@
     />
     <div
       class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
-
       class:opacity-0={!isOverlaySecondVisible}
       class:opacity-100={isOverlaySecondVisible}
     >
@@ -429,7 +594,6 @@
     />
     <div
       class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
-
       class:opacity-0={!isOverlayThirdVisible}
       class:opacity-100={isOverlayThirdVisible}
     >
@@ -446,7 +610,6 @@
     />
     <div
       class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
-
       class:opacity-0={!isOverlayBottomVisible}
       class:opacity-100={isOverlayBottomVisible}
     >
