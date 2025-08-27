@@ -37,7 +37,7 @@
       <ul class="flex space-x-10 text-sm text-white">
         <a href = "https://treads.org.in/"
         >
-          <li><h4>About TREADS</h4></li>
+          <li><h4>About TREADS test</h4></li>
         </a>
       </ul>
     </nav>
