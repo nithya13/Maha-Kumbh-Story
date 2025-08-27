@@ -72,10 +72,10 @@
       A water rejuvenation lesson from the Maha Kumbh
     </h1>
     <h6
-      class="text-base font-medium"
+      class="text-l font-medium"
       style="font-family: 'Lora', serif;"
     >
-      Indigenous practices often embody an ecological ethic of conservation
+      Eliciting the Embodied Ecological Ethic of Conservation
     </h6>
   </div>
 
