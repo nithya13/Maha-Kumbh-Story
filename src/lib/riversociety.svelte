@@ -63,7 +63,7 @@
     playsinline
     class="w-full lg:w-[60%] h-auto lg:h-full object-contain z-0 lg:absolute lg:top-0"
   >
-    <source src={`${base}/Interview clip.mp4`} type="video/mp4" />
+    <source src={`${base}/Interview Clip 1.mp4`} type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
