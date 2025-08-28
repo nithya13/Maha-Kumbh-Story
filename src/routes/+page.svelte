@@ -37,7 +37,7 @@
       <ul class="flex space-x-10 text-sm text-white">
         <a href = "https://treads.org.in/"
         >
-          <li><h4>About TREADS test</h4></li>
+          <li><h4>About TREADS</h4></li>
         </a>
       </ul>
     </nav>
@@ -53,7 +53,7 @@
     playsinline
     class="absolute inset-0 w-full h-full object-cover"
   >
-    <source src={`${base}/Drone clip.mp4`} type="video/mp4" />
+    <source src={`${base}/drone.mp4`} type="video/mp4" />
     Your browser does not support the video tag.
   </video>
   <!-- Dark overlay for better text visibility (optional but recommended) -->

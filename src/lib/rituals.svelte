@@ -82,7 +82,7 @@
     <div class="relative w-full">
       <!-- Main Calendar Image -->
       <img
-        src={`${base}/Calendar.jpg`}
+        src={`${base}/Calendar.webp`}
         alt="Calendar"
         class="w-full h-auto object-contain justify-self-center mb-6"
       />
@@ -90,7 +90,7 @@
       <!-- Overlay 1 -->
       {#if showFirstOverlay}
         <img
-          src={`${base}/Dates-overlay.png`}
+          src={`${base}/Dates-overlay.webp`}
           alt="Dates Overlay"
           class="absolute top-0 left-0 w-full h-full object-contain"
           in:fade={{ duration: 1500 }}
@@ -101,7 +101,7 @@
       <!-- Overlay 2 -->
       {#if showSecondOverlay}
         <img
-          src={`${base}/Snan-dates.png`}
+          src={`${base}/Snan-dates.webp`}
           alt="Snan Dates Overlay"
           class="absolute top-0 left-0 w-full h-full object-contain"
           in:fade={{ duration: 1500 }}

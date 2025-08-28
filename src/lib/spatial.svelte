@@ -57,13 +57,13 @@
       </h2>
       <!-- Base Map -->
       <img
-        src={`${base}/Basemap.png`}
+        src={`${base}/Basemap.webp`}
         alt="Zoning"
         class="w-full h-full object-cover"
       />
 <!-- First overlay -->
       <img
-        src={`${base}/Zones.png`}
+        src={`${base}/Zones.webp`}
         alt="Overlay"
         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
         class:opacity-0={!isZonesVisible}
@@ -71,7 +71,7 @@
       />
       <!-- Second overlay -->
       <img
-        src={`${base}/Fecal-coliform.png`}
+        src={`${base}/Fecal-coliform.webp`}
         alt="Overlay"
         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
         class:opacity-0={!isOverlayVisible}
@@ -80,7 +80,7 @@
 
       <!-- Third overlay (points) -->
       <img
-        src={`${base}/Flower-tributes.png`}
+        src={`${base}/Flower-tributes.webp`}
         alt="Points"
         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
         class:opacity-0={!isPointsVisible}
@@ -88,7 +88,7 @@
       />
 <!-- Fourth overlay (points) -->
       <img
-        src={`${base}/Diyas.png`}
+        src={`${base}/Diyas.webp`}
         alt="Points"
         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-800"
         class:opacity-0={!isNightVisible}

@@ -63,7 +63,7 @@
     playsinline
     class="w-full lg:w-[60%] h-auto lg:h-full object-contain z-0 lg:absolute lg:top-0"
   >
-    <source src={`${base}/Interview Clip 1.mp4`} type="video/mp4" />
+    <source src={`${base}/Interview clip.mp4`} type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
@@ -95,7 +95,7 @@
   class="col-start-1 col-span-1 md:col-start-5 md:col-span-5 py-4 md:py-8 px-4 text-left bg-[#f1efe2]"
 >
   <h2 class="text-xl font-bold mb-6">Our Approach</h2>
- <img src = "{base}/process.png" alt = "Process" class="md:w-[80%] sm:w-[100%] mb-6">
+ <img src = "{base}/process.webp" alt = "Process" class="md:w-[80%] sm:w-[100%] mb-6">
   
  
 </section>
