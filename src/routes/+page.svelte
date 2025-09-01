@@ -69,7 +69,7 @@
       class="text-5xl uppercase tracking-wider md:text-6xl font-bold border-b-2 border-white"
       style="font-family: 'Khand', sans-serif;"
     >
-      A water rejuvenation lesson from the Maha Kumbh
+      Reading Rituals of the Maha Kumbh for River Rejuvenation
     </h1>
     <h6
       class="text-l font-medium"
