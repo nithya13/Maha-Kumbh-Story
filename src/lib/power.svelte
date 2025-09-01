@@ -7,10 +7,17 @@
 
   let fadeTrigger1;
   let fadeTrigger2;
+
   let isOverlayTopVisible = false;
   let isOverlaySecondVisible = false;
   let isOverlayThirdVisible = false;
   let isOverlayBottomVisible = false;
+
+
+  let isOverlayMTopVisible = false;
+  let isOverlayMSecondVisible = false;
+  let isOverlayMThirdVisible = false;
+  let isOverlayMBottomVisible = false;
 
   let isOverlayAVisible = false;
   let isOverlayBVisible = false;
@@ -49,6 +56,11 @@
   let thirdTrigger;
   let bottomTrigger;
 
+  let topMobileTrigger;
+  let secondMobileTrigger;
+  let thirdMobileTrigger;
+  let bottomMobileTrigger;
+
   const overlayTexts = [
     `The Akharas—monastic orders—sit at the apex of spiritual authority. Their decisions influence the rituals performed and the sequence of holy bathing.`,
     `Spiritual leaders and socio-cultural organizations serve as intermediaries, providing both spiritual guidance and logistical infrastructure for followers.`,
@@ -83,6 +95,11 @@
     createObserver(secondTrigger, (val) => (isOverlaySecondVisible = val));
     createObserver(thirdTrigger, (val) => (isOverlayThirdVisible = val));
     createObserver(bottomTrigger, (val) => (isOverlayBottomVisible = val));
+
+    createObserver(topMobileTrigger, (val) => (isOverlayMTopVisible = val));
+    createObserver(secondMobileTrigger, (val) => (isOverlayMSecondVisible = val));
+    createObserver(thirdMobileTrigger, (val) => (isOverlayMThirdVisible = val));
+    createObserver(bottomMobileTrigger, (val) => (isOverlayMBottomVisible = val));
 
     createObserver(topTrigger, (val) => (isOverlayAVisible = val));
     createObserver(secondTrigger, (val) => (isOverlayBVisible = val));
@@ -191,14 +208,14 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
       <div class="relative w-full lg:w-3/4 h-auto">
         <!-- Main Illustration -->
         <img
-          src={`${base}/Main/Main-illustration.jpg`}
+          src={`${base}/Main/Main-illustration.webp`}
           alt="Spiritual and economic relationships"
           class="w-full h-auto object-contain z-0"
         />
 
         <!-- Overlay A -->
         <img
-          src={`${base}/Main/Akhara.png`}
+          src={`${base}/Main/Akhara.webp`}
           alt="Overlay A"
           class="absolute top-0 left-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayAVisible}
@@ -216,7 +233,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
 
         <!-- Overlay B -->
         <img
-          src={`${base}/Main/ABAP.png`}
+          src={`${base}/Main/ABAP.webp`}
           alt="Overlay B"
           class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayBVisible}
@@ -234,7 +251,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
 
         <!-- Overlay C -->
         <img
-          src={`${base}/Main/pma.png`}
+          src={`${base}/Main/pma.webp`}
           alt="Overlay C"
           class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayCVisible}
@@ -252,7 +269,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
 
         <!-- Overlay D -->
         <img
-          src={`${base}/Main/Pandas.png`}
+          src={`${base}/Main/Pandas.webp`}
           alt="Overlay D"
           class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayDVisible}
@@ -270,7 +287,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
 
         <!-- Overlay E -->
         <img
-          src={`${base}/Main/Kalpavas.png`}
+          src={`${base}/Main/Kalpavas.webp`}
           alt="Overlay E"
           class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayEVisible}
@@ -288,7 +305,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
 
         <!-- Overlay F -->
         <img
-          src={`${base}/Main/Naga-Sadhu.png`}
+          src={`${base}/Main/Naga-Sadhu.webp`}
           alt="Overlay F"
           class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayFVisible}
@@ -306,7 +323,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
 
         <!-- Overlay G -->
         <img
-          src={`${base}/Main/Businesses.png`}
+          src={`${base}/Main/Businesses.webp`}
           alt="Overlay G"
           class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
           class:opacity-0={!isOverlayGVisible}
@@ -367,68 +384,68 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
     <div class="sticky top-20 h-screen w-full">
       <!-- Main Illustration -->
       <img
-        src={`${base}/Main/Main-illustration.jpg`}
+        src={`${base}/Main/Main-illustration.webp`}
         alt="Spiritual and economic relationships"
         class="w-full h-auto object-contain z-0"
       />
 
       <!-- Overlay A -->
       <img
-        src={`${base}/Main/Akhara.png`}
+        src={`${base}/Main/Akhara.webp`}
         alt="Overlay A"
-        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
         class:opacity-0={!isOverlayMAVisible}
         class:opacity-100={isOverlayMAVisible}
       />
 
       <!-- Overlay B -->
       <img
-        src={`${base}/Main/ABAP.png`}
+        src={`${base}/Main/ABAP.webp`}
         alt="Overlay B"
-        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
         class:opacity-0={!isOverlayMBVisible}
         class:opacity-100={isOverlayMBVisible}
       />
       <!-- Overlay C -->
       <img
-        src={`${base}/Main/pma.png`}
+        src={`${base}/Main/pma.webp`}
         alt="Overlay C"
-        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
         class:opacity-0={!isOverlayMCVisible}
         class:opacity-100={isOverlayMCVisible}
       />
 
       <!-- Overlay D -->
       <img
-        src={`${base}/Main/Pandas.png`}
+        src={`${base}/Main/Pandas.webp`}
         alt="Overlay D"
-        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
         class:opacity-0={!isOverlayMDVisible}
         class:opacity-100={isOverlayMDVisible}
       />
 
       <!-- Overlay E -->
       <img
-        src={`${base}/Main/Kalpavas.png`}
+        src={`${base}/Main/Kalpavas.webp`}
         alt="Overlay E"
-        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
         class:opacity-0={!isOverlayMEVisible}
         class:opacity-100={isOverlayMEVisible}
       />
       <!-- Overlay F -->
       <img
-        src={`${base}/Main/Naga-Sadhu.png`}
+        src={`${base}/Main/Naga-Sadhu.webp`}
         alt="Overlay F"
-        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
         class:opacity-0={!isOverlayMFVisible}
         class:opacity-100={isOverlayMFVisible}
       />
 
       <!-- Overlay G -->
       <img
-        src={`${base}/Main/Businesses.png`}
+        src={`${base}/Main/Businesses.webp`}
         alt="Overlay G"
-        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-700"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
         class:opacity-0={!isOverlayMGVisible}
         class:opacity-100={isOverlayMGVisible}
       />
@@ -436,7 +453,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
 
     <!-- Explainer Texts (fixed, independent) -->
     <div
-      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-300"
       class:opacity-0={!isOverlayMAVisible}
       class:opacity-100={isOverlayMAVisible}
     >
@@ -445,7 +462,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
     </div>
 
     <div
-      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-300"
       class:opacity-0={!isOverlayMBVisible}
       class:opacity-100={isOverlayMBVisible}
     >
@@ -454,7 +471,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
     </div>
 
     <div
-      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"     
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-300"     
        class:opacity-0={!isOverlayMCVisible}
       class:opacity-100={isOverlayMCVisible}
     >
@@ -463,7 +480,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
     </div>
 
     <div
-      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-300"
       class:opacity-0={!isOverlayMDVisible}
       class:opacity-100={isOverlayMDVisible}
     >
@@ -471,7 +488,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
       <p>{overlayExplainerTexts[3]}</p>
     </div>
     <div
-      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-300"
       class:opacity-0={!isOverlayMEVisible}
       class:opacity-100={isOverlayMEVisible}
     >
@@ -479,7 +496,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
       <p>{overlayExplainerTexts[4]}</p>
     </div>
     <div
-      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-300"
       class:opacity-0={!isOverlayMFVisible}
       class:opacity-100={isOverlayMFVisible}
     >
@@ -487,7 +504,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
       <p>{overlayExplainerTexts[5]}</p>
     </div>
     <div
-      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-700"
+      class="fixed bottom-60 left-4 right-10 z-20  transition-opacity duration-300"
       class:opacity-0={!isOverlayMGVisible}
       class:opacity-100={isOverlayMGVisible}
     >
@@ -517,12 +534,12 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
       <picture class="w-full lg:w-2/3">
         <!-- Mobile -->
         <source
-          srcset={`${base}/Alluvial-mobile.png`}
+          srcset={`${base}/Alluvial-mobile.webp`}
           media="(max-width: 1023px)"
         />
         <!-- Desktop -->
         <img
-          src={`${base}/Main-illustration.png`}
+          src={`${base}/Alluvial.webp`}
           alt="Institutional Framework"
           class="w-full h-auto object-contain mt-10 lg:mt-0"
         />
@@ -552,12 +569,12 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
   </div>
 </section>
 
-<!-- ✦ SECTION: Pyramid -->
-<section class="relative col-span-full h-[900vh]">
-  <div class="sticky top-0 h-screen overflow-hidden z-10">
+<!-- ✦ SECTION: desktop Pyramid -->
+<section class="hidden lg:block relative col-span-full h-[600vh] bg-[#f1efe2]">
+  <div class="sticky top-0 h-auto overflow-hidden z-10">
     <!-- Title -->
     <h5
-      class="absolute top-4 left-1/2 transform -translate-x-1/2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-center px-2 sm:px-4"
+      class="absolute top-4 left-2/3 transform -translate-x-1/2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold z-20 text-center px-2 sm:px-4"
     >
       Permeating Power
     </h5>
@@ -589,7 +606,11 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
       class:opacity-100={isOverlayTopVisible}
     />
     <div
-      class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
+  class="absolute top-1/3 right-24 lg:right-48 
+         w-80 h-80 bg-[#e5e3d7dd] backdrop-blur-lg 
+         rounded-full p-10 shadow-sm z-20 
+         flex items-center justify-center text-center"
+
       class:opacity-0={!isOverlayTopVisible}
       class:opacity-100={isOverlayTopVisible}
     >
@@ -605,7 +626,10 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
       class:opacity-100={isOverlaySecondVisible}
     />
     <div
-      class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
+  class="absolute top-1/3 right-24 lg:right-48 
+         w-80 h-80 bg-[#e5e3d7dd] backdrop-blur-lg 
+         rounded-full p-10 shadow-sm z-20 
+         flex items-center justify-center text-center"
       class:opacity-0={!isOverlaySecondVisible}
       class:opacity-100={isOverlaySecondVisible}
     >
@@ -621,7 +645,10 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
       class:opacity-100={isOverlayThirdVisible}
     />
     <div
-      class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
+  class="absolute top-1/3 right-24 lg:right-48 
+         w-80 h-80 bg-[#e5e3d7dd] backdrop-blur-lg 
+         rounded-full p-10 shadow-sm z-20 
+         flex items-center justify-center text-center"
       class:opacity-0={!isOverlayThirdVisible}
       class:opacity-100={isOverlayThirdVisible}
     >
@@ -637,7 +664,10 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
       class:opacity-100={isOverlayBottomVisible}
     />
     <div
-      class="absolute top-1/4 right-2 sm:right-4 md:right-12 lg:right-24 w-[90%] sm:w-4/5 md:w-1/2 lg:w-1/3 max-w-md bg-[#f1efe2] backdrop-blur-lg rounded p-3 sm:p-4 md:p-6 shadow-lg z-20 fade"
+  class="absolute top-1/3 right-24 lg:right-48 
+         w-80 h-80 bg-[#e5e3d7dd] backdrop-blur-lg 
+         rounded-full p-10 shadow-sm z-20 
+         flex items-center justify-center text-center"
       class:opacity-0={!isOverlayBottomVisible}
       class:opacity-100={isOverlayBottomVisible}
     >
@@ -663,6 +693,77 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
     class="absolute top-[500vh] h-[10vh] w-full"
   ></div>
 </section>
+
+
+<!-- Mobile Section -->
+<section class="block lg:hidden relative col-span-full">
+  <!-- Intro Text -->
+  <div class="px-4 md:px-6 py-8 text-left">
+    <h5 class="text-xl md:text-3xl font-semibold mb-4">Permeating Power</h5>
+    <p class="text-sm md:text-base">
+      This visual captures the spiritual and cultural hierarchy that informs
+      ritual practices and shapes informal interactions with devotees and
+      pilgrims. The illustration delineates four levels within this projection
+      of power or influence—beginning with the Akharas at the top, followed by
+      influential spiritual gurus and socio-cultural organisations, then the
+      Pandas and Purohits, and finally culminating in the pilgrims and
+      Kalpavasis, who constitute the base of this hierarchical structure.
+    </p>
+    
+  </div>
+
+  <!-- Sticky Illustration & Overlay Container -->
+  <div class="relative h-[450vh]">
+    <div class="sticky top-20 h-screen w-full">
+      <!-- Main Illustration -->
+      <img
+        src={`${base}/Mobile-pyramid.png`}
+        alt="Pyramid"
+        class="w-full h-auto object-contain z-0"
+      />
+
+      <!-- Overlay top -->
+      <img
+        src={`${base}/Mobile-top.png`}
+        alt="Overlay top"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
+        class:opacity-0={!isOverlayMTopVisible}
+        class:opacity-100={isOverlayMTopVisible}
+      />
+      <!-- Overlay second -->
+      <img
+        src={`${base}/Mobile-second.png`}
+        alt="Overlay second"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
+        class:opacity-0={!isOverlayMSecondVisible}
+        class:opacity-100={isOverlayMSecondVisible}
+      />
+      <!-- Third overlay -->
+      <img
+        src={`${base}/Mobile-third.png`}
+        alt="Overlay third"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
+        class:opacity-0={!isOverlayMThirdVisible}
+        class:opacity-100={isOverlayMThirdVisible}
+      />
+      <!-- Bottom overlay -->
+      <img
+        src={`${base}/Mobile-bottom.png`}
+        alt="Overlay bottom"
+        class="absolute inset-0 w-full h-auto object-contain z-10 transition-opacity duration-500"
+        class:opacity-0={!isOverlayMBottomVisible}
+        class:opacity-100={isOverlayMBottomVisible}
+      />
+    </div>
+    
+  <!-- Scroll Trigger for Overlays -->
+  <div bind:this={topMobileTrigger} class="absolute top-[100vh] h-[10vh] w-full"></div>
+  <div bind:this={secondMobileTrigger} class="absolute top-[200vh] h-[10vh] w-full"></div>
+  <div bind:this={thirdMobileTrigger} class="absolute top-[300vh] h-[10vh] w-full"></div>
+  <div bind:this={bottomMobileTrigger} class="absolute top-[400vh] h-[10vh] w-full"></div>
+  
+</section>
+
 <!-- ✦ SECTION: Institutional Framework -->
 <section class="relative col-span-full bg-[#f1efe2]">
   <div class="sticky top-0 z-10 mt-10">
