@@ -30,17 +30,29 @@
     rel="stylesheet"
   />
 </svelte:head>
-<header class="w-full py-4 px-6 absolute top-0 left-0 z-20 text-white">
-  <div class="flex items-center justify-end px-6 py-4">
+<header class="w-full py-4 px-6 absolute top-0 left-0 z-20 text-white bg-white/40 ">
+  <div class="flex items-right justify-end px-6 py-4">
+    
+    <!-- Left: Logos -->
+    <div class="flex items-center justify-center space-x-4">
+      <a href="https://nmcg.nic.in/">
+        <img src={`${base}/NGP Logo .png`}
+        alt="Namami Gange" class="h-15 w-auto">
+      </a>
+      <a href="https://treads.org.in/">
+        <img src={`${base}/TREADS logo vector.png`}
+        alt="TREADS" class="h-10 w-auto">
+      </a>
+    </div>
     <!-- Menu (right) -->
-    <nav>
+    <!-- <nav>
       <ul class="flex space-x-10 text-sm text-white">
         <a href = "https://treads.org.in/"
         >
           <li><h4>About TREADS</h4></li>
         </a>
       </ul>
-    </nav>
+    </nav> -->
   </div>
 </header>
 
@@ -58,12 +70,13 @@
   </video>
   <!-- Dark overlay for better text visibility (optional but recommended) -->
   <div
-    class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"
+    class="absolute inset-0 bg-gradient-to-b from-white/20 to-black/60"
   ></div>
 
   <!-- Centered Content -->
   <div
-    class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 transform md:-translate-y-20 text-white"
+    class="relative z-10 flex flex-col items-center h-full text-center px-4 transform md:-translate-y-20 text-white 
+         justify-start mt-20 md:justify-center"
   >
     <h1
       class="text-5xl uppercase tracking-wider md:text-6xl font-bold border-b-2 border-white"
