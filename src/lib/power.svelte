@@ -281,7 +281,7 @@ createObserver(MATrigger, (val) => (isOverlayMAVisible = val));
           class:opacity-0={!isOverlayDVisible}
           class:opacity-100={isOverlayDVisible}
         >
-          <h5 class="text-xl mb-2">Panda Pujaris / Prayagwalas</h5>
+          <h5 class="text-xl mb-2">Panda Pujaris </h5>
           <p class="text-base leading-relaxed">{overlayExplainerTexts[3]}</p>
         </div>
 

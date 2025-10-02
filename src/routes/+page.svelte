@@ -31,28 +31,20 @@
   />
 </svelte:head>
 <header class="w-full py-4 px-6 absolute top-0 left-0 z-20 text-white bg-white/40 ">
-  <div class="flex items-right justify-end px-6 py-4">
+  <div class= "flex items-right justify-end px-6 py-4">
     
     <!-- Left: Logos -->
     <div class="flex items-center justify-center space-x-4">
       <a href="https://nmcg.nic.in/">
         <img src={`${base}/NGP Logo .png`}
-        alt="Namami Gange" class="h-15 w-auto">
+        alt="Namami Gange" class="max-h-15 w-auto object-contain">
       </a>
       <a href="https://treads.org.in/">
         <img src={`${base}/TREADS logo vector.png`}
-        alt="TREADS" class="h-10 w-auto">
+        alt="TREADS" class="max-h-10 w-auto object-contain">
       </a>
     </div>
-    <!-- Menu (right) -->
-    <!-- <nav>
-      <ul class="flex space-x-10 text-sm text-white">
-        <a href = "https://treads.org.in/"
-        >
-          <li><h4>About TREADS</h4></li>
-        </a>
-      </ul>
-    </nav> -->
+   
   </div>
 </header>
 
@@ -168,7 +160,7 @@
   <Rituals {base} />
   <div class="h-[10vh]"></div>
   <Spatial {base} />
-  <Power {base} />
+  <Power {base} /> 
   
 
 </main>
@@ -260,4 +252,6 @@
 
     margin-bottom: 1rem;
   }
+  
+
 </style>

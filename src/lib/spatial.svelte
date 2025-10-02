@@ -119,7 +119,7 @@
     ></div>
 
     <!-- Floating cards area -->
-    <div class="absolute top-[90vh] left-[5vw] w-full z-20">
+    <div class="absolute top-[90vh] left-0 px-[5vw] w-full z-20">
 
 <div
         class="bg-[#f1efe2bb] backdrop-blur-lg rounded p-6 md:p-8 w-11/12 md:max-w-lg mr-3 mb-[100vh] shadow-lg"
